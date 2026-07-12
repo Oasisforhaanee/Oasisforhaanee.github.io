@@ -15,9 +15,11 @@ In this post we'll explore the **complex plane**. Understanding the concept matt
 
 *How $e^{i\omega t}$ advances as a helix along the time axis.*
 
-Did you watch them? If that already makes sense to you, you might be a genius — it took me almost months to really get it. (Maybe I'm just slow.)
+Did you get it? If that already makes sense to you, you might be a genius — it took me almost months for me to really get it. (...Or maybe I'm just slow.)
 
-Anyway, even if it doesn't click yet, I'm confident it will eventually if you study step by step. So let's begin explaining the complex plane, starting from the definition and the conceptual picture.
+Anyway, even if you don't understand it yet, I'm sure you will eventually get it if you study step by step. 
+
+Okay then let's get started.
 
 ## Taylor Expansion
 
@@ -71,6 +73,8 @@ Notice that the $\cos$ terms line up exactly with those of $e^{ix}$; if we addit
 
 $$e^{ix}=\cos x+i\sin x$$
 
+This is called as "Euler Formula"
+
 Plug in $x=\pi$: $\cos(\pi)+i\sin(\pi)=-1$, so $e^{i\pi}+1=0$. The relation for $e^{ix}$ is absolutely central in mathematics, science, and engineering — keep it in mind.
 
 ## The Complex Plane
@@ -101,7 +105,7 @@ Viewed from the 2nd viewpoint, showing only the time axis and imaginary axis, we
 
 Viewed from the 1st viewpoint, showing only the time axis and real axis, we see the graph of $\cos(\omega t)$. The blue graph is $\cos(\omega t)$.
 
-You can see there's a *rotation* as time progresses: starting from $t=0$, the point moves along a helical line. In the 3rd viewpoint, since $\omega t$ is the angle on the complex plane, a larger $\omega$ means it rotates faster in time and the helix is tighter. That's why $\omega$ is called the **angular frequency** — think of it as the angular version of frequency $f$ (even a 240 Hz screen refresh rate is a frequency), expressing how much it oscillates.
+You can see there's a *rotation* as time progresses: starting from $t=0$, the point moves along a helical line. In the 3rd viewpoint, since $\omega t$ is the angle on the complex plane, a larger $\omega$ means it rotates faster in time and the helix is tighter. That's why $\omega$ is called the **angular frequency** — think of it as the angular version of frequency $f$, expressing how much it oscillates.
 
 ## Plane Waves
 
