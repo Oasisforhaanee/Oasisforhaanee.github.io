@@ -1,0 +1,191 @@
+<!DOCTYPE html> <html lang="en"> <head> <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"> <meta charset="utf-8"> <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no"> <meta http-equiv="X-UA-Compatible" content="IE=edge"> <title> The Complex Plane | Haanee Choi </title> <meta name="author" content="Haanee Choi"> <meta name="description" content="A visual, intuitive introduction to the complex plane — Taylor series, Euler's identity, and how e^{iωt} draws a rotating spiral in space-time."> <meta name="keywords" content="quantum mechanics, self-study, materials engineering, seoul national university, physics notes, portfolio"> <meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self' 'unsafe-inline' https:; style-src 'self' 'unsafe-inline' https:; img-src 'self' data: https:; font-src 'self' data: https:; media-src 'self' https:; frame-src 'self' https:; connect-src 'self' https:;"> <style>
+  :root {
+    --max-content-width: 930px;
+  }
+</style> <link rel="stylesheet" href="/assets/css/tailwind.css?v=50c64c15cbb9fd1ce6056fdb8bcb4b62"> <link defer rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@7.2.0/css/all.min.css" integrity="sha256-MVopmdyC2tYTiJ8wlktf0uh0v4NgT+vNdyVFepi7Q0c=" crossorigin="anonymous"> <link defer rel="stylesheet" href="https://cdn.jsdelivr.net/npm/academicons@1.9.5/css/academicons.min.css" integrity="sha256-SzrCOBJbGVFMahewkgjwnApaV2+av1DwMAA+/QGLyZw=" crossorigin="anonymous"> <link defer rel="stylesheet" href="https://cdn.jsdelivr.net/npm/scholar-icons@1.0.3/css/scholar-icons.css" integrity="sha256-VY3hHVj/hNX3fYG6wtbA6TcKJQl7+FthzGSyIB64klY=" crossorigin="anonymous"> <link defer rel="stylesheet" type="text/css" href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700|Roboto+Slab:100,300,400,500,700|Material+Icons&amp;display=swap"> <link defer rel="stylesheet" href="/assets/css/jekyll-pygments-themes-github.css?v=591dab5a4e56573bf4ef7fd332894c99" media="" id="highlight_theme_light"> <link rel="shortcut icon" href="data:image/svg+xml,&lt;svg%20xmlns=%22http://www.w3.org/2000/svg%22%20viewBox=%220%200%20100%20100%22&gt;&lt;text%20y=%22.9em%22%20font-size=%2290%22&gt;%E2%9A%9B%EF%B8%8F&lt;/text&gt;&lt;/svg&gt;"> <link rel="stylesheet" href="/assets/css/main.css?v=f0b101217084a90093badfe99ff9a7d1"> <link rel="canonical" href="https://oasisforhaanee.github.io/blog/2026/complex-plane/"> <script src="/assets/js/theme.js?v=7af685e2ba20b37fef545c97b8064050"></script> <link defer rel="stylesheet" href="/assets/css/jekyll-pygments-themes-native.css?v=5847e5ed4a4568527aa6cfab446049ca" media="none" id="highlight_theme_dark"> <script>
+    initTheme();
+  </script> </head> <body class="fixed-top-nav "> <header> <nav id="navbar" class="navbar navbar-light navbar-expand-sm fixed-top" role="navigation"> <div class="container"> <a class="navbar-brand title font-weight-lighter" href="/"> <span class="font-weight-bold">Haanee</span> Choi </a> <button class="navbar-toggler collapsed navbar-toggler-main" type="button" data-nav-toggle="navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation"> <span class="sr-only">Toggle navigation</span> <span class="icon-bar top-bar"></span> <span class="icon-bar middle-bar"></span> <span class="icon-bar bottom-bar"></span> </button> <div class="collapse navbar-collapse navbar-collapse-main" id="navbarNav"> <ul class="navbar-nav navbar-menu-list flex-nowrap"> <li class="nav-item "> <a class="nav-link" href="/">about </a> </li> <li class="nav-item active"> <a class="nav-link" href="/blog/">blog </a> </li> <li class="nav-item "> <a class="nav-link" href="/publications/">publications </a> </li> <li class="nav-item "> <a class="nav-link" href="/projects/">projects </a> </li> <li class="nav-item "> <a class="nav-link" href="/repositories/">repositories </a> </li> <li class="nav-item "> <a class="nav-link" href="/cv/">CV </a> </li> <li class="nav-item "> <a class="nav-link" href="/teaching/">teaching </a> </li> <li class="nav-item "> <a class="nav-link" href="/people/">people </a> </li> <li class="nav-item dropdown "> <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-nav-dropdown-toggle="true" aria-haspopup="true" aria-expanded="false">submenus </a> <div class="dropdown-menu dropdown-menu-right" aria-labelledby="navbarDropdown"> <a class="dropdown-item " href="/books/">bookshelf</a> <div class="dropdown-divider"></div> <a class="dropdown-item " href="/blog/">blog</a> </div> </li> <li class="nav-item"> <button id="search-toggle" type="button" title="Search" aria-label="Open search"> <span class="nav-link">ctrl k <i class="fa-solid fa-magnifying-glass"></i></span> </button> </li> <li class="toggle-container"> <button id="light-toggle" type="button" title="Change theme" aria-label="Change color theme"> <i class="fa-half-sun-moon" id="light-toggle-system"></i> <i class="fa-solid fa-moon" id="light-toggle-dark"></i> <i class="fa-solid fa-sun" id="light-toggle-light"></i> </button> </li> </ul> </div> </div> </nav> <progress id="progress" value="0"> <div class="progress-container"> <span class="progress-bar"></span> </div> </progress> </header> <div class="container mt-5" role="main"> <script type="text/javascript">
+  window.MathJax = {
+    tex: {
+      tags: 'ams',
+      inlineMath: [['$', '$'], ['\\(', '\\)']],
+      displayMath: [['$$', '$$'], ['\\[', '\\]']],
+    },
+    options: {
+      skipHtmlTags: ['script', 'noscript', 'style', 'textarea', 'pre', 'code'],
+    },
+  };
+</script> <script defer type="text/javascript" id="MathJax-script" src="https://cdn.jsdelivr.net/npm/mathjax@3.2.2/es5/tex-mml-chtml.js" integrity="sha256-MASABpB4tYktI2Oitl4t+78w/lyA+D7b/s9GEP0JOGI=" crossorigin="anonymous"></script> <script defer src="https://cdnjs.cloudflare.com/polyfill/v3/polyfill.min.js?features=es6" crossorigin="anonymous"></script> <p>In this post we’ll explore the <strong>complex plane</strong>. Understanding the concept matters, but <em>seeing</em> it helps a lot — so let’s start with a couple of short animations.</p> <p><img src="/assets/img/complex_plane_theta.gif" alt="e^{iθ} moving as θ changes"> <em>How $e^{i\theta}$ moves as $\theta$ changes.</em></p> <p><img src="/assets/img/traveling_wave_3d.gif" alt="e^{iωt} spiraling along the time axis"> <em>How $e^{i\omega t}$ advances as a helix along the time axis.</em></p> <p>Did you watch them? If that already makes sense to you, you might be a genius — it took me almost months to really get it. (Maybe I’m just slow.)</p> <p>Anyway, even if it doesn’t click yet, I’m confident it will eventually if you study step by step. So let’s begin explaining the complex plane, starting from the definition and the conceptual picture.</p> <h2 id="taylor-expansion">Taylor Expansion</h2> <p>A <strong>Taylor expansion</strong> rewrites a function we know as an infinite sum of polynomials, by computing its 1st, 2nd, … nth (up to $n\to\infty$) derivatives at a point and building a polynomial that matches those derivative values. Of course not every function behaves this way, and sometimes the Taylor-expanded form doesn’t match the real function. When the Taylor expansion differs significantly from the actual function, we call it <strong>non-analytic</strong>; when the real function can be approximated by its Taylor expansion, we call it an <strong>analytic function</strong>. Every function we’ll meet in this post is analytic, so you don’t need to worry about counterexamples.</p> <p>Let’s look at a concrete example using Taylor expansion. Consider the following expression:</p> \[f\left(x\right)=\frac{1}{1-x}\quad\left(-1&lt;x&lt;1\right)\] <p>This is just the sum of a geometric series with ratio $x$, which we know well. Using the derivatives at $x=0$, we can express this function as an infinite sum of polynomials:</p> \[f(0)=\frac{1}{1-0}=1\] \[f'(0)=\frac{1}{(1-x)^2}\rightarrow 1\] \[f''(0)=\frac{2}{(1-x)^3}\rightarrow 2\] \[f'''(0)=\frac{6}{(1-x)^4}\rightarrow 6\] <p>Building a polynomial that satisfies these derivative values: since $f(0)=1$ the constant term is 1; the linear term has coefficient 1 (because the first derivative is 1); the quadratic term has coefficient 2/2! = 1 (because the second derivative is 2); and so on. Working through it, $f(x)$ becomes:</p> \[f\left(x\right)=\frac{1}{1-x}=1+x+x^2+x^3+x^4+\dots\] <p>This matches perfectly with the sum of a geometric series of ratio $x$ that we already know. That’s the core idea of Taylor expansion: it can approximate the real function almost exactly.</p> <h2 id="eulers-identity">Euler’s Identity</h2> \[e^{i\pi}+1=0\] <p>This is <strong>Euler’s identity</strong>, called the most beautiful equation in the world. (I’m not so sure myself, but anyway —) to prove this formula we need the Taylor expansion from above.</p> <p>$e^x$ is also analytic, so it too can be written as an infinite polynomial via Taylor expansion. $e^x$ is a bit special: differentiating it with respect to $x$ keeps giving $e^x$, i.e. the original function. Using this property together with the fact that $e^0=1$, we get:</p> \[e^x=1+x+\frac{x^2}{2!}+\frac{x^3}{3!}+\frac{x^4}{4!}+\frac{x^5}{5!}+\dots =\sum_{n=0}^{\infty}\frac{x^n}{n!}\] <p>You can see that differentiating with respect to $x$ over and over just gives back the same expression. The only polynomial whose derivative returns itself and equals 1 at $x=0$ is exactly this one.</p> <p>It’s not just $e^x$. For sine and cosine: differentiating $\sin(x)$ gives $\cos(x)$, and differentiating $\cos(x)$ gives $-\sin(x)$. Using $\sin(0)=0$, $\cos(0)=1$, and this relationship, $\sin(x)$ and $\cos(x)$ can also be written as infinite polynomials:</p> \[\sin x=x-\frac{x^3}{3!}+\frac{x^5}{5!}-\frac{x^7}{7!}+\dots =\sum_{n=0}^{\infty}\frac{(-1)^nx^{2n+1}}{(2n+1)!}\] \[\cos x=1-\frac{x^2}{2!}+\frac{x^4}{4!}-\frac{x^6}{6!}+\dots =\sum_{n=0}^{\infty}\frac{(-1)^nx^{2n}}{(2n)!}\] <p>Notice how similar these are to the terms of $e^x$. If we plug in $ix$ for $x$, it looks like we could recover $\sin$ and $\cos$. Computing $e^{ix}$:</p> \[e^{ix}=1+(ix)+\frac{(ix)^2}{2!}+\frac{(ix)^3}{3!}+\frac{(ix)^4}{4!}+\frac{(ix)^5}{5!}+\dots\] \[=e^{ix}=1+ix-\frac{x^2}{2!}-\frac{ix^3}{3!}+\frac{x^4}{4!}+\frac{ix^5}{5!}-\frac{x^6}{6!}-\frac{ix^7}{7!}+\dots\] <p>Notice that the $\cos$ terms line up exactly with those of $e^{ix}$; if we additionally add the terms that are $\sin$ multiplied by $i$, it matches $e^{ix}$ perfectly. Thus we obtain:</p> \[e^{ix}=\cos x+i\sin x\] <p>Plug in $x=\pi$: $\cos(\pi)+i\sin(\pi)=-1$, so $e^{i\pi}+1=0$. The relation for $e^{ix}$ is absolutely central in mathematics, science, and engineering — keep it in mind.</p> <h2 id="the-complex-plane">The Complex Plane</h2> <p>We now know $e^{ix}=\cos x+i\sin x$, but what does it <em>mean</em>? There’s a more interesting way to interpret this formula. If we take the familiar coordinate plane and let the $x$-axis be the real axis and the $y$-axis be the imaginary axis, then $\cos x+i\sin x$ can be plotted just like a coordinate point: $(\cos x,\ \sin x)$.</p> <p><img src="/assets/img/complex_plane_ab.svg" alt="A complex number a+bi plotted on the complex plane"> <em>A complex number $a+bi$ plotted on the complex plane.</em></p> <p><img src="/assets/img/complex_plane_cossin.svg" alt="cos ψ + i sin ψ plotted on the complex plane"> <em>$\cos\psi+i\sin\psi$ plotted on the complex plane.</em></p> <p>Then, as in the second figure, since the real axis is $\cos x$ and the imaginary axis is $\sin x$, the $x$ here represents the angle between that point and the real axis.</p> <p>In conclusion: if we treat the familiar $x$-axis as the real axis and the $y$-axis as the imaginary axis, then $e^{ix}$ becomes a point on the unit circle, at angle $x$ from the real axis.</p> <h2 id="the-time-axis">The Time Axis</h2> <p><img src="/assets/img/time_axis.png" alt="The complex plane extended with a time axis"> <em>The complex plane with a time axis added.</em></p> <p>The complex plane was an expression involving $x$, but it gets more interesting when we include <em>time</em>. The figure above shows the complex plane we know, extended with a time axis. This expression is written only in terms of time, not $x$.</p> <p>If we view it from the 3rd viewpoint, showing only the imaginary axis (Im) and real axis (Re), we see the circle representing $e^{i\omega t}=\cos(\omega t)+i\sin(\omega t)$ on the complex plane — here $\omega t$ plays the role of $x$.</p> <p>Viewed from the 2nd viewpoint, showing only the time axis and imaginary axis, we see the graph of $e^{i\omega t}=\cos(\omega t)+i\sin(\omega t)$’s $i\sin(\omega t)$, i.e. $\sin(\omega t)$. The red graph in the figure is $\sin(\omega t)$.</p> <p>Viewed from the 1st viewpoint, showing only the time axis and real axis, we see the graph of $\cos(\omega t)$. The blue graph is $\cos(\omega t)$.</p> <p>You can see there’s a <em>rotation</em> as time progresses: starting from $t=0$, the point moves along a helical line. In the 3rd viewpoint, since $\omega t$ is the angle on the complex plane, a larger $\omega$ means it rotates faster in time and the helix is tighter. That’s why $\omega$ is called the <strong>angular frequency</strong> — think of it as the angular version of frequency $f$ (even a 240 Hz screen refresh rate is a frequency), expressing how much it oscillates.</p> <h2 id="plane-waves">Plane Waves</h2> <p>Now let’s look at ordinary waves. The waves we usually picture look something like this — they don’t move.</p> <p><img src="/assets/img/plane_wave_static.png" alt="A static wave"></p> <p>But a real wave moves like this: a real wave is the static wave from the first picture, plus a term for time:</p> \[e^{i(kx-\omega t)}\] <p>This is the most basic form of a moving <strong>plane wave</strong>. The $\omega t$ term gives the wave its time-dependent motion; the $kx$ term sets the <strong>wave number</strong> of the stationary wave, like in the first wave picture.</p> \[k=\frac{2\pi}{\lambda}\] \[k:\ \text{wavenumber (Unit: rad/m)}\] \[\lambda:\ \text{wavelength (Unit: m)}\] <p>The wavenumber formula is $2\pi$ divided by the wavelength; since $2\pi$ is the phase change over one wavelength, this tells us the wavenumber is the phase change per unit distance.</p> <p>A plane wave uses the $e^{ikx}$ term to express the shape of the stationary wave, and the $e^{-i\omega t}$ term to express its progression over time. One thing to note: when a plane wave moves, we often show only its <strong>real part</strong>.</p> <p><img src="/assets/img/code_generated_2.gif" alt="The real part of e^{i(kx-ωt)}, shown in blue, as it moves helically"> <img src="/assets/img/code_generated_3.gif" alt="The real part of the spiraling e^{i(kx-ωt)}"> <img src="/assets/img/code_generated_4.gif" alt="Another view of the traveling plane wave"></p> <p>The blue graph shows only the real part of $e^{i(kx-\omega t)}$, which moves helically.</p> <p>Complex-plane concepts come up constantly in quantum mechanics and physics as the notion of <strong>phase</strong>, so if you gloss over them without understanding, you’ll pay for it later. If anything is unclear, please make sure you understand it properly before moving on. And that’s it for this post — thanks for reading this long piece.</p> <hr> <p><em>This post is written from my own perspective, so it may contain errors. Questions are always welcome — feel free to ask anytime.</em></p> </div> <footer class="fixed-bottom" role="contentinfo"> <div class="container mt-0"> © Copyright 2026 Haanee Choi. Powered by <a href="https://jekyllrb.com/" target="_blank" rel="external nofollow noopener">Jekyll</a> with <a href="https://github.com/alshedivat/al-folio" rel="external nofollow noopener" target="_blank">al-folio</a> theme. Hosted by <a href="https://pages.github.com/" target="_blank" rel="external nofollow noopener">GitHub Pages</a>. </div> </footer> <script>
+  window.alFolio = {
+    compatBootstrap: false
+  };
+</script> <script src="/assets/js/nav-toggle.js?v=141bd79a73ebc0f0b6ea58e440ae79fc"></script> <script defer src="https://cdn.jsdelivr.net/npm/masonry-layout@4.2.2/dist/masonry.pkgd.min.js" integrity="sha256-Nn1q/fx0H7SNLZMQ5Hw5JLaTRZp0yILA/FRexe19VdI=" crossorigin="anonymous"></script> <script defer src="https://cdn.jsdelivr.net/npm/imagesloaded@5.0.0/imagesloaded.pkgd.min.js" integrity="sha256-htrLFfZJ6v5udOG+3kNLINIKh2gvoKqwEhHYfTTMICc=" crossorigin="anonymous"></script> <script defer src="/assets/js/masonry.js?v=e49affc7bd2646f6acdad1dbe02c2359" type="text/javascript"></script> <script src="/assets/js/tooltips-setup.js?v=fe487e99db6c43751e6e7bdb2d6a0611"></script> <script src="/assets/js/no_defer.js?v=53b1b1a645525975c963ce8bf8bfefcf"></script> <script defer src="/assets/js/common.js?v=87baac90f765f2f3362dcf6aaf312a8a"></script> <script defer src="/assets/js/copy_code.js?v=c8a01c11a92744d44b093fc3bda915df" type="text/javascript"></script> <script defer src="/assets/js/jupyter_new_tab.js?v=896d254890d9b47f0281f63bfccf0dee"></script> <script async src="https://d1bxh8uas1mnw7.cloudfront.net/assets/embed.js"></script> <script async src="https://badge.dimensions.ai/badge.js"></script> <script defer src="https://cdn.jsdelivr.net/npm/medium-zoom@1.1.0/dist/medium-zoom.min.js" integrity="sha256-ZgMyDAIYDYGxbcpJcfUnYwNevG/xi9OHKaR/8GK+jWc=" crossorigin="anonymous"></script> <script defer src="/assets/al_img_tools/js/zoom.js"></script> <script defer src="/assets/js/progress-bar.js?v=499464c5c63ced6cf7ad62509f1e2610" type="text/javascript"></script> <script src="https://cdn.jsdelivr.net/npm/vanilla-back-to-top@7.2.1/dist/vanilla-back-to-top.min.js" integrity="sha256-uMJJ3EoTyfRBoTbR+lrfu1uRQ87RZG8AR3cVNuQVeFg=" crossorigin="anonymous"></script> <script>
+    addBackToTop();
+  </script> <script type="module" src="/assets/al_search/js/search/ninja-keys.min.js"></script> <ninja-keys hidebreadcrumbs noautoloadmdicons placeholder="Type to start searching"></ninja-keys> <script src="/assets/al_search/js/search-setup.js"></script> <script>
+// get the ninja-keys element
+const ninja = document.querySelector('ninja-keys');
+
+// add the home and posts menu items
+ninja.data = [{
+    id: "nav-about",
+    title: "about",
+    section: "Navigation",
+    handler: () => {
+      window.location.href = "/";
+    },
+  },{id: "nav-blog",
+          title: "blog",
+          description: "",
+          section: "Navigation",
+          handler: () => {
+            window.location.href = "/blog/";
+          },
+        },{id: "nav-publications",
+          title: "publications",
+          description: "publications by categories in reversed chronological order. generated by jekyll-scholar.",
+          section: "Navigation",
+          handler: () => {
+            window.location.href = "/publications/";
+          },
+        },{id: "nav-projects",
+          title: "projects",
+          description: "A growing collection of your cool projects.",
+          section: "Navigation",
+          handler: () => {
+            window.location.href = "/projects/";
+          },
+        },{id: "nav-repositories",
+          title: "repositories",
+          description: "Edit the `_data/repositories.yml` and change the `github_users` and `github_repos` lists to include your own GitHub profile and repositories.",
+          section: "Navigation",
+          handler: () => {
+            window.location.href = "/repositories/";
+          },
+        },{id: "nav-cv",
+          title: "CV",
+          description: "This is a description of the page. You can modify it in &#39;_pages/cv.md&#39;. You can also change or remove the top pdf download button.",
+          section: "Navigation",
+          handler: () => {
+            window.location.href = "/cv/";
+          },
+        },{id: "nav-teaching",
+          title: "teaching",
+          description: "Course materials, schedules, and resources for classes taught.",
+          section: "Navigation",
+          handler: () => {
+            window.location.href = "/teaching/";
+          },
+        },{id: "nav-people",
+          title: "people",
+          description: "members of the lab or group",
+          section: "Navigation",
+          handler: () => {
+            window.location.href = "/people/";
+          },
+        },{id: "dropdown-bookshelf",
+              title: "bookshelf",
+              description: "",
+              section: "Dropdown",
+              handler: () => {
+                window.location.href = "/books/";
+              },
+            },{id: "dropdown-blog",
+              title: "blog",
+              description: "",
+              section: "Dropdown",
+              handler: () => {
+                window.location.href = "/blog/";
+              },
+            },{id: "post-the-complex-plane",
+        
+          title: "The Complex Plane",
+        
+        description: "A visual, intuitive introduction to the complex plane — Taylor series, Euler&#39;s identity, and how e^{iωt} draws a rotating spiral in space-time.",
+        section: "Posts",
+        handler: () => {
+          
+            window.location.href = "/blog/2026/complex-plane/";
+          
+        },
+      },{id: "post-the-schrödinger-equation-time-independent-amp-time-dependent",
+        
+          title: "The Schrödinger Equation (Time-Independent &amp; Time-Dependent)",
+        
+        description: "",
+        section: "Posts",
+        handler: () => {
+          
+            window.location.href = "/blog/2026/schrodinger-equation/";
+          
+        },
+      },{
+        id: 'social-cv',
+        title: 'CV',
+        section: 'Socials',
+        handler: () => {
+          window.open("/assets/pdf/example_pdf.pdf", "_blank");
+        },
+      },{
+        id: 'social-email',
+        title: 'email',
+        section: 'Socials',
+        handler: () => {
+          window.open("mailto:%79%6F%75@%65%78%61%6D%70%6C%65.%63%6F%6D", "_blank");
+        },
+      },{
+        id: 'social-inspire',
+        title: 'Inspire HEP',
+        section: 'Socials',
+        handler: () => {
+          window.open("https://inspirehep.net/authors/1010907", "_blank");
+        },
+      },{
+        id: 'social-rss',
+        title: 'RSS Feed',
+        section: 'Socials',
+        handler: () => {
+          window.open("/feed.xml", "_blank");
+        },
+      },{
+        id: 'social-scholar',
+        title: 'Google Scholar',
+        section: 'Socials',
+        handler: () => {
+          window.open("https://scholar.google.com/citations?user=qc6CJjYAAAAJ", "_blank");
+        },
+      },{
+        id: 'social-custom_social',
+        title: 'Custom_social',
+        section: 'Socials',
+        handler: () => {
+          window.open("https://www.alberteinstein.com/", "_blank");
+        },
+      },{
+      id: 'light-theme',
+      title: 'Change theme to light',
+      description: 'Change the theme of the site to Light',
+      section: 'Theme',
+      handler: () => {
+        setThemeSetting("light");
+      },
+    },
+    {
+      id: 'dark-theme',
+      title: 'Change theme to dark',
+      description: 'Change the theme of the site to Dark',
+      section: 'Theme',
+      handler: () => {
+        setThemeSetting("dark");
+      },
+    },
+    {
+      id: 'system-theme',
+      title: 'Use system default theme',
+      description: 'Change the theme of the site to System Default',
+      section: 'Theme',
+      handler: () => {
+        setThemeSetting("system");
+      },
+    },];
+
+</script> <script src="/assets/al_search/js/shortcut-key.js"></script> </body> </html>
