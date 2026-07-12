@@ -282,7 +282,6 @@ plugins:
   - al_img_tools
   - al_search
   - al_charts
-  - al_math
   - al_comments
   - al_newsletter
 
@@ -591,9 +590,6 @@ third_party_libraries:
       js: "https://cdn.jsdelivr.net/npm/mermaid@{{version}}/dist/mermaid.min.js"
     version: "10.7.0"
   mathjax:
-    tex:
-      inlineMath: [["$", "$"], ["\\(", "\\)"]]
-      displayMath: [["$$", "$$"], ["\\[", "\\]"]]
     integrity:
       js: "sha256-MASABpB4tYktI2Oitl4t+78w/lyA+D7b/s9GEP0JOGI="
     local:
