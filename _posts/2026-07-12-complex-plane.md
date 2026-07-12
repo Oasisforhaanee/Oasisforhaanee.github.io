@@ -8,10 +8,12 @@ description: A visual, intuitive introduction to the complex plane — Taylor se
 
 In this post we'll explore the **complex plane**. Understanding the concept matters, but *seeing* it helps a lot — so let's start with a couple of short animations.
 
-![e^{iθ} moving as θ changes](/assets/img/complex_plane_theta.gif)
+<img width="750" height="750" alt="complex_plane_theta" src="https://github.com/user-attachments/assets/ae997986-d727-437c-a65c-2710fb052b6c" />
+
 *How $e^{i\theta}$ moves as $\theta$ changes.*
 
-![e^{iωt} spiraling along the time axis](/assets/img/traveling_wave_3d.gif)
+<img width="800" height="600" alt="Code_Generated_Image_(2)" src="https://github.com/user-attachments/assets/1d12909b-aa41-44ba-9fda-363b0e40dfe2" />
+
 *How $e^{i\omega t}$ advances as a helix along the time axis.*
 
 Did you watch them? If that already makes sense to you, you might be a genius — it took me almost months to really get it. (Maybe I'm just slow.)
