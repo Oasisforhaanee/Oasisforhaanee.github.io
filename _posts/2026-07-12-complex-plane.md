@@ -76,11 +76,11 @@ Plug in $x=\pi$: $\cos(\pi)+i\sin(\pi)=-1$, so $e^{i\pi}+1=0$. The relation for 
 
 We now know $e^{ix}=\cos x+i\sin x$, but what does it *mean*? There's a more interesting way to interpret this formula. If we take the familiar coordinate plane and let the $x$-axis be the real axis and the $y$-axis be the imaginary axis, then $\cos x+i\sin x$ can be plotted just like a coordinate point: $(\cos x,\ \sin x)$.
 
-<img width="332" height="243" alt="image" src="https://github.com/user-attachments/assets/1e6778d7-9bfa-4e31-8cf9-43741fb5dbf4" />
+<img width="500" height="400" alt="image" src="https://github.com/user-attachments/assets/1e6778d7-9bfa-4e31-8cf9-43741fb5dbf4" />
 
 *A complex number $a+bi$ plotted on the complex plane.*
 
-<img width="332" height="243" alt="다운로드 (1)" src="https://github.com/user-attachments/assets/0b8d9e9e-2b2a-41ec-86dc-1bfdfcb10a8f" />
+<img width="500" height="500" alt="다운로드 (1)" src="https://github.com/user-attachments/assets/0b8d9e9e-2b2a-41ec-86dc-1bfdfcb10a8f" />
 *$\cos\psi+i\sin\psi$ plotted on the complex plane.*
 
 Then, as in the second figure, since the real axis is $\cos x$ and the imaginary axis is $\sin x$, the $x$ here represents the angle between that point and the real axis.
