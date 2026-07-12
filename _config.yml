@@ -1,0 +1,31 @@
+# 사이트 기본 정보
+title: 내 개발 블로그
+description: >-
+  GitHub Pages와 Jekyll로 만든 나만의 블로그.
+  개발 공부, 일상, 생각을 기록합니다.
+author: kkul2
+lang: ko
+
+# 테마 (GitHub Pages에 기본 포함된 minima)
+theme: minima
+
+# GitHub Pages 주소 설정
+# User/Org 페이지( username.github.io )라면 baseurl/url은 그대로 비워둡니다.
+baseurl: ""
+url: ""   # 예: https://kkul2.github.io
+
+# 빌드 설정
+markdown: kramdown
+plugins:
+  - jekyll-feed
+  - jekyll-seo-tag
+
+# 헤더 메뉴에 표시할 페이지
+header_pages:
+  - about.md
+
+# 소셜 링크 (원하면 알맞게 채우세요)
+social_links:
+  - label: "GitHub"
+    icon: "fab fa-github"
+    url: "https://github.com/kkul2"
