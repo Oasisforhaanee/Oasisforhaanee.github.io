@@ -1,4 +1,5 @@
 ---
+layout: post
 title: "The Schrödinger Equation (Time-Independent & Time-Dependent)"
 date: 2026-07-12
 categories: [Quantum Mechanics, Physics]
