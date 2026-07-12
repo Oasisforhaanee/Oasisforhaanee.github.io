@@ -42,6 +42,7 @@ $$i\hbar \frac{\partial \psi(x,t)}{\partial t}=-\frac{\hbar^2}{2m}\frac{\partial
 The $h$ with a bar on top is read "h-bar" ($\hbar$) and equals Planck's constant $h$ divided by $2\pi$. Since $h/2\pi$ comes up so often, we give it the new symbol $\hbar$. What this equation means is: given a time-dependent wave function $\psi(x,t)$ placed in a potential field $V(x,t)$, it tells us how the wave function **propagates** over time.
 
 If we consider the left-hand side at a specific time $t_1$, we get the second derivative of the wave function together with $V(x,t_1)\cdot\psi(x,t_1)$, and combined with the time derivative on the right-hand side this tells us how the state changes as time goes on.
+<img width="875" height="562" alt="wave_packet_well_reflection" src="https://github.com/user-attachments/assets/76545313-ca8a-4470-9656-9628d143d12f" />
 
 The motion of the wave in this video is also obtained by solving the Schrödinger equation at each time step and plotting the wave's position.
 
@@ -67,7 +68,8 @@ $$T(t) = e^{-iEt/\hbar}$$
 
 This means that for a wave function $\psi(x)$ with a definite energy $E$, the wave function rotates in the complex plane according to its energy.
 
-When the time term $e^{-iEt/\hbar}$ multiplies the "bulging" spatial term $\psi(x)$, we get a wave function that rotates in the complex plane as shown above.
+<img width="1000" height="750" alt="wavefunction_3d_spiral" src="https://github.com/user-attachments/assets/9280a4c6-ff78-4523-855c-ce61179c54f2" />
+
 
 To fully supplement the latter part, I'd need to explain stationary states and the superposition of wave functions in detail. I'll write about that when I get the chance.
 
