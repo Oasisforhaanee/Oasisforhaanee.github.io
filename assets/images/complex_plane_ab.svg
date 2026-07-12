@@ -1,0 +1,15 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="420" height="360" viewBox="0 0 420 360" font-family="Segoe UI, sans-serif">
+  <!-- axes -->
+  <line x1="40" y1="180" x2="400" y2="180" stroke="#333" stroke-width="1.5"/>
+  <line x1="210" y1="20" x2="210" y2="340" stroke="#333" stroke-width="1.5"/>
+  <text x="385" y="172" font-size="14" fill="#333">Re</text>
+  <text x="218" y="32" font-size="14" fill="#333">Im</text>
+  <!-- point a+bi at (300, 110) => a on real axis, b on imag axis -->
+  <line x1="210" y1="110" x2="300" y2="110" stroke="#888" stroke-dasharray="4 3"/>
+  <line x1="300" y1="180" x2="300" y2="110" stroke="#888" stroke-dasharray="4 3"/>
+  <circle cx="300" cy="110" r="5" fill="#1a73e8"/>
+  <text x="305" y="105" font-size="15" fill="#1a73e8">a + bi</text>
+  <!-- projections -->
+  <text x="240" y="200" font-size="13" fill="#555">a</text>
+  <text x="312" y="150" font-size="13" fill="#555">b</text>
+</svg>

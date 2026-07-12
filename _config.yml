@@ -16,6 +16,9 @@ url: ""   # 예: https://kkul2.github.io
 
 # 빌드 설정
 markdown: kramdown
+# 수식(LaTeX) 렌더링: kramdown이 수식을 MathJax용 태그로 변환 + head.html에서 MathJax 로드
+kramdown:
+  math_engine: mathjax
 plugins:
   - jekyll-feed
   - jekyll-seo-tag
