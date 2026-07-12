@@ -3,9 +3,9 @@
 # -----------------------------------------------------------------------------
 
 title: blank # the website title (if blank, full name will be used instead)
-first_name: Your
+first_name: Haanee
 middle_name: ""
-last_name: Name
+last_name: Choi
 contact_note: >
   서울대학교 재료공학부 / 양자역학 자습 노트
 description: > # the ">" symbol means to ignore newlines until "footer_text:"
@@ -341,8 +341,8 @@ display_categories: ["external-services"] # these categories will be displayed o
 # -----------------------------------------------------------------------------
 
 scholar:
-  last_name: [Einstein]
-  first_name: [Albert, A.]
+  last_name: []
+  first_name: []
 
   style: apa
   locale: en
