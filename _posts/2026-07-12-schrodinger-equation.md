@@ -76,4 +76,4 @@ That's it for this post. Thank you for reading this long article.
 
 *※ This post was written based on my own understanding, so there may be errors. Questions are always welcome, so feel free to ask.*
 
-*Originally written in Korean: [슈뢰딩거 방정식 (네이버 블로그)](https://blog.naver.com/kkul20235/224343743129)*
+
