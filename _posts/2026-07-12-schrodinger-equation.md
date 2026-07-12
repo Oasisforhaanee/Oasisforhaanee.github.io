@@ -5,6 +5,7 @@ date: 2026-07-12
 categories: [Quantum Mechanics, Physics]
 tags: [Schrödinger Equation, Wave Function, Matter Wave]
 canonicalURL: "https://blog.naver.com/kkul20235/224343743129"
+math: true
 ---
 
 Anyone who has studied the Schrödinger equation will be most familiar with this one. This is the **time-independent Schrödinger equation**:
