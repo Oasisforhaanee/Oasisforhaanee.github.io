@@ -76,10 +76,11 @@ Plug in $x=\pi$: $\cos(\pi)+i\sin(\pi)=-1$, so $e^{i\pi}+1=0$. The relation for 
 
 We now know $e^{ix}=\cos x+i\sin x$, but what does it *mean*? There's a more interesting way to interpret this formula. If we take the familiar coordinate plane and let the $x$-axis be the real axis and the $y$-axis be the imaginary axis, then $\cos x+i\sin x$ can be plotted just like a coordinate point: $(\cos x,\ \sin x)$.
 
-![A complex number a+bi plotted on the complex plane](/assets/img/complex_plane_ab.svg)
+<img width="332" height="243" alt="image" src="https://github.com/user-attachments/assets/1e6778d7-9bfa-4e31-8cf9-43741fb5dbf4" />
+
 *A complex number $a+bi$ plotted on the complex plane.*
 
-![cos ψ + i sin ψ plotted on the complex plane](/assets/img/complex_plane_cossin.svg)
+<img width="332" height="243" alt="다운로드 (1)" src="https://github.com/user-attachments/assets/0b8d9e9e-2b2a-41ec-86dc-1bfdfcb10a8f" />
 *$\cos\psi+i\sin\psi$ plotted on the complex plane.*
 
 Then, as in the second figure, since the real axis is $\cos x$ and the imaginary axis is $\sin x$, the $x$ here represents the angle between that point and the real axis.
@@ -88,7 +89,8 @@ In conclusion: if we treat the familiar $x$-axis as the real axis and the $y$-ax
 
 ## The Time Axis
 
-![The complex plane extended with a time axis](/assets/img/time_axis.png)
+<img width="332" height="243" alt="image" src="https://github.com/user-attachments/assets/d463e21b-5c34-4f3e-885d-4475012de700" />
+
 *The complex plane with a time axis added.*
 
 The complex plane was an expression involving $x$, but it gets more interesting when we include *time*. The figure above shows the complex plane we know, extended with a time axis. This expression is written only in terms of time, not $x$.
@@ -105,9 +107,11 @@ You can see there's a *rotation* as time progresses: starting from $t=0$, the po
 
 Now let's look at ordinary waves. The waves we usually picture look something like this — they don't move.
 
-![A static wave](/assets/img/plane_wave_static.png)
+<img width="800" height="400" alt="Code_Generated_Image (1)" src="https://github.com/user-attachments/assets/6b3779c9-ace9-4057-a05b-c20f9d4ae5d4" />
+
 
 But a real wave moves like this: a real wave is the static wave from the first picture, plus a term for time:
+<img width="800" height="400" alt="Code_Generated_Image_(3)" src="https://github.com/user-attachments/assets/ef065126-5b80-455a-aa74-bc4ce8ad3fe8" />
 
 $$e^{i(kx-\omega t)}$$
 
@@ -123,10 +127,9 @@ The wavenumber formula is $2\pi$ divided by the wavelength; since $2\pi$ is the 
 
 A plane wave uses the $e^{ikx}$ term to express the shape of the stationary wave, and the $e^{-i\omega t}$ term to express its progression over time. One thing to note: when a plane wave moves, we often show only its **real part**.
 
-![The real part of e^{i(kx-ωt)}, shown in blue, as it moves helically](/assets/img/code_generated_2.gif)
-![The real part of the spiraling e^{i(kx-ωt)}](/assets/img/code_generated_3.gif)
-![Another view of the traveling plane wave](/assets/img/code_generated_4.gif)
-
+<img width="800" height="500" alt="Code_Generated_Image_(4)" src="https://github.com/user-attachments/assets/a3a90b93-4eb5-484a-ad22-288d23ea6ea5" />
+The blue graph shows only the real part of $e^{i(kx)}$, which moves helically.
+<img width="1062" height="750" alt="traveling_wave_3d_with_real" src="https://github.com/user-attachments/assets/a6f4e054-55fc-41b0-a7e1-df4174251ced" />
 The blue graph shows only the real part of $e^{i(kx-\omega t)}$, which moves helically.
 
 Complex-plane concepts come up constantly in quantum mechanics and physics as the notion of **phase**, so if you gloss over them without understanding, you'll pay for it later. If anything is unclear, please make sure you understand it properly before moving on. And that's it for this post — thanks for reading this long piece.
