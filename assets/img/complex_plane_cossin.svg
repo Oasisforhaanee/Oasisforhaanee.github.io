@@ -1,0 +1,21 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="420" height="360" viewBox="0 0 420 360" font-family="Segoe UI, sans-serif">
+  <!-- axes -->
+  <line x1="40" y1="200" x2="400" y2="200" stroke="#333" stroke-width="1.5"/>
+  <line x1="210" y1="40" x2="210" y2="360" stroke="#333" stroke-width="1.5"/>
+  <text x="385" y="192" font-size="14" fill="#333">Re</text>
+  <text x="218" y="52" font-size="14" fill="#333">Im</text>
+  <!-- unit circle -->
+  <circle cx="210" cy="200" r="140" fill="none" stroke="#aaa" stroke-width="1.5"/>
+  <!-- point at angle psi (say 40 deg above axis) -->
+  <line x1="210" y1="200" x2="317" y2="110" stroke="#1a73e8" stroke-width="2"/>
+  <circle cx="317" cy="110" r="5" fill="#1a73e8"/>
+  <text x="322" y="105" font-size="15" fill="#1a73e8">cos ψ + i sin ψ</text>
+  <!-- angle arc -->
+  <path d="M 260 200 A 50 50 0 0 0 248 150" fill="none" stroke="#e0913a" stroke-width="1.5"/>
+  <text x="262" y="162" font-size="13" fill="#e0913a">ψ</text>
+  <!-- projections -->
+  <line x1="210" y1="200" x2="317" y2="200" stroke="#888" stroke-dasharray="4 3"/>
+  <line x1="317" y1="200" x2="317" y2="110" stroke="#888" stroke-dasharray="4 3"/>
+  <text x="255" y="220" font-size="13" fill="#555">cos ψ</text>
+  <text x="322" y="160" font-size="13" fill="#555">sin ψ</text>
+</svg>
