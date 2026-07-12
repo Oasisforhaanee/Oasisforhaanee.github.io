@@ -7,10 +7,6 @@ tags: [Schrödinger Equation, Wave Function, Matter Wave]
 canonicalURL: "https://blog.naver.com/kkul20235/224343743129"
 ---
 
-Hello everyone, it's been a while. Surprisingly, it's already been a month since I was discharged from military service. Life after discharge is absolute heaven. Yahoo~
-
-Anyway, since being discharged I've been steadily self-studying quantum mechanics, and it's no easy task. I'm not always sure whether I truly understand it or am just pretending to. So I thought I'd write things down to check whether I actually understand. In this post, I'll cover the Schrödinger equation.
-
 Anyone who has studied the Schrödinger equation will be most familiar with this one. This is the **time-independent Schrödinger equation**:
 
 $$-\frac{\hbar^2}{2m}\frac{d^2\psi(x)}{dx^2}+V(x)\psi(x)=E\psi(x)$$
@@ -67,6 +63,7 @@ Solving this differential equation for the general solution gives the following.
 $$T(t) = e^{-iEt/\hbar}$$
 
 This means that for a wave function $\psi(x)$ with a definite energy $E$, the wave function rotates in the complex plane according to its energy.
+<img width="1188" height="563" alt="wavefunction_ground_state" src="https://github.com/user-attachments/assets/c7634c03-64cb-4a97-bbab-cc67ba2a937a" />
 
 <img width="1000" height="750" alt="wavefunction_3d_spiral" src="https://github.com/user-attachments/assets/9280a4c6-ff78-4523-855c-ce61179c54f2" />
 
