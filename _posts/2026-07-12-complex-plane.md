@@ -8,10 +8,10 @@ description: A visual, intuitive introduction to the complex plane — Taylor se
 
 In this post we'll explore the **complex plane**. Understanding the concept matters, but *seeing* it helps a lot — so let's start with a couple of short animations.
 
-![e^{iθ} moving as θ changes](/assets/images/complex_plane_theta.gif)
+![e^{iθ} moving as θ changes](/assets/img/complex_plane_theta.gif)
 *How $e^{i\theta}$ moves as $\theta$ changes.*
 
-![e^{iωt} spiraling along the time axis](/assets/images/traveling_wave_3d.gif)
+![e^{iωt} spiraling along the time axis](/assets/img/traveling_wave_3d.gif)
 *How $e^{i\omega t}$ advances as a helix along the time axis.*
 
 Did you watch them? If that already makes sense to you, you might be a genius — it took me almost months to really get it. (Maybe I'm just slow.)
@@ -76,10 +76,10 @@ Plug in $x=\pi$: $\cos(\pi)+i\sin(\pi)=-1$, so $e^{i\pi}+1=0$. The relation for 
 
 We now know $e^{ix}=\cos x+i\sin x$, but what does it *mean*? There's a more interesting way to interpret this formula. If we take the familiar coordinate plane and let the $x$-axis be the real axis and the $y$-axis be the imaginary axis, then $\cos x+i\sin x$ can be plotted just like a coordinate point: $(\cos x,\ \sin x)$.
 
-![A complex number a+bi plotted on the complex plane](/assets/images/complex_plane_ab.svg)
+![A complex number a+bi plotted on the complex plane](/assets/img/complex_plane_ab.svg)
 *A complex number $a+bi$ plotted on the complex plane.*
 
-![cos ψ + i sin ψ plotted on the complex plane](/assets/images/complex_plane_cossin.svg)
+![cos ψ + i sin ψ plotted on the complex plane](/assets/img/complex_plane_cossin.svg)
 *$\cos\psi+i\sin\psi$ plotted on the complex plane.*
 
 Here is the classic Argand-plane view of Euler's formula, where the number $e^{i\phi}=\cos\phi+i\sin\phi$ sits on the unit circle at angle $\phi$:
@@ -110,7 +110,7 @@ You can see there's a *rotation* as time progresses: starting from $t=0$, the po
 
 Now let's look at ordinary waves. The waves we usually picture look something like this — they don't move.
 
-![A static wave](/assets/images/plane_wave_static.png)
+![A static wave](/assets/img/plane_wave_static.png)
 
 But a real wave moves like this: a real wave is the static wave from the first picture, plus a term for time:
 
@@ -128,9 +128,9 @@ The wavenumber formula is $2\pi$ divided by the wavelength; since $2\pi$ is the 
 
 A plane wave uses the $e^{ikx}$ term to express the shape of the stationary wave, and the $e^{-i\omega t}$ term to express its progression over time. One thing to note: when a plane wave moves, we often show only its **real part**.
 
-![The real part of e^{i(kx-ωt)}, shown in blue, as it moves helically](/assets/images/code_generated_2.gif)
-![The real part of the spiraling e^{i(kx-ωt)}](/assets/images/code_generated_3.gif)
-![Another view of the traveling plane wave](/assets/images/code_generated_4.gif)
+![The real part of e^{i(kx-ωt)}, shown in blue, as it moves helically](/assets/img/code_generated_2.gif)
+![The real part of the spiraling e^{i(kx-ωt)}](/assets/img/code_generated_3.gif)
+![Another view of the traveling plane wave](/assets/img/code_generated_4.gif)
 
 The blue graph shows only the real part of $e^{i(kx-\omega t)}$, which moves helically.
 
