@@ -4,7 +4,7 @@ cv:
   email: kkul2023@gmail.com
   location: Seoul, Republic of Korea
   image: ""
-  summary: Undergraduate student in Materials Science and Engineering at Seoul National University. Self-studying quantum mechanics and materials physics.
+  summary: Undergraduate student in Materials Science and Engineering at Seoul National University. Self-studying quantum mechanics and materials science.
 
   social_networks:
     - network: GitHub
@@ -29,7 +29,7 @@ cv:
         start_date: 2022
         end_date: ""
         score: ""
-        courses: "Quantum Mechanics, Materials Physics, Electromagnetism"
+        courses: "Quantum Mechanics, Materials science"
         highlights:
           - Currently enrolled since 2022
 
@@ -43,7 +43,7 @@ cv:
       - name: Physics
         level: Intermediate
         icon: fa-solid fa-hashtag
-        keywords: "Quantum Mechanics, Schrödinger Equation, Wave Function, Materials Physics"
+        keywords: "Quantum Mechanics"
 
     Languages:
       - name: Korean
@@ -54,7 +54,7 @@ cv:
     Interests:
       - name: Quantum Mechanics Self-Study
         icon: fa-solid fa-atom
-        keywords: "Quantum Mechanics, Schrödinger Equation, Materials Science"
+        keywords: "Quantum Mechanics, Materials Science"
 
     Certificates: []
 
