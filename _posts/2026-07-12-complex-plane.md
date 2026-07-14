@@ -2,8 +2,10 @@
 layout: post
 title:  "The Complex Plane"
 date:   2026-07-12 21:00:00 +0900
-categories: mathematics quantum-mechanics
+categories: [mathematics, quantum-mechanics]
+tags: [complex-plane, euler, taylor]
 description: A visual, intuitive introduction to the complex plane — Taylor series, Euler's identity, and how e^{iωt} draws a rotating spiral in space-time.
+usemathjax: true
 ---
 
 In this post we'll explore the **complex plane**. Understanding the concept matters, but *seeing* it helps a lot — so let's start with a couple of short animations.
@@ -133,9 +135,7 @@ The wavenumber formula is $2\pi$ divided by the wavelength; since $2\pi$ is the 
 A plane wave uses the $e^{ikx}$ term to express the shape of the stationary wave, and the $e^{-i\omega t}$ term to express its progression over time. One thing to note: when a plane wave moves, we often show only its **real part**.
 
 <img width="800" height="500" alt="Code_Generated_Image_(4)" src="https://github.com/user-attachments/assets/acd8933c-950e-45c4-9b8d-ec0b9e09cf9f" />
-
 <img width="800" height="580" alt="traveling_wave_3d_with_real" src="https://github.com/user-attachments/assets/784c30af-9244-4d7f-b970-92837d059ced" />
-
 
 The blue graph shows only the real part of $e^{i(kx-\omega t)}$, which moves helically.
 

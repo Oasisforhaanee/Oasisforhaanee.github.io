@@ -2,10 +2,10 @@
 layout: post
 title: "The Schrödinger Equation (Time-Independent & Time-Dependent)"
 date: 2026-07-12
-categories: [Quantum Mechanics, Physics]
+categories: [quantum-mechanics, physics]
 tags: [Schrödinger Equation, Wave Function, Matter Wave]
 canonicalURL: "https://blog.naver.com/kkul20235/224343743129"
-math: true
+usemathjax: true
 ---
 
 Anyone who has studied the Schrödinger equation will be most familiar with this one. This is the **time-independent Schrödinger equation**:
