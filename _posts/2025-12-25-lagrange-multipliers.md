@@ -56,9 +56,9 @@ We see that even the $x+y+z=1.5$ plane still intersects $x^2+y^2+z^2=1$. So if w
 
 Why a *candidate* extremum? We haven't studied it yet, but it's because that point could be a saddle point. Briefly, think of it as similar to an inflection point of a cubic in 3D. $f$ and $g$ are tangent even at a saddle point. But this doesn't cause a problem for finding max/min — even if we include saddle points along with the extrema, the max and min will after all come from the actual extrema, not the saddles.
 
-![A saddle point.](/assets/img/_EB_8B_A4_EC_9A_B4_EB_A1_9C_EB_93_9C__1_.jpeg)
+![Visualizing a saddle point on the hyperbolic paraboloid $z=x^2-y^2$.](/assets/img/saddle_point_hyperbolic_paraboloid.jpg)
 
-The shape of a saddle point
+The shape of a saddle point — the hyperbolic paraboloid $z=x^2-y^2$, with a minimum along the $x$-axis and a maximum along the $y$-axis meeting at $(0,0,0)$.
 
 Now we know that candidate extrema of $f$ and $g$ can appear. To find them we use the gradient. In the previous post (on partial derivatives and the gradient) we said the gradient vector is perpendicular to the level surface. $f$ and $g$ being tangent means that at the point of tangency the two gradient vectors are parallel — i.e., they stand in a constant-multiple proportion. In formula form:
 
