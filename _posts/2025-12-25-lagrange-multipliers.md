@@ -6,6 +6,8 @@ categories: [mathematics, calculus]
 tags: [Lagrange multiplier, optimization, gradient]
 description: An intuitive, geometric explanation of the method of Lagrange multipliers for constrained optimization, with level surfaces and worked examples.
 usemathjax: true
+comments: true
+
 ---
 
 Hello everyone. Merry Christmas. Luckily it didn't snow. This will probably be my last post of 2025. I hope you all wrap up the remaining bit of 2025 well and start 2026 with energy.
