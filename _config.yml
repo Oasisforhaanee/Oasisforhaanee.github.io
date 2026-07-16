@@ -1,8 +1,6 @@
 # Site settings
-title: Haanee Choi # site title
-description: >- # site description
-  예비 대학원생을 위한 대학교 자습 노트와 연구 포트폴리오. 슈뢰딩거 방정식,
-  양자역학의 수학적 구조, 재료물리 학습 기록을 다룹니다.
+title: Haanee's Oasis # site title
+description: My own notebook # site description
 lang: en-US # default lang
 timezone: Asia/Seoul # set your timezone
 image: /assets/img/ogp.png # This image used for Open Graph more info https://ogp.me/
@@ -11,9 +9,8 @@ mode: dark # default theme "dark" | "light"
 
 # Profile settings
 author:
-  name: Haanee Choi # author name
-  bio: >- # tell to the world
-    서울대학교 재료공학부 / 대학교 자습 노트 — 양자역학, 재료물리, 수학 학습 기록.
+  name: Haanee's Oasis # author name
+  bio: My own notebook # tell to the world
   username: Oasisforhaanee # general username
   github: Oasisforhaanee # github username
   twitter: # twitter username
