@@ -6,6 +6,8 @@ categories: [mathematics, calculus]
 tags: [partial derivative, gradient, chain rule]
 description: An intuitive introduction to partial derivatives, the geometric meaning of the gradient, and the chain rule — with contour plots and 3D surfaces.
 usemathjax: true
+comments: true
+
 ---
 
 Hello everyone, it's been a while. We had the first snow yesterday. Snow is lovely out in society, but here I never want to see it again... honestly it's a bit sad. Seoul got hit with a heavy snowfall, so please be careful on the icy roads and stay warm.
