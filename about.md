@@ -2,14 +2,10 @@
 title: About
 permalink: /about/
 layout: page
-excerpt: 서울대학교 재료공학부 / 대학교 자습 노트 — 양자역학, 재료물리, 수학 학습 기록.
+excerpt: My own notebook.
 comments: false
 ---
 
-안녕하세요. 저는 서울대학교 재료공학부 학생 **Haanee Choi**입니다.
-
-이 사이트는 제 **대학교 자습 노트**이자 연구 포트폴리오입니다. 슈뢰딩거 방정식, 양자역학의 수학적 구조, 재료물리 학습 기록을 영어로 정리해 올립니다.
-
-공부하면서 스스로 이해한 내용을 기록하는 공간이며, 틀린 부분이 있을 수 있습니다. 언제든 질문이나 지적은 환영합니다.
+This place is my own notebook. Please feel free to ask questions.
 
 - github.com/{{ site.author.github }}
