@@ -6,6 +6,8 @@ categories: [mathematics, quantum-mechanics]
 tags: [complex-plane, euler, taylor]
 description: A visual, intuitive introduction to the complex plane — Taylor series, Euler's identity, and how e^{iωt} draws a rotating spiral in space-time.
 usemathjax: true
+comments: true
+
 ---
 
 In this post we'll explore the **complex plane**. Understanding the concept matters, but *seeing* it helps a lot — so let's start with a couple of short animations.
