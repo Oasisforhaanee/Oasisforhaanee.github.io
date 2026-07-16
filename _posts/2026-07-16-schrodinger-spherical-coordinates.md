@@ -7,6 +7,8 @@ tags: [Schrödinger Equation, Spherical Coordinates, Laplacian, Chain Rule]
 description: How to convert the 3D Schrödinger equation from Cartesian to spherical coordinates — including the full chain-rule derivation of the Laplacian.
 canonicalURL: "https://blog.naver.com/kkul20235/224348646713"
 usemathjax: true
+comments: true
+
 ---
 
 In this post I'll walk through the process of converting the coordinate system of the 3D Schrödinger equation from Cartesian coordinates to spherical coordinates.
@@ -74,7 +76,7 @@ $$x^2+y^2+z^2=r^2 \ ...(6)$$
 
 ## Converting the Laplacian Operator from Cartesian to Spherical Coordinates
 
-Now the calculation hell begins. To express the Laplacian in spherical coordinates, we need to use the chain rule. (If you're not comfortable with the chain rule, take a look at my earlier post ["Partial Derivatives and the Gradient (plus the Chain Rule)"](https://oasisforhaanee.github.io/partial-derivatives-and-gradient/).) Before applying the chain rule, using equations (1) through (6) above we can establish the following relations:
+Now the calculation hell begins. To express the Laplacian in spherical coordinates, we need to use the chain rule. (If you're not comfortable with the chain rule, take a look at my earlier post ["Partial Derivatives and the Gradient (plus the Chain Rule)"](https://oasisforhaanee.github.io/partial-derivatives-and-gradient/#chain-rule).) Before applying the chain rule, using equations (1) through (6) above we can establish the following relations:
 
 $$\frac{\partial r}{\partial x}=\sin\theta\cos\phi \qquad \frac{\partial r}{\partial y}=\sin\theta\sin\phi \qquad \frac{\partial r}{\partial z}=\cos\theta$$
 
