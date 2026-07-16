@@ -172,7 +172,19 @@
           processEscapes: true,
           tags: 'ams'
         },
-        options: { skipHtmlTags: ['script', 'noscript', 'style', 'textarea', 'pre', 'code'] }
+        options: { skipHtmlTags: ['script', 'noscript', 'style', 'textarea', 'pre', 'code'] },
+        startup: {
+          ready: function () {
+            MathJax.startup.defaultReady();
+            MathJax.startup.promise.then(function () {
+              if (window.location.hash) {
+                var id = decodeURIComponent(window.location.hash.substring(1));
+                var el = document.getElementById(id);
+                if (el) { el.scrollIntoView(); }
+              }
+            });
+          }
+        }
       };
     </script>
     <script type="text/javascript" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml.js"></script>
