@@ -6,6 +6,7 @@ categories: [양자역학, quantum-mechanics]
 tags: [Fourier Transform, 푸리에 급수, 양자역학, math-physics]
 canonicalURL: "https://blog.naver.com/kkul20235/224354607368"
 usemathjax: true
+permalink: /fourier-transform-in-quantum-mechanics/
 ---
 
 이번 글에서는 푸리에 변환을 다뤄보도록 하겠습니다. 푸리에 변환을 알아보기 이전, 푸리에 급수라는 것에 대해 먼저 알아야 합니다.

@@ -6,6 +6,7 @@ categories: [양자역학, quantum-mechanics]
 tags: [Stationary State, 슈뢰딩거 방정식, 양자역학, Wave Function]
 canonicalURL: "https://blog.naver.com/kkul20235/224353189556"
 usemathjax: true
+permalink: /stationary-state/
 ---
 
 해당 내용을 읽기 전 아래의 글을 먼저 읽어보시면 이해에 도움을 줄 수 있습니다.
