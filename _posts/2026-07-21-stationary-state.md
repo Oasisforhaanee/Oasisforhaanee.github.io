@@ -1,68 +1,66 @@
 ---
 layout: post
-title: "정상 상태 (Stationary state)"
-date: 2026-07-21
-categories: [양자역학, quantum-mechanics]
-tags: [Stationary State, 슈뢰딩거 방정식, 양자역학, Wave Function]
+title:  "Stationary States"
+date:   2026-07-21 14:00:00 +0900
+categories: [quantum-mechanics, physics]
+tags: [Stationary State, Schrödinger Equation, Wave Function]
+description: Why the time-independent Schrödinger equation only holds for special states, and how superposition makes the full time-dependent equation linear.
 canonicalURL: "https://blog.naver.com/kkul20235/224353189556"
 usemathjax: true
+comments: true
 permalink: /stationary-state/
 ---
 
-해당 내용을 읽기 전 아래의 글을 먼저 읽어보시면 이해에 도움을 줄 수 있습니다.
+If you haven't already, I'd recommend reading the previous post first:
+- [The Schrödinger Equation (Time-Independent & Time-Dependent)](https://oasisforhaanee.github.io/schrodinger-equation/)
 
-- [슈뢰딩거 방정식 (시간 독립 / 시간 종속)](https://oasisforhaanee.github.io/schrodinger-equation/)
+Earlier we wrote the time-dependent wave function as a product of a spatial part and a temporal part:
 
-앞서 시간에 따라 변화하는 파동함수를 다음과 같은 식으로 표현할 수 있다고 하였습니다.
+$$\Psi(x,t)=\psi(x)\phi(t)$$
 
-$$\\Psi (x,t)=\\psi (x)\\phi (t)$$
+That separation gave us two pieces:
 
-그리고 그 결과로 특정 에너지 $E$를 가지는 시간 항, 그리고 공간 항이 생긴다고 설명하였죠.
+- time part: $\phi(t)=e^{-iEt/\hbar}$
+- space part: $-\frac{\hbar^2}{2m}\frac{d^2\psi(x)}{dx^2}+V(x)\psi(x)=E\psi(x)$
 
-- 시간항: $\\phi(t)=e^{-iEt/\\hbar}$
-- 공간항: $-\\frac{\\hbar^2}{2m}\\frac{d^2\\psi(x)}{dx^2}+V(x)\\psi(x)=E\\psi(x)$
+But this separated form does **not** hold for every wave function. Let's step back to the full time-dependent Schrödinger equation.
 
-하지만 이 식은 시간-의존 슈뢰딩거 방정식처럼 모든 파동함수에 의해 성립하는 식은 아닙니다. 다시 시간-의존 슈뢰딩거 방정식으로 돌아가 보겠습니다.
+This is the time-dependent Schrödinger equation, and it holds for **any** wave function. Think of it as $F = ma$ for quantum waves: it's universally valid.
 
-이 식은 시간-의존 슈뢰딩거 방정식으로, **어떠한 파동함수이건 성립하는 방정식**입니다. 슈뢰딩거 방정식이 파동에 적용하는 $F=ma$ 같은 운동 방정식이라고 한 것처럼, 모든 파동에 대해 해당 방정식은 성립합니다.
+The key hidden assumption was the **separation of variables**: we assumed the wave function could be written as a product $\psi(x)\phi(t)$. That assumption only works for certain special states.
 
-그리고 이 방정식에서 시간-독립 슈뢰딩거 방정식을 유도할 때, 중요한 가정을 하나 하였습니다. 바로 **파동함수가 시간항과 공간항의 곱으로 쪼개어진다는 가정**이었죠. 그리고 이렇게 가정하였을 때 특정 에너지를 가진 파동함수의 방정식이 나왔습니다.
+Suppose we had two stationary states, one with energy $E_1$ and wave function $\psi_1(x,t)$, and another with energy $E_2$ and wave function $\psi_2(x,t)$. Their superposition is:
 
-그럼 예를 들어 에너지 $E_1$을 가진 파동함수 $\\psi_1$과 에너지 $E_2$를 가진 파동함수 $\\psi_2$가 있다면 어떻게 될까요? $E_1<E_2$라고 할 때, 파동함수는 이런 식일 것입니다.
+$$\Psi(x,t) = c_1\,\psi_1(x,t) + c_2\,\psi_2(x,t)$$
 
-이 파동함수가 중첩되어 있는 파동함수의 경우, 더 이상 변수 분리법을 사용할 수 없게 됩니다.
+For this superposition, **the separation of variables breaks down**. We can no longer write $\Psi$ as a single product $\psi(x)\phi(t)$.
 
-즉 **특정 에너지를 가진 파동함수들에 한해서만** 변수 분리법을 쓸 수 있고, 변수 분리법의 결과인 시간-독립 슈뢰딩거 방정식은 특정 에너지를 가진 파동함수에 대해서만 성립하는 것입니다. 이 특정 에너지를 가지는 파동함수를, 우리는 **정상 상태(Stationary state)** 에 있는 파동함수라고 부릅니다.
+So the time-independent Schrödinger equation only holds for those special energy eigenstates. We call those **stationary states**.
 
-그럼 어떻게 시간-의존 슈뢰딩거 방정식은 모든 파동함수에 대해 성립하는 것일까요? **시간-의존 슈뢰딩거 방정식이 선형 방정식**이기 때문입니다.
+But then how can the time-dependent Schrödinger equation be valid for all states? Because **it is linear**. If $\psi_1$ and $\psi_2$ both satisfy the Schrödinger equation, then any superposition
 
-$\\psi_1(x,t)$, $\\psi_2(x,t)$가 슈뢰딩거 방정식을 만족한다고 해보겠습니다. 중첩 상태의 $\\psi_1(x,t)+\\psi_2(x,t)$를 슈뢰딩거 방정식에 대입하면:
+$$\Psi(x,t)=c_1\,\psi_1(x,t)+c_2\,\psi_2(x,t)$$
 
-- 좌변: $\\hat{H}(\\psi_1+\\psi_2)$
-- 우변: $E_1\\psi_1 + E_2\\psi_2$
+is also a valid solution.
 
-즉 $\\psi_1(x,t)$와 $\\psi_2(x,t)$가 중첩되어 있는 $\\psi(x,t)$를 시간-의존 슈뢰딩거 방정식에 대입한 결과는 각 항을 더한 결과와 같기 때문에 똑같이 성립합니다.
+This means: if you superpose multiple stationary states, the resulting state is still a perfectly valid solution of the full time-dependent Schrödinger equation. The coefficients $c_1, c_2, \dots$ control how much of each stationary state is present.
 
-이 말의 의미는, **만약 여러 에너지의 다양한 정상 상태가 중첩되어 있는 파동함수가 있다고 할 때, 각각의 정상 상태 모두 슈뢰딩거 방정식의 해이므로, 즉 중첩되어 있는 파동함수 또한 슈뢰딩거 방정식의 해**라는 것입니다.
+To make this more concrete, consider a free electron ($V(x)=0$). A plane wave with wavenumber $k$ has energy:
 
-조금 설명이 애매모호한 것 같아 $V(x)=0$, 즉 자유전자일 때로 예시를 들어보겠습니다.
+$$E_k=\frac{\hbar^2 k^2}{2m}$$
 
-파수 $k$를 가지는 파동은 다음 에너지를 가집니다.
+So each $k$ corresponds to one stationary-state energy. When we superpose many such plane waves, the resulting state has a spread of energies, determined by the Fourier coefficients $\psi(k)$. This connection leads naturally to the Fourier transform.
 
-$$E_k=\\frac{\\hbar^2 k^2}{2m}$$
+## Summary
 
-이는 일정한 파수, 즉 일정한 파장을 가지는 파동함수만이 특정 에너지를 가진다는 뜻입니다. 그것들이 중첩된 파동함수는, 중첩된 정도에 따라 에너지가 달라지게 됩니다.
+- The time-independent Schrödinger equation holds only for **stationary states** — states with definite energy.
+- A superposition of stationary states is still a valid solution of the **time-dependent** Schrödinger equation.
+- In superposition, the energy is not single-valued; it depends on how much of each stationary state is present.
 
-## 정리
+We'll need the Fourier transform to make point 3 much more precise.
 
-- 시간 독립 슈뢰딩거 방정식은 특정 에너지를 가진 파동함수, 즉 **정상 상태**에 대해서만 성립한다.
-- 정상 상태들이 중첩된 파동함수 또한 시간-의존 슈뢰딩거 방정식을 성립한다.
-- 중첩된 파동함수는 중첩된 정도에 따라 에너지가 달라지게 된다.
-
-3번 내용이 무슨 의미를 가지는지 알기 위해서는 푸리에 변환에 대해 배워야 합니다.
-
-이번 글은 여기까지입니다. 긴 글 읽어주셔서 감사합니다.
+Thanks for reading, and feel free to ask questions.
 
 ---
-> 이 글은 저의 주관대로 쓴 것이니 잘못된 정보가 있을 수 있습니다. 질문은 언제든지 환영이니 편하게 질문해주세요.<br>
-> 원문: [네이버 블로그](https://blog.naver.com/kkul20235/224353189556)
+> This post reflects my personal understanding, so there may be mistakes. Questions are always welcome.<br>
+> Original: [Naver Blog](https://blog.naver.com/kkul20235/224353189556)

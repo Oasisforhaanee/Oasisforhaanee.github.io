@@ -1,60 +1,58 @@
 ---
 layout: post
-title: "양자역학에서의 푸리에 변환"
-date: 2026-07-19
-categories: [양자역학, quantum-mechanics]
-tags: [Fourier Transform, 푸리에 급수, 양자역학, math-physics]
+title:  "The Fourier Transform in Quantum Mechanics"
+date:   2026-07-19 14:00:00 +0900
+categories: [quantum-mechanics, mathematics]
+tags: [Fourier Transform, Fourier Series, Quantum Mechanics, Wave Function]
+description: From Fourier series to the Fourier transform — and why decomposing a wave function into momentum components matters in quantum mechanics.
 canonicalURL: "https://blog.naver.com/kkul20235/224354607368"
 usemathjax: true
+comments: true
 permalink: /fourier-transform-in-quantum-mechanics/
 ---
 
-이번 글에서는 푸리에 변환을 다뤄보도록 하겠습니다. 푸리에 변환을 알아보기 이전, 푸리에 급수라는 것에 대해 먼저 알아야 합니다.
+Welcome back. In this post we'll look at the **Fourier transform**. Before diving into it, though, we need to understand the **Fourier series** first.
 
-## 푸리에 급수
+## Fourier Series
 
-푸리에 급수는 아래의 식을 의미합니다.
+A Fourier series is the following expression:
 
 $$f(t)=\frac{a_0}{2}+\sum _{n=1}^{\infty }\left[a_n\cos (n\omega _0t)+b_n\sin (n\omega _0t)\right]\quad \left(\omega _0=\frac{2\pi }{T}\right)$$
 
-주기 $T$의 어떤 함수든 간에, 적절한 계수를 곱한 사인함수와 코사인 함수의 합으로 표현할 수 있다는 뜻을 의미합니다.
+What this means is that **any periodic function** with period $T$ can be written as a sum of sines and cosines with appropriate coefficients.
 
-예를 들어, 톱니 모양처럼 생긴 함수가 있다고 가정해 보겠습니다.
+Let's take the sawtooth wave as an example.
 
-<!-- TODO: 원본 네이버 블로그의 톱니 모shape 그래프 이미지를 여기에 삽입하세요. -->
+<!-- TODO: insert sawtooth graph from the original Naver post -->
 
-이 톱니 모양 그래프는, 적절한 사인 함수와 코사인 함수의 합으로 표현할 수 있습니다. 아래의 그림은 좌측의 5개의 함수를 더했을 때, 우측의 그래프처럼 된다는 의미입니다. 아직 톱니 모양 그래프와는 조금 다르지만, 유사한 모습을 가집니다.
+Using the right coefficients, we can reconstruct this sawtooth wave out of sines and cosines. The figures below show what happens when we add 5, 100, and then 1000 such terms — the shape gets closer and closer to the original function, even if it's never exactly the same.
 
-<!-- TODO: 원본 네이버 블로그의 5개 함수 합 결과 이미지를 여기에 삽입하세요. -->
+<!-- TODO: insert reconstruction figures from the original Naver post -->
 
-아래의 그림은 5개의 함수가 아닌, 100개, 그리고 1000개의 함수를 더했을 때의 그래프 모양입니다. 완전히 똑같지는 않지만, 차이를 못 느낄 정도로 가까워지는 것을 알 수 있습니다.
-
-<!-- TODO: 원본 네이버 블로그의 100개/1000개 함수 합 결과 이미지를 여기에 삽입하세요. -->
-
-여기에서 관건은 사인 함수와, 코사인 함수의 계수를 구하는 것입니다. 이를 구하는 것 또한 수학적으로 가능합니다.
+The key question is how to actually compute those coefficients, and the answer is:
 
 $$a_0=\frac{2}{T}\int _{-T/2}^{T/2}f(t)\, dt$$
 
-이걸 설명하기 위해서는 선형 대수의 Orthogonality를 다뤄야 가능하지만, 일단 그냥 이런 공식을 통해 계수를 구할 수 있구나 라고만 알아두시면 좋을 것 같습니다.
+Explaining this properly requires the orthogonality ideas from linear algebra, so for now it's enough to notice that such formulas *do* exist.
 
-하지만 푸리에 급수에는 치명적인 단점이 존재합니다. 바로 **주기함수에 대해서만 성립**한다는 것입니다. $\sin(n\omega_0 t)$, $\cos(n\omega_0 t)$를 더하다 보니 주기는 $2\pi/\omega_0$로 한정될 수밖에 없는 것이죠. 이것이 의미하는 바는, $\omega_0$가 유한한 값을 가진 이상 주기함수가 아닌 함수에 대해서는 성립할 수 없다는 것입니다.
+But the Fourier series has a serious limitation: it only works for **periodic functions**. Because we're only adding sines and cosines of fixed frequency $\omega_0$, the overall period is forced to be $2\pi/\omega_0$. So a non-periodic function cannot be represented exactly this way.
 
-## 푸리에 변환
+## Fourier Transform
 
-푸리에 변환은 푸리에 급수와 매우 유사하지만, 다른 점이 있습니다. 바로 급수(sigma)가 아닌 **적분을 이용**하는 것이죠. $\omega$의 범위를 $-\infty$부터 $+\infty$까지 전 구간으로 확대한 것입니다. 이에 주기 $T$가 무한대로 증가한, 약간 말장난 같지만 결국 주기함수가 아닌 함수에 대해서도 성립합니다.
+The Fourier transform is very similar to the Fourier series, except that instead of a sum we use an **integral**, and instead of only frequencies around some $\omega_0$ we integrate over the whole range $-\infty < \omega < \infty$. In a slightly hand-wavy but useful way, think of it as letting the period $T\to\infty$, which turns a periodic function into a non-periodic one.
 
-뒤의 $e^{i\omega t}$ 항은 복소평면 글을 읽어보시면 아시겠지만, 시간에 따라 시간축과 복소평면 축을 나선형으로 돌고 있는 함수입니다. 즉 푸리에 급수의 $\cos$, $\sin$ 역할인 것이죠.
+The factor $e^{i\omega t}$ is doing the same job that $\cos$ and $\sin$ did in the series, just wrapped into a single complex exponential. And the prefactor $F(\omega)$ plays the same role as the $a_n$ and $b_n$ coefficients from before.
 
-그럼 이게 왜 양자역학에서 중요하게 쓰일까요? 임의의 파동함수가 주어졌을 때, 푸리에 변환을 이용해 무수히 많은 일정한 $k$ 값을 가진 함수로 쪼개어, 그 계수를 구한다면 이는 해당 파동함수가 내포하고 있는 **에너지의 분포**를 표현하게 됩니다.
+So why does this matter in quantum mechanics? Given an arbitrary wave function, the Fourier transform breaks it into infinitely many plane waves with definite $k$. The resulting weights $\psi(k)$ describe how much of each momentum/energy component is present in the original state.
 
-양자역학에서 쓰는 푸리에 변환은 공간에 따른 것으로, 다음과 같은 식입니다. 만약 파동함수가 시간 $t=0$일 때 다음과 같은 모습을 가진다고 한다면, 우리는 푸리에 변환을 이용해 수없이 많은 $e^{ikx}$들의 합으로 표현할 수 있을 것입니다.
+In quantum mechanics we usually use the **spatial** Fourier transform rather than the temporal one. If the wave function at time $t=0$ has some arbitrary shape $\psi(x,0)$, we can rewrite it as a superposition of plane waves $e^{ikx}$ with continuous weights $\psi(k)$.
 
-정상상태 에너지는 $e^{ikx}$에 대해 $E=\hbar^2 k^2/2m$의 값을 가진다고 하였습니다. 총 파동함수는 이런 파동함수들의 중첩이고, 중첩된 정도는 $\psi(k)$의 계수로 나타냅니다.
+For a plane-wave component $e^{ikx}$, the stationary-state energy is $E_k=\hbar^2 k^2/2m$. The total wave function is a superposition of these stationary states, and the superposition weight is exactly the Fourier coefficient $\psi(k)$.
 
-우리는 여기서 시간항을 봐보겠습니다. 시간항에서 에너지 $E_k$는 $k$의 절댓값이 높을수록 큽니다. 에너지가 높을수록 $e^{-iE_k t/\hbar}$에서 파동의 시간항은 더 빠르게 진동하기 때문에, 에너지가 낮은 쪽은 느리게 퍼지고 에너지가 높은 쪽은 빨리 퍼집니다. 즉 시간이 지날수록 기존의 파동함수의 모양이 유지되지 않고 점차 퍼져갈 것입니다.
+Now look at the **time-dependent factor**: higher $|k|$ means higher energy, which means $e^{-iE_k t/\hbar}$ oscillates faster in time. So over time the components with large $|k|$ spread out faster, and the original shape of the wave function gradually broadens. That's why a localized wave packet does not stay localized forever.
 
-이번 글은 여기까지입니다. 긴 글 읽어주셔서 감사합니다.
+That's it for this post. Thanks for reading, and feel free to ask questions if anything was unclear.
 
 ---
-> 이 글은 저의 주관대로 쓴 것이니 잘못된 정보가 있을 수 있습니다. 질문은 언제든지 환영이니 편하게 질문해 주세요.<br>
-> 원문: [네이버 블로그](https://blog.naver.com/kkul20235/224354607368)
+> This post reflects my personal understanding, so there may be mistakes. Questions are always welcome.<br>
+> Original: [Naver Blog](https://blog.naver.com/kkul20235/224354607368)
