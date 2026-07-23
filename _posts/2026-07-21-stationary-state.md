@@ -11,7 +11,7 @@ permalink: /stationary-state/
 
 해당 내용을 읽기 전 아래의 글을 먼저 읽어보시면 이해에 도움을 줄 수 있습니다.
 
-- [슈뢰딩거 방정식 (시간 독립 / 시간 종속)](https://blog.naver.com/kkul20235/224343743129)
+- [슈뢰딩거 방정식 (시간 독립 / 시간 종속)](https://oasisforhaanee.github.io/schrodinger-equation/)
 
 앞서 시간에 따라 변화하는 파동함수를 다음과 같은 식으로 표현할 수 있다고 하였습니다.
 
