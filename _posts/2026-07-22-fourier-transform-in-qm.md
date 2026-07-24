@@ -54,8 +54,6 @@ The Fourier transform is very similar to the Fourier series, but with one differ
 
 The $e^{i\omega t}$ term afterward, as you'll see if you read the complex-plane post, is a function spiraling around in a helix along the time axis and the complex-plane axis over time. That is, it plays the role of $\cos$ and $\sin$ from the Fourier series. And the $F(\omega)$ multiplied in front plays the role of the coefficient for each $\omega$, like $a_n$, $b_n$ in the Fourier series. (Complex-plane post: ["The Complex Plane"](https://oasisforhaanee.github.io/complex-plane/).)
 
-https://blog.naver.com/kkul20235/224344379486
-
 So why is this important in quantum mechanics? Earlier I explained that in a stationary state, the energy changes depending on how much the stationary states are superimposed. Given an arbitrary wave function, if we use the Fourier transform to break it into infinitely many functions each with a constant $k$ value, and find their coefficients, this expresses the energy distribution that the wave function contains.
 
 Let me explain with an example.
