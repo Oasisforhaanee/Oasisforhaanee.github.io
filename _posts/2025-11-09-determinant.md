@@ -15,11 +15,17 @@ The determinant measures how much a matrix expands or contracts space.
 
 ## 2x2 Determinant
 
+![Diagram](/assets/img/determinant_img_01.png)
+
 $$A=\begin{pmatrix}a&b\\ c&d\end{pmatrix},\quad \det(A)=ad-bc$$
 
 ## 3x3 Determinant
 
+![Diagram](/assets/img/determinant_img_02.png)
+
 $$A=\begin{pmatrix}a&b&c\\ d&e&f\\ g&h&i\end{pmatrix}$$
+
+![Diagram](/assets/img/determinant_img_03.jpg)
 
 One convenient computation is cofactor expansion:
 
@@ -29,7 +35,9 @@ $$\det(A)=a\begin{vmatrix}e&f\\ h&i\end{vmatrix}
 
 ## Geometric Meaning
 
-`|det(A)|` gives the area/volume scaling factor. If `det(A)=0`, the columns are linearly dependent and the transformation collapses space.
+`|det(A)|` gives the area/volume scaling factor.
+
+![Diagram](/assets/img/determinant_img_04.png) If `det(A)=0`, the columns are linearly dependent and the transformation collapses space.
 
 ![Diagram](/assets/img/determinant_img_01.png)
 
