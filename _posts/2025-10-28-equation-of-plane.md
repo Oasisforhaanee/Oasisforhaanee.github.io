@@ -29,7 +29,7 @@ The dot product measures how much two vectors point in the same direction:
 
 $$\mathbf{a}\cdot\mathbf{b}=\|\mathbf{a}\|\|\mathbf{b}\|\cos\theta$$
 
-`|a|` is the length of vector `a`. `θ` is the angle between vectors `a` and `b`.
+`|a|` is the length of vector `a`. `theta` is the angle between vectors `a` and `b`.
 
 Geometrically, the dot product equals the length of `b` times the component of `a` along `b`. When the vectors are perpendicular, the dot product is `0`.
 
