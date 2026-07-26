@@ -11,9 +11,13 @@ comments: true
 permalink: /orthogonality/
 ---
 
+![Diagram](/assets/img/orthogonality_img_01.png)
+
 ## Linear Dependence
 
 Vectors are linearly dependent if one is a scalar multiple of another.
+
+![Diagram](/assets/img/orthogonality_img_02.png)
 
 ## Linear Independence
 
@@ -22,6 +26,10 @@ They are linearly independent if no nontrivial combination makes zero:
 $$c_1\mathbf{v}_1+\cdots+c_n\mathbf{v}_n=\mathbf{0}$$
 
 The only solution should be all `c_i=0`.
+
+![Diagram](/assets/img/orthogonality_img_03.png)
+
+![Diagram](/assets/img/orthogonality_img_04.png)
 
 ## Orthogonality
 
@@ -35,18 +43,11 @@ This concept is essential in signal processing, PCA, and quantum mechanics.
 
 For geometric intuition, see [Determinant](https://oasisforhaanee.github.io/2025-11-09-determinant/).
 
-![Diagram](/assets/img/orthogonality_img_01.png)
 
-![Diagram](/assets/img/orthogonality_img_02.png)
 
-![Diagram](/assets/img/orthogonality_img_03.png)
 
-![Diagram](/assets/img/orthogonality_img_04.png)
 
-![Diagram](/assets/img/orthogonality_img_05.png)
 
-![Diagram](/assets/img/orthogonality_img_06.png)
 
-![Diagram](/assets/img/orthogonality_img_07.png)
 
 This post reflects my own understanding, so there may be errors. Questions are always welcome, so feel free to ask.
