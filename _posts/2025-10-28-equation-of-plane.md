@@ -17,28 +17,36 @@ When I first learned calculus in college, I mostly studied to pass exams instead
 
 A **vector** expresses magnitude and direction, while a **scalar** expresses magnitude only. Mass, temperature, speed, and height are scalar examples.
 
-## Coordinates
+![Scalar and vector illustration](/assets/img/plane_img_01.png)
 
-In the coordinate plane, the point `(1,1)` is also a vector from the origin to `(1,1)`. We put an arrow over the symbol to tell vectors apart from points.
+We work with vectors in the coordinate plane. The point `(1,1)` is also a vector from the origin to `(1,1)`. To distinguish vectors from points, we put an arrow over the symbol.
 
-## Dot Product
+![Notation: vectors use arrows](/assets/img/plane_img_02.jpg)
+
+## Vector Dot Product
 
 The dot product measures how much two vectors point in the same direction:
 
-$$\mathbf{a}\cdot\mathbf{b}=\|\mathbf{a}\|\|\mathbf{b}\|\cos(\theta)$$
+$$\\mathbf{a}\\cdot\\mathbf{b}=\\|\\mathbf{a}\\|\\|\\mathbf{b}\\|\\cos(\\theta)$$
+
+`|a|` is the length of vector `a`. `θ` is the angle between vectors `a` and `b`.
+
+Geometrically, the dot product equals the length of `b` times the component of `a` along `b`. When the vectors are perpendicular, the dot product is `0`.
+
+For components, `(a,b)⋅(c,d)=ac+bd` because the cross terms are orthogonal:
+
+![Dot product with components](/assets/img/plane_img_04.jpg)
 
 ## Equation of a Plane
 
 A plane can be written as
 
-$$\mathbf{n}\cdot(\mathbf{r}-\mathbf{r}_0)=0$$
+$$\\mathbf{n}\\cdot(\\mathbf{r}-\\mathbf{r}_0)=0$$
 
-where `n` is a normal vector and `r_0` is any point on the plane.
+where `n` is a normal vector and `r_0` is any point on the plane. This says every vector lying in the plane is orthogonal to `n`.
 
-![Diagram](/assets/img/plane_img_01.png)
+![Plane visualization](/assets/img/plane_img_05.png)
 
-![Diagram](/assets/img/plane_img_02.jpg)
-
-![Diagram](/assets/img/plane_img_04.jpg)
+The familiar form `ax+by+cz=k` has normal vector `(a,b,c)`. When `k=0`, the plane passes through the origin. For nonzero `k`, it is just the origin plane shifted along the normal direction.
 
 This post reflects my own understanding, so there may be errors. Questions are always welcome, so feel free to ask.
