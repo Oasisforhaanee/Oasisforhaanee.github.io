@@ -33,9 +33,11 @@ $$\\mathbf{a}\\cdot\\mathbf{b}=\\|\\mathbf{a}\\|\\|\\mathbf{b}\\|\\cos(\\theta)$
 
 Geometrically, the dot product equals the length of `b` times the component of `a` along `b`. When the vectors are perpendicular, the dot product is `0`.
 
-For components, `(a,b)⋅(c,d)=ac+bd` because the cross terms are orthogonal:
+![Dot product geometry](/assets/img/plane_img_04.jpg)
 
-![Dot product with components](/assets/img/plane_img_04.jpg)
+For components, `(a,b)⋅(c,d)=ac+bd` because the cross terms are orthogonal.
+
+![Dot product with components](/assets/img/plane_img_05.png)
 
 ## Equation of a Plane
 
@@ -44,8 +46,6 @@ A plane can be written as
 $$\\mathbf{n}\\cdot(\\mathbf{r}-\\mathbf{r}_0)=0$$
 
 where `n` is a normal vector and `r_0` is any point on the plane. This says every vector lying in the plane is orthogonal to `n`.
-
-![Plane visualization](/assets/img/plane_img_05.png)
 
 The familiar form `ax+by+cz=k` has normal vector `(a,b,c)`. When `k=0`, the plane passes through the origin. For nonzero `k`, it is just the origin plane shifted along the normal direction.
 
