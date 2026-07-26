@@ -27,7 +27,7 @@ We work with vectors in the coordinate plane. The point `(1,1)` is also a vector
 
 The dot product measures how much two vectors point in the same direction:
 
-$$\\mathbf{a}\\cdot\\mathbf{b}=\\|\\mathbf{a}\\|\\|\\mathbf{b}\\|\\cos(\\theta)$$
+$$\mathbf{a}\cdot\mathbf{b}=\|\mathbf{a}\|\|\mathbf{b}\|\cos\theta$$
 
 `|a|` is the length of vector `a`. `θ` is the angle between vectors `a` and `b`.
 
@@ -35,7 +35,7 @@ Geometrically, the dot product equals the length of `b` times the component of `
 
 ![Dot product geometry](/assets/img/plane_img_04.jpg)
 
-For components, `(a,b)⋅(c,d)=ac+bd` because the cross terms are orthogonal.
+For components, `(a,b)·(c,d)=ac+bd` because the cross terms are orthogonal.
 
 ![Dot product with components](/assets/img/plane_img_05.png)
 
@@ -43,7 +43,7 @@ For components, `(a,b)⋅(c,d)=ac+bd` because the cross terms are orthogonal.
 
 A plane can be written as
 
-$$\\mathbf{n}\\cdot(\\mathbf{r}-\\mathbf{r}_0)=0$$
+$$\mathbf{n}\cdot(\mathbf{r}-\mathbf{r}_0)=0$$
 
 where `n` is a normal vector and `r_0` is any point on the plane. This says every vector lying in the plane is orthogonal to `n`.
 
