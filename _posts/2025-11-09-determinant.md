@@ -31,4 +31,12 @@ $$\det(A)=a\begin{vmatrix}e&f\\ h&i\end{vmatrix}
 
 `|det(A)|` gives the area/volume scaling factor. If `det(A)=0`, the columns are linearly dependent and the transformation collapses space.
 
+![Diagram](/assets/img/determinant_img_01.png)
+
+![Diagram](/assets/img/determinant_img_02.png)
+
+![Diagram](/assets/img/determinant_img_03.jpg)
+
+![Diagram](/assets/img/determinant_img_04.png)
+
 This post reflects my own understanding, so there may be errors. Questions are always welcome, so feel free to ask.
