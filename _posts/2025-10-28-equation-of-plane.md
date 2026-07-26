@@ -11,19 +11,19 @@ comments: true
 permalink: /equation-of-plane/
 ---
 
-When I first learned calculus in college, I mostly studied to pass exams instead of really understanding. This series tries to revisit the basics carefully, starting from vectors and scalars, then building up to equations of a plane.
+When I first learned calculus in college, I mostly studied to pass exams instead of really understanding. This series revisits the basics carefully, starting from vectors and scalars, then building up to equations of a plane.
 
 ## Scalars and Vectors
 
-A **vector** expresses magnitude and direction, while a **scalar** expresses magnitude only. Common examples are mass, temperature, speed, and height.
+A **vector** expresses magnitude and direction, while a **scalar** expresses magnitude only. Mass, temperature, speed, and height are scalar examples.
 
 ## Coordinates
 
-In the coordinate plane the point `(1,1)` is also a vector from the origin to `(1,1)`. To distinguish vectors from points, we write an arrow above the symbol.
+In the coordinate plane, the point `(1,1)` is also a vector from the origin to `(1,1)`. We put an arrow over the symbol to tell vectors apart from points.
 
 ## Dot Product
 
-The dot product measures how much two vectors point in the same direction.
+The dot product measures how much two vectors point in the same direction:
 
 $$\mathbf{a}\cdot\mathbf{b}=\|\mathbf{a}\|\|\mathbf{b}\|\cos(\theta)$$
 
@@ -33,6 +33,12 @@ A plane can be written as
 
 $$\mathbf{n}\cdot(\mathbf{r}-\mathbf{r}_0)=0$$
 
-where `n` is a normal vector and `r_0` is a point on the plane.
+where `n` is a normal vector and `r_0` is any point on the plane.
+
+![Diagram](/assets/img/plane_img_01.png)
+
+![Diagram](/assets/img/plane_img_02.jpg)
+
+![Diagram](/assets/img/plane_img_04.jpg)
 
 This post reflects my own understanding, so there may be errors. Questions are always welcome, so feel free to ask.
