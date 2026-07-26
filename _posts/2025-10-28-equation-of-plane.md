@@ -8,6 +8,7 @@ description: "A first-principles explanation of scalar and vectors, dot product,
 canonicalURL: "https://blog.naver.com/kkul20235/224056851459"
 usemathjax: true
 comments: true
+permalink: /equation-of-plane/
 ---
 
 When I first learned calculus in college, I mostly studied to pass exams instead of really understanding. This series tries to revisit the basics carefully, starting from vectors and scalars, then building up to equations of a plane.
