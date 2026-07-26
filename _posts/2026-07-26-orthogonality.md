@@ -35,4 +35,18 @@ This concept is essential in signal processing, PCA, and quantum mechanics.
 
 For geometric intuition, see [Determinant](https://oasisforhaanee.github.io/2025-11-09-determinant/).
 
+![Diagram](/assets/img/orthogonality_img_01.png)
+
+![Diagram](/assets/img/orthogonality_img_02.png)
+
+![Diagram](/assets/img/orthogonality_img_03.png)
+
+![Diagram](/assets/img/orthogonality_img_04.png)
+
+![Diagram](/assets/img/orthogonality_img_05.png)
+
+![Diagram](/assets/img/orthogonality_img_06.png)
+
+![Diagram](/assets/img/orthogonality_img_07.png)
+
 This post reflects my own understanding, so there may be errors. Questions are always welcome, so feel free to ask.
