@@ -4,79 +4,102 @@ title: "The Schrödinger Equation (Time-Independent & Time-Dependent)"
 date: 2026-07-12
 categories: [quantum-mechanics, physics]
 tags: [Schrödinger Equation, Wave Function, Matter Wave]
+description: "What the time-independent and time-dependent Schrödinger equations mean, where they come from, and why wave-like matter in the microscopic world needs them."
 canonicalURL: "https://blog.naver.com/kkul20235/224343743129"
 usemathjax: true
 comments: true
-
 ---
 
-Anyone who has studied the Schrödinger equation will be most familiar with this one. This is the **time-independent Schrödinger equation**:
+Hi everyone. It's been a while. Surprisingly, I'm already a month past my military discharge. Life after service is honestly amazing — yahoo!
 
-$$-\frac{\hbar^2}{2m}\frac{d^2\psi(x)}{dx^2}+V(x)\psi(x)=E\psi(x)$$
+Anyway, I've been consistently self-studying quantum mechanics since getting out, but it's not easy. I'm not always sure whether I actually understand something or just look like I do. So I'm starting to write these posts to check what I really understand. This time, let's talk about the Schrödinger equation.
 
-This equation is also a Schrödinger equation; it's called the **time-dependent Schrödinger equation**:
+$$-\frac{\hbar ^2}{2m}\frac{d^2\psi (x)}{dx^2}+V(x)\psi (x)=E\psi (x)$$
 
-$$i\hbar \frac{\partial \psi(x,t)}{\partial t}=-\frac{\hbar^2}{2m}\frac{\partial^2\psi(x,t)}{\partial x^2}+V(x,t)\psi(x,t)$$
+If you've ever studied the Schrödinger equation, this form is probably the most familiar. This is the **time-independent Schrödinger equation**.
 
-So what does this equation mean, and why should we know it? Before looking at the Schrödinger equation, we need to know what a **matter wave** is. The matter-wave formula is defined as follows:
+$$i\hbar \frac{\partial \psi (x,t)}{\partial t}=-\frac{\hbar ^2}{2m}\frac{\partial ^2\psi (x,t)}{\partial x^2}+V(x,t)\psi (x,t)$$
 
-$$\lambda = \frac{h}{p} = \frac{h}{mv}$$
+This one is also a Schrödinger equation; it is called the **time-dependent Schrödinger equation**.
 
-The wavelength of this matter wave is given by Planck's constant $h$ divided by the momentum $mv$.
+So what does this equation mean, and why should we know it? Before we look at the Schrödinger equation itself, we need to know what a **matter wave** is. The matter-wave formula is defined as follows:
 
-Every object with momentum carries a wave of that wavelength. Yet no one perceives matter waves in everyday life. This is because the matter-wave wavelength is extremely small. For a 150 g baseball flying at 40 m/s, the matter wave is as follows:
+$$\lambda =\frac{h}{p}=\frac{h}{mv}\qquad \left(h=6.626\times 10^{-34}\ \text{J}\cdot \text{s}\right)$$
 
-$$\lambda \approx \frac{6.63\times 10^{-34}}{0.15 \times 40} \approx 1.1\times 10^{-34}\ \text{m}$$
+The wavelength of a matter wave is given by Planck's constant $h$ divided by the momentum $mv$.
 
-The wavelength is so short that we can't perceive this wave. The wavelength is simply too short for the wave to cause any interference with our bodies.
+Any object with momentum carries a wave with that wavelength. But no one can perceive matter waves in daily life. This is because the matter-wave wavelength is extremely small. For example, for a 150 g baseball flying at 40 m/s, the matter wave is:
 
-But as we move from the macroscopic world into the microscopic world, the matter-wave wavelength becomes very large. For a moving electron, the matter-wave wavelength is on the order of 0.1–0.2 nm because its momentum is small, which is comparable to the interatomic spacing in solids. Because the wavelength is of this scale, the wave can interfere with bonding and reactions, and electrons in solids play a key role in determining properties such as thermal and electrical conductivity.
+$$\lambda =\frac{6.626\times 10^{-34}\ \text{kg}\cdot \text{m}^2/\text{s}}{(0.15\ \text{kg})\times (40\ \text{m/s})}\approx 1.104\times 10^{-34}\ \text{m}$$
 
-These microscopic particles have the properties of both mass-bearing particles *and* waves of an appropriate wavelength. Therefore, to handle matter in the microscopic world we need an equation of motion that takes wave nature into account, not just classical mechanics. This is the Schrödinger equation. Just as $F = ma$ plays its role in classical mechanics, the Schrödinger equation plays that role in quantum mechanics.
+Because the wavelength is so incredibly short, it can't interfere with our bodies or surroundings in any noticeable way, so we simply cannot feel this wave.
 
-The most basic form of the Schrödinger equation is as follows:
+But as we move from the macroscopic world into the microscopic world, the situation changes completely. In the world of very small particles, momentum becomes smaller and the matter-wave wavelength becomes much longer. For a typical electron, the matter-wave wavelength is around $0.1$–$0.2\ \text{nm}$, which is comparable to the distance between atoms in a solid. Thanks to this appropriate wavelength, electrons can directly interfere with bonding, reactions, and structural properties inside solids, and as a result they play a key role in determining properties like thermal and electrical conductivity.
 
-$$i\hbar \frac{\partial \psi(x,t)}{\partial t}=-\frac{\hbar^2}{2m}\frac{\partial^2\psi(x,t)}{\partial x^2}+V(x,t)\psi(x,t)$$
+So microscopic particles have both the properties of particles with mass *and* the wave properties of an appropriate wavelength. Therefore, to describe such microscopic matter accurately, we need a new equation of motion that includes wave-like behavior, not just classical mechanics. That is exactly what the Schrödinger equation is. Just as $F=ma$ played its role in classical mechanics, the Schrödinger equation plays that role in quantum mechanics.
 
-The $h$ with a bar on top is read "h-bar" ($\hbar$) and equals Planck's constant $h$ divided by $2\pi$. Since $h/2\pi$ comes up so often, we give it the new symbol $\hbar$. What this equation means is: given a time-dependent wave function $\psi(x,t)$ placed in a potential field $V(x,t)$, it tells us how the wave function **propagates** over time.
+The most basic form of the Schrödinger equation is:
 
-If we consider the left-hand side at a specific time $t_1$, we get the second derivative of the wave function together with $V(x,t_1)\cdot\psi(x,t_1)$, and combined with the time derivative on the right-hand side this tells us how the state changes as time goes on.
-<img width="875" height="562" alt="wave_packet_well_reflection" src="https://github.com/user-attachments/assets/76545313-ca8a-4470-9656-9628d143d12f" />
+$$-\frac{\hbar ^2}{2m}\frac{\partial ^2\Psi (x,t)}{\partial x^2}+V(x,t)\Psi (x,t)=i\hbar \frac{\partial \Psi (x,t)}{\partial t}$$
+
+The $h$ with a bar on top is read **hbar** ($\hbar$), and it equals Planck's constant $h$ divided by $2\pi$. Since $h/2\pi$ appears so often, we introduce the new symbol $\hbar$ to keep things concise.
+
+What this equation means is straightforward. Given a time-dependent wave function $\psi(x,t)$ inside a potential field $V(x,t)$, it tells us how that wave function **propagates** over time.
+
+If we look at the left-hand side at a specific time $t_1$, the second derivative of the wave function together with $V(x,t_1)\Psi(x,t_1)$ produces a single result. That result connects with the time derivative on the right-hand side, telling us how the wave function evolves as time passes.
 
 The motion of the wave in this video is also obtained by solving the Schrödinger equation at each time step and plotting the wave's position.
 
-So what about the time-*independent* Schrödinger equation? If the potential $V(x,t)$ does not change with time — that is, it is just $V(x)$ — then we may assume the wave function $\psi(x,t)$ takes a separated form:
+![Wave packet in a well potential](/assets/img/schrodinger_well_wave.gif)
 
-$$\psi(x,t) = \psi(x)\,T(t)$$
+So what about the time-*independent* Schrödinger equation? If the potential $V(x,t)$ does *not* change with time — that is, if it only depends on position, $V(x)$ — then we may assume the wave function $\Psi(x,t)$ takes the separated form:
 
-(Strictly speaking, we'd also need the condition that $\psi(x,t)$ is a *stationary state*, but I'll cover that next time.)
+$$\Psi (x,t)=\psi (x)\,\phi (t)$$
 
-Why? How do we know we can separate the time and space parts and solve like that? Well, if we actually solve the equation, we end up with solutions for $\psi(x)$ and $T(t)$ as a result. The general solution of linear equations can be expressed as a linear combination of already-found solutions. Since the Schrödinger equation is also a linear partial differential equation, a linear combination of its solutions is again a solution.
+Strictly speaking, this assumption requires $\Psi(x,t)$ to be a **stationary state**, but I'll cover that in the next post.
 
-The process of finding the solution feels a bit… unsatisfying. It's like we're forcing it to work. But that's generally how solving linear differential equations goes. You assume a form that's easy to solve, transform the equation, and then build the general solution as a superposition of the solutions you found. The method of assuming the function is a product of terms each depending on a single independent variable — like the wave function above — is called **separation of variables**.
+Why *can* we separate the time and space parts like this? Well, if we actually solve the equation, we end up with separate solutions for $\psi(x)$ and $\phi(t)$ anyway. One important property of linear equations is that any linear combination of already-known solutions is again a new solution. Since the Schrödinger equation is also a linear partial differential equation, a linear combination of its solutions is still a solution.
 
-Anyway, substituting the separated $\psi(x,t) = \psi(x)T(t)$ into the time-dependent Schrödinger equation gives the following. After dividing by $\psi(x)T(t)$:
+The process of finding the solution feels a bit hand-wavy, honestly. It's almost like we're guessing the form and then checking that it works. But that's generally how solving linear differential equations goes. You assume a form that's easy to solve, transform the equation, and then build the general solution as a superposition of the individual solutions you found. The method of assuming the function is a product of terms each depending on a single independent variable — like the wave function above — is called **separation of variables**.
 
-$$i\hbar \frac{1}{T(t)}\frac{dT(t)}{dt} = -\frac{\hbar^2}{2m}\frac{1}{\psi(x)}\frac{d^2\psi(x)}{dx^2} + V(x)$$
+Anyway, substituting the separated form $\Psi(x,t)=\psi(x)\phi(t)$ into the time-dependent Schrödinger equation gives:
 
-The left side is an equation in $t$, the right side an equation in $x$. Since $x$ and $t$ are independent variables, for this equality to hold for *all* $x$ and $t$, each side must equal a constant. Surprisingly, that constant is the energy $E$ of the wave.
+$$i\hbar \psi (x)\frac{d\phi (t)}{dt}=\left[-\frac{\hbar ^2}{2m}\frac{d^2\psi (x)}{dx^2}+V(x)\psi (x)\right]\phi (t)$$
 
-Solving this differential equation for the general solution gives the following. As a result, the time part takes the form $e^{-iEt/\hbar}$, and $\psi(x)$ is determined by $V(x)$:
+$$\downarrow \ \div \ \psi (x)\phi (t)$$
 
-$$T(t) = e^{-iEt/\hbar}$$
+$$i\hbar \frac{1}{\phi (t)}\frac{d\phi (t)}{dt}=\frac{1}{\psi (x)}\left[-\frac{\hbar ^2}{2m}\frac{d^2\psi (x)}{dx^2}+V(x)\psi (x)\right]$$
 
-This means that for a wave function $\psi(x)$ with a definite energy $E$, the wave function rotates in the complex plane according to its energy.
-<img width="1188" height="563" alt="wavefunction_ground_state" src="https://github.com/user-attachments/assets/c7634c03-64cb-4a97-bbab-cc67ba2a937a" />
+The left side is an equation in $t$, the right side an equation in $x$. Since $x$ and $t$ are independent variables, for this equality to hold for all $x$ and $t$, each side must equal a constant. Let's call that constant $C$. Solving these differential equations for the general solutions gives:
 
-<img width="1000" height="750" alt="wavefunction_3d_spiral" src="https://github.com/user-attachments/assets/9280a4c6-ff78-4523-855c-ce61179c54f2" />
+$$i\hbar \frac{1}{\phi (t)}\frac{d\phi (t)}{dt}=C\quad\Rightarrow\quad \phi (t)=e^{-iCt/\hbar}$$
 
+$$\frac{1}{\psi (x)}\left[-\frac{\hbar ^2}{2m}\frac{d^2\psi (x)}{dx^2}+V(x)\psi (x)\right]=E$$
 
-To fully supplement the latter part, I'd need to explain stationary states and the superposition of wave functions in detail. I'll write about that when I get the chance.
+The result is that the time part takes the form $e^{-iEt/\hbar}$, while $\psi(x)$ is determined by the potential $V(x)$.
 
-That's it for this post. Thank you for reading this long article.
+The time term of a wave is generally written as $e^{-i\omega t}$ (see the Complex Plane post).
+
+Also, for a wave with energy $E$, the relation between energy and angular frequency is:
+
+$$E=h\nu =\hbar \omega \quad\Rightarrow\quad \omega =\frac{E}{\hbar }$$
+
+So the time-dependent term for an energy-carrying wave can be written as:
+
+$$e^{-i\omega t}=e^{-i\frac{E}{\hbar }t}$$
+
+Does the similarity to the expression we obtained for the time part make sense? That constant $C$ turns out to be essentially the energy $E$ of the wave.
+
+Putting it all together:
+
+$$\phi (t)=e^{-iEt/\hbar }$$
+
+$$\Psi (x,t)=\psi (x)\,\phi (t)=\psi (x)\,e^{-iEt/\hbar }$$
+
+This means that if we have a spatial wave function $\psi(x)$ with definite energy $E$, multiplying it by the time factor $e^{-iEt/\hbar}$ makes the overall wave function rotate in the complex plane as time advances, with the rotation speed depending on the energy.
+
+That's it for this post. Thank you for reading all the way through.
 
 ---
 
-*※ This post was written based on my own understanding, so there may be errors. Questions are always welcome, so feel free to ask.*
-
-
+*This post reflects my own understanding, so there may be errors. Questions are always welcome, so feel free to ask.*
