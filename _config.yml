@@ -85,5 +85,3 @@ plugins:
   - jekyll-feed
   - jekyll-sitemap
   - jekyll-postfiles
-# force rebuild
-# rebuild
