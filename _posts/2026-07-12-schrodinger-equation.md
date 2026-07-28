@@ -80,6 +80,8 @@ The result is that the time part takes the form $e^{-iEt/\hbar}$, while $\psi(x)
 
 The time term of a wave is generally written as $e^{-i\omega t}$ (see the Complex Plane post).
 
+![Traveling wave](/assets/img/schrodinger_traveling_wave.gif)
+
 Also, for a wave with energy $E$, the relation between energy and angular frequency is:
 
 $$E=h\nu =\hbar \omega \quad\Rightarrow\quad \omega =\frac{E}{\hbar }$$
@@ -97,6 +99,8 @@ $$\phi (t)=e^{-iEt/\hbar }$$
 $$\Psi (x,t)=\psi (x)\,\phi (t)=\psi (x)\,e^{-iEt/\hbar }$$
 
 This means that if we have a spatial wave function $\psi(x)$ with definite energy $E$, multiplying it by the time factor $e^{-iEt/\hbar}$ makes the overall wave function rotate in the complex plane as time advances, with the rotation speed depending on the energy.
+
+![Wave function rotating in the complex plane](/assets/img/schrodinger_wavefunction_3d.gif)
 
 That's it for this post. Thank you for reading all the way through.
 
