@@ -3,6 +3,11 @@
   <a class="footer_item" href="javascript::void(0)">resume</a>
   <a class="footer_item" href="/feed.xml">rss</a>
   <span class="footer_item">&copy; {{ site.time | date: "%Y" }}</span>
+  <span class="footer_item" id="visitor-counter">
+    <span class="visitor-today">Today <span id="visitor-today">–</span></span>
+    <span class="visitor-sep"> · </span>
+    <span class="visitor-total">Total <span id="visitor-total">–</span></span>
+  </span>
   <small class="footer_copyright">
     <!-- Klisé Theme: https://github.com/piharpi/jekyll-klise -->
     <a
@@ -44,3 +49,21 @@
     });
   </script>
 {%- endif -%}
+<!-- GoatCounter visitor tracking -->
+<script data-goatcounter="https://oasisforhaanee.goatcounter.com/count"
+        async src="//gc.zgo.at/count.js"></script>
+<!-- Visitor counter display (reads /assets/stats.json updated by GitHub Actions) -->
+<script>
+  (function () {
+    var todayEl = document.getElementById('visitor-today');
+    var totalEl = document.getElementById('visitor-total');
+    if (!todayEl || !totalEl) return;
+    fetch('/assets/stats.json')
+      .then(function (r) { return r.json(); })
+      .then(function (d) {
+        if (typeof d.today === 'number') todayEl.textContent = d.today;
+        if (typeof d.total === 'number') totalEl.textContent = d.total;
+      })
+      .catch(function () {});
+  })();
+</script>

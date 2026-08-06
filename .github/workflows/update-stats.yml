@@ -1,0 +1,57 @@
+name: Update visitor stats
+
+on:
+  schedule:
+    - cron: '0 * * * *'   # every hour
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+jobs:
+  update-stats:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Fetch GoatCounter stats
+        env:
+          API_KEY: ${{ secrets.GOATCOUNTER_API_KEY }}
+        run: |
+          curl -s "https://oasisforhaanee.goatcounter.com/api/v0/stats/total" \
+            -H "Content-Type: application/json" \
+            -H "Authorization: Bearer ${API_KEY}" \
+            -o /tmp/gc_stats.json
+          python3 - <<'EOF'
+          import json, datetime, os
+
+          data = json.load(open('/tmp/gc_stats.json'))
+          total = data.get('total', 0)
+          today = 0
+          today_str = datetime.date.today().isoformat()
+          for s in data.get('stats', []):
+              if s.get('day') == today_str:
+                  today = s.get('daily', 0)
+          out = {
+              'today': today,
+              'total': total,
+              'updated': datetime.datetime.utcnow().isoformat() + 'Z',
+          }
+          with open('assets/stats.json', 'w') as f:
+              json.dump(out, f)
+          print('stats:', out)
+          EOF
+
+      - name: Commit and push if changed
+        run: |
+          if git diff --quiet assets/stats.json; then
+            echo "No changes to stats.json"
+          else
+            git config user.name "Haanee's Oasis"
+            git config user.email "kkul20235@users.noreply.github.com"
+            git add assets/stats.json
+            git commit -m "Update visitor stats [skip ci]"
+            git push
+            echo "Pushed updated stats"
+          fi
