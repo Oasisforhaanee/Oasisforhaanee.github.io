@@ -25,15 +25,11 @@ Unlike a matrix made of many numbers, the determinant of a matrix A comes out as
 
 $$A=\begin{pmatrix}a&b\\c&d\end{pmatrix}\ \ \ \ \ \ \ \ \ \ \det (A)=ad-bc$$
 
-![Computing the 2x2 determinant](/assets/img/det-2x2-calculation.png)
-
 The determinant of a 2x2 matrix is computed by starting with the number in row 1, column 1, multiplying the numbers on the diagonal going down to the right, and subtracting the product of the numbers on the opposite diagonal.
 
 ### 3x3 Matrix
 
 $$A=\begin{pmatrix}2&0&1\\1&1&0\\0&1&1\end{pmatrix}$$
-
-![Computing the 3x3 determinant](/assets/img/det-space-transformation.png)
 
 The case of the 3x3 determinant is a bit more complicated, but the principle is similar. Multiply all the numbers on the diagonal going down to the right (a, e, i), and also multiply the numbers in the other downward-right directions and the remaining numbers (c, d, h and b, f, g), add them all, and subtract the value obtained by multiplying and adding the numbers in the opposite diagonal direction.
 
@@ -41,9 +37,9 @@ Alternatively, it can also be computed as follows:
 
 $$A=\begin{pmatrix}a&b&c\\d&e&f\\g&h&i\end{pmatrix}\ \ \ \ \ \ \ \det \left(A\right)=a\begin{vmatrix}e&f\\h&i\end{vmatrix}-b\begin{vmatrix}d&f\\g&i\end{vmatrix}+c\begin{vmatrix}d&e\\g&h\end{vmatrix}$$
 
-![Computing the 3x3 determinant with 2x2 determinants](/assets/img/det-parallelogram-proof.png)
-
 This is a method of computing a 3x3 determinant using 2x2 matrices, computed over the numbers in one row of the matrix. In the example above, taking the a, b, c in row 1 as the reference, for a we multiply the determinant excluding a (figure 1 below) and multiply the sign corresponding to a's position (figure 4). Applying this same principle to a, b, c in the same row and adding them all gives the determinant.
+
+![Computing the 3x3 determinant with 2x2 determinants](/assets/img/det-cofactor-expansion.png)
 
 The determinant calculation method I just explained can compute higher-dimensional matrices like 4x4, 5x5, and so on as well. The determinant of a 4x4 matrix comes out by computing four 3x3 determinants, and the determinant of a 5x5 matrix can be computed with five 4x4 matrices. As you can see, the determinants of such high-dimensional matrices are very complicated to compute, but since most of the matrices we deal with are 2x2 or 3x3 matrices, knowing these two is no big problem.
 
