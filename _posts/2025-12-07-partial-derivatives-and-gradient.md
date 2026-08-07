@@ -2,7 +2,7 @@
 layout: post
 title: "Calculus — Partial Derivatives and the Gradient (plus the Chain Rule)"
 date: 2025-12-07 19:32:00 +0900
-categories: [mathematics, calculus]
+categories: [mathematics]
 tags: [partial derivative, gradient, chain rule]
 description: An intuitive introduction to partial derivatives, the geometric meaning of the gradient, and the chain rule — with contour plots and 3D surfaces.
 canonicalURL: "https://blog.naver.com/kkul20235/224101388177"

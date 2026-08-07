@@ -2,7 +2,7 @@
 layout: post
 title: "The 3D Schrödinger Equation in the Hydrogen Atom"
 date: 2026-07-31
-categories: [quantum-mechanics, physics]
+categories: [quantum-mechanics]
 tags: [Hydrogen Atom, Schrödinger Equation, Spherical Coordinates, Angular Equation, Radial Equation, Legendre Polynomials, Associated Laguerre Polynomials, Quantum Numbers]
 description: Applying the 3D Schrödinger equation to the hydrogen atom — solving the angular and radial equations via separation of variables to derive the wave functions and the energy levels that depend only on the principal quantum number n.
 canonicalURL: "https://blog.naver.com/kkul20235/224364088350"

@@ -2,7 +2,7 @@
 layout: post
 title:  "The Complex Plane"
 date:   2026-07-12 21:00:00 +0900
-categories: [mathematics, quantum-mechanics]
+categories: [mathematics]
 tags: [complex-plane, euler, taylor]
 description: A visual, intuitive introduction to the complex plane — Taylor series, Euler's identity, and how e^{iωt} draws a rotating spiral in space-time.
 usemathjax: true

@@ -2,7 +2,7 @@
 layout: post
 title: "Stationary States"
 date: 2026-07-21
-categories: [quantum-mechanics, physics]
+categories: [quantum-mechanics]
 tags: [Stationary State, Schrödinger Equation, Superposition, Wave Function]
 description: What a stationary state is — why the time-independent Schrödinger equation holds only for eigenstates of definite energy, and why superpositions of them still satisfy the time-dependent equation.
 canonicalURL: "https://blog.naver.com/kkul20235/224353189556"

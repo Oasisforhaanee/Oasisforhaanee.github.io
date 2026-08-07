@@ -2,7 +2,7 @@
 layout: post
 title: "Determinant"
 date: 2025-11-09T21:37:00+09:00
-categories: [linear-algebra, calculus]
+categories: [linear-algebra]
 tags: [Determinant, Linear Algebra, Area, Volume, Linear Transformation]
 description: "Geometric interpretation of determinants — the area/volume scaling factor of a space transformation, how to compute 2x2 and 3x3 determinants, and what det=0 means."
 canonicalURL: "https://blog.naver.com/kkul20235/224070231552"

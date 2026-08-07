@@ -2,7 +2,7 @@
 layout: post
 title: "Fourier Transform"
 date: 2026-07-26
-categories: [mathematical-methods, quantum-mechanics]
+categories: [mathematics]
 tags: [Fourier Transform, Orthogonality, Dirac Delta Function, Complex Exponentials, Quantum Mechanics]
 description: "Derivation of the Fourier transform from the orthogonality of complex exponentials — using the Dirac delta function and the normalization constant A."
 canonicalURL: "https://blog.naver.com/kkul20235/224358309175"

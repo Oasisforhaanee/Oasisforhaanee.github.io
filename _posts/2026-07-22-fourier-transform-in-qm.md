@@ -2,7 +2,7 @@
 layout: post
 title: "The Fourier Transform in Quantum Mechanics"
 date: 2026-07-22
-categories: [quantum-mechanics, physics]
+categories: [quantum-mechanics]
 tags: [Fourier Transform, Fourier Series, Wave Function, Stationary State]
 description: How the Fourier series leads to the Fourier transform, and why that matters in quantum mechanics for decomposing a wave function into stationary states of definite momentum.
 canonicalURL: "https://blog.naver.com/kkul20235/224354607368"

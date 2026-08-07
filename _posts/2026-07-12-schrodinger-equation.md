@@ -2,7 +2,7 @@
 layout: post
 title: "The Schrödinger Equation (Time-Independent & Time-Dependent)"
 date: 2026-07-12
-categories: [quantum-mechanics, physics]
+categories: [quantum-mechanics]
 tags: [Schrödinger Equation, Wave Function, Matter Wave]
 description: "What the time-independent and time-dependent Schrödinger equations mean, where they come from, and why wave-like matter in the microscopic world needs them."
 canonicalURL: "https://blog.naver.com/kkul20235/224343743129"
