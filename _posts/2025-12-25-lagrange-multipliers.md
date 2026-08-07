@@ -5,6 +5,7 @@ date: 2025-12-25 21:37:00 +0900
 categories: [mathematics, calculus]
 tags: [Lagrange multiplier, optimization, gradient]
 description: An intuitive, geometric explanation of the method of Lagrange multipliers for constrained optimization, with level surfaces and worked examples.
+canonicalURL: "https://blog.naver.com/kkul20235/224122558794"
 usemathjax: true
 comments: true
 
@@ -12,13 +13,17 @@ comments: true
 
 Hello everyone. Merry Christmas. Luckily it didn't snow. This will probably be my last post of 2025. I hope you all wrap up the remaining bit of 2025 well and start 2026 with energy.
 
-You've surely met, back in high school, problems of finding the maximum or minimum of one expression subject to some given condition. The arithmetic–geometric mean inequality is a classic example. With a slight twist on the AM–GM inequality, the statement "if $x+y+z$ has the value $s$, then the maximum of $xyz$ occurs when they are all equal, $x=y=z=s/3$" can be rephrased as follows.
+You've surely met, back in high school, problems of finding the maximum or minimum of one expression subject to some given condition. The arithmetic–geometric mean inequality is a classic example:
+
+$$\frac{x+y+z}{3}\ge \sqrt[3]{xyz}\ (x,y,z>0,\ 등호는\ x=y=z일때\ 성립)$$
+
+With a slight twist on the AM–GM inequality, the statement "if $x+y+z$ has the value $s$, then the maximum of $xyz$ occurs when they are all equal, $x=y=z=s/3$" can be derived.
 
 But the AM–GM inequality only applies to expressions of that particular form — it doesn't work for every equation. So how do we find the maximum or minimum of an expression under a given condition? The method that works for *any* expression and helps us find its max or min is the **method of Lagrange multipliers**. In this post we'll look at it.
 
 To give the conclusion up front: for a function $f(x_1,x_2,\dots,x_n)$ of independent variables, when the variables satisfy the condition $g(x_1,x_2,\dots,x_n)=k$, the condition on the variables $(x_1,x_2,\dots,x_n)$ under which $f$ can take an extremum is:
 
-$$\nabla f = \lambda\,\nabla g$$
+$$\nabla f=\lambda \nabla g$$
 
 Here the left side is the gradient of $f$, and the right side is the gradient of $g$ multiplied by the constant $\lambda$ (lambda). $\lambda$ indicates that the two gradient vectors are parallel. The points satisfying this equation are *candidates* for extrema of $f$. If $f$ is a continuous function that doesn't blow up to infinity, we can compare these candidate extrema and pick the largest as the maximum and the smallest as the minimum. Let's see why this works.
 
@@ -34,7 +39,9 @@ Now let's look at $f(x,y,z)$. Just like $g(x,y,z)=k$ above, there will be loci s
 
 Let's take an example. Suppose we want the max or min of $x+y+z$ subject to $x^2+y^2+z^2=1$. Then $g=k$ and $f$ are:
 
-$$g(x,y,z)=x^2+y^2+z^2=1,\qquad f(x,y,z)=x+y+z$$
+$$g(x,y,z)=x^2+y^2+z^2=1$$
+
+$$f(x,y,z)=x+y+z$$
 
 Now let's connect the two. Over the points on the locus satisfying $g(x,y,z)=k$, we must make the value of $f(x,y,z)$ as large or as small as possible. First, here is the locus of $g$.
 
@@ -64,19 +71,41 @@ The shape of a saddle point — the hyperbolic paraboloid $z=x^2-y^2$, with a mi
 
 Now we know that candidate extrema of $f$ and $g$ can appear. To find them we use the gradient. In the previous post (on partial derivatives and the gradient) we said the gradient vector is perpendicular to the level surface. $f$ and $g$ being tangent means that at the point of tangency the two gradient vectors are parallel — i.e., they stand in a constant-multiple proportion. In formula form:
 
-$$\nabla f = \lambda\,\nabla g$$
+$$\nabla f=\lambda \nabla g$$
 
 Here the upside-down triangle is the operator that computes the gradient. $\lambda$ tells us the two gradient vectors are constant multiples of each other. Let's solve the example above using this equation. The gradients of $f$ and $g$ are:
 
-$$\nabla f=(1,1,1),\qquad \nabla g=(2x,2y,2z)$$
+$$\nabla f=\left(\frac{\partial f}{\partial x},\frac{\partial f}{\partial y},\frac{\partial f}{\partial z}\right)=\left(1,\ 1,\ 1\right)$$
 
-So $(1,1,1)=\lambda(2x,2y,2z)$, which gives $x=y=z=1/(2\lambda)$. Substituting these into the constraint $g$ yields the value of $\lambda$. With $x^2+y^2+z^2=1$ we get $3\cdot(1/(2\lambda))^2=1$, hence $\lambda=\pm\sqrt{3}/2$, and $x=y=z=\pm 1/\sqrt{3}$.
+$$\nabla g=\left(\frac{\partial g}{\partial x},\frac{\partial g}{\partial y},\frac{\partial g}{\partial z}\right)=(2x,2y,2z)$$
+
+So $(1,1,1)=\lambda(2x,2y,2z)$, which gives:
+
+$$\nabla f=\lambda \nabla g=(1,1,1)=\lambda (2x,2y,2z)$$
+
+$$x=y=z=\frac{1}{2\lambda }$$
+
+Substituting these into the constraint $g$ yields the value of $\lambda$. With $x^2+y^2+z^2=1$ we get:
+
+$$\left(\frac{1}{2\lambda }\right)^2+\left(\frac{1}{2\lambda }\right)^2+\left(\frac{1}{2\lambda }\right)^2=1$$
+
+$$3\cdot \frac{1}{4\lambda ^2}=1\quad \Rightarrow \quad \lambda ^2=\frac{3}{4}$$
+
+$$\lambda =\pm \frac{\sqrt{3}}{2}$$
+
+And therefore:
+
+$$x=y=z=\pm \frac{1}{\sqrt{3}}$$
+
+$$f\left(\frac{1}{\sqrt{3}},\frac{1}{\sqrt{3}},\frac{1}{\sqrt{3}}\right)=\frac{3}{\sqrt{3}}=\sqrt{3}$$
+
+$$f\left(-\frac{1}{\sqrt{3}},-\frac{1}{\sqrt{3}},-\frac{1}{\sqrt{3}}\right)=-\frac{3}{\sqrt{3}}=-\sqrt{3}$$
 
 These values are the candidate extrema of $f$. Since this equation yields both the max and the min (because it's defined on a closed bounded set — the detailed explanation is omitted), we naturally find the maximum to be $\sqrt{3}$ and the minimum to be $-\sqrt{3}$.
 
-![The planes $x+y+z=-\sqrt{3}$ (left) and $x+y+z=\sqrt{3}$ (right); they are perfectly tangent to $g$.](/assets/img/Screenshot_20251225_213042_Chrome.jpg)
+![The planes $x+y+z=-\sqrt3$ (left) and $x+y+z=\sqrt3$ (right); they are perfectly tangent to $g$.](/assets/img/Screenshot_20251225_213042_Chrome.jpg)
 
-The graphs of $x+y+z=-\sqrt{3}$ (left) and $x+y+z=\sqrt{3}$ (right); you can see they are perfectly tangent to $g$.
+The graphs of $x+y+z=-\sqrt3$ (left) and $x+y+z=\sqrt3$ (right); you can see they are perfectly tangent to $g$.
 
 The core of the Lagrange multiplier method — for finding the max of an arbitrary expression under constraints — is that an extremum can occur where the constraint locus and the level surface of the expression are tangent. Since tangency means the gradient vectors are parallel, we solve using this fact. That is the method of Lagrange multipliers.
 
