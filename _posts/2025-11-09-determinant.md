@@ -31,7 +31,7 @@ The determinant of a 2x2 matrix is computed by starting with the number in row 1
 
 ### 3x3 Matrix
 
-$$A=\begin{pmatrix}2&0&1\\1&1&0\\0&1&1\end{pmatrix}\ \ \ \ \ $$
+$$A=\begin{pmatrix}2&0&1\\1&1&0\\0&1&1\end{pmatrix}$$
 
 ![Computing the 3x3 determinant](/assets/img/det-space-transformation.png)
 
