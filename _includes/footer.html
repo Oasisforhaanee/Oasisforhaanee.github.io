@@ -58,7 +58,7 @@
     var todayEl = document.getElementById('visitor-today');
     var totalEl = document.getElementById('visitor-total');
     if (!todayEl || !totalEl) return;
-    fetch('/assets/stats.json')
+    fetch('/assets/stats.json?ts=' + Date.now(), {cache: 'no-store'})
       .then(function (r) { return r.json(); })
       .then(function (d) {
         if (typeof d.today === 'number') todayEl.textContent = d.today;

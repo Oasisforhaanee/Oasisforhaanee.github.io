@@ -24,19 +24,37 @@ jobs:
             -H "Authorization: Bearer ${API_KEY}" \
             -o /tmp/gc_stats.json
           python3 - <<'EOF'
-          import json, datetime, os
+          import json, datetime
 
           data = json.load(open('/tmp/gc_stats.json'))
           total = data.get('total', 0)
+
+          # GoatCounter aggregates by UTC day. The site owner is in KST (UTC+9),
+          # so "today" should be computed in KST. A KST day spans:
+          #   UTC [D-1 15:00, D 15:00)  where D is the KST date.
+          # We sum hourly buckets within that window.
+          KST = datetime.timezone(datetime.timedelta(hours=9))
+          now_kst = datetime.datetime.now(KST)
+          kst_today = now_kst.date()
+
           today = 0
-          today_str = datetime.date.today().isoformat()
-          for s in data.get('stats', []):
-              if s.get('day') == today_str:
-                  today = s.get('daily', 0)
+          stats = data.get('stats', [])
+          by_day = {s.get('day'): s for s in stats}
+          # UTC day D covers KST D 09:00 ~ D+1 09:00.
+          # KST day D covers: UTC D-1 15:00-24:00 (hours 15-23) + UTC D 00:00-15:00 (hours 0-14)
+          prev_day = (kst_today - datetime.timedelta(days=1)).isoformat()
+          cur_day = kst_today.isoformat()
+          if prev_day in by_day:
+              hourly = by_day[prev_day].get('hourly', [])
+              today += sum(hourly[15:24])
+          if cur_day in by_day:
+              hourly = by_day[cur_day].get('hourly', [])
+              today += sum(hourly[0:15])
+
           out = {
               'today': today,
               'total': total,
-              'updated': datetime.datetime.utcnow().isoformat() + 'Z',
+              'updated': datetime.datetime.now(datetime.timezone.utc).isoformat() + 'Z',
           }
           with open('assets/stats.json', 'w') as f:
               json.dump(out, f)
