@@ -15,7 +15,7 @@ In this post, we'll look at the most widely used notation in quantum mechanics: 
 
 First, please read the post below:
 
-[The Inner Product and Orthogonality of Functions](https://blog.naver.com/kkul20235/224376331608)
+[Linear Dependence, Linear Independence, and Orthogonality](https://oasisforhaanee.github.io/linear-dependence-independence-and-orthogonality/)
 
 ## Bra-ket notation
 
@@ -25,7 +25,7 @@ When we have two functions f(x) and g(x), their inner product is expressed as:
 
 $$\int _{-\infty }^{\infty }f^*(x)g(x)dx$$
 
-At this point, each function can be transformed into the form of an infinite-dimensional vector (refer to the inner product and orthogonality of functions post). This infinite-dimensional vector space is called a Hilbert space.
+At this point, each function can be transformed into the form of an infinite-dimensional vector (refer to [the inner product and orthogonality of functions post](https://oasisforhaanee.github.io/inner-product-and-orthogonality-of-functions/)). This infinite-dimensional vector space is called a Hilbert space.
 
 $$g\rightarrow \begin{pmatrix}g(x_1)\\g(x_2)\\g(x_3)\\\vdots \end{pmatrix}$$
 
