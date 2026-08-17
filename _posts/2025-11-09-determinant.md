@@ -77,7 +77,7 @@ Since det can also come out as a negative number, its absolute value |det(A)| ca
 
 If there's a matrix A with determinant 3 and a matrix B with determinant 4, we can see that the determinant of AB is 12. If the space grows by 4 times through B's operation, then when operation A is applied afterward it grows by 3 times, becoming 12 times. We can also see that the determinant of BA is 12, just like AB.
 
-There are also cases where the determinant is 0. When a matrix transformation compresses to a lower dimension — for example, from 3D to 2D, or from 2D to 1D — the determinant comes out as 0. This happens when linearly dependent vectors are included. If you're curious, see the Bonus: Determinant section of my [Orthogonality](https://oasisforhaanee.github.io/orthogonality/) post.
+There are also cases where the determinant is 0. When a matrix transformation compresses to a lower dimension — for example, from 3D to 2D, or from 2D to 1D — the determinant comes out as 0. This happens when linearly dependent vectors are included. If you're curious, see the Bonus: Determinant section of my [Linear Dependence, Linear Independence, and Orthogonality](https://oasisforhaanee.github.io/linear-dependence-independence-and-orthogonality/) post.
 
 In this post, we looked at the definition and meaning of the determinant. I'll keep posting various and interesting posts about calculus. Thanks for reading the long post.
 
