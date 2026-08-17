@@ -21,7 +21,7 @@ Let's find out why they're expressed this way.
 
 ## Orthogonality
 
-It would help your understanding to read the [previous post on orthogonality](https://oasisforhaanee.github.io/orthogonality/) first.
+It would help your understanding to read [the inner product and orthogonality of functions](https://oasisforhaanee.github.io/inner-product-and-orthogonality-of-functions/) first.
 
 The inner product of functions is expressed as follows:
 
