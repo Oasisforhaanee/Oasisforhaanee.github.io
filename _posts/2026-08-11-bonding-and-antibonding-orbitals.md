@@ -19,8 +19,8 @@ I remember being told, "oh there's this thing" as a freshman, and then having to
 
 So in this post, I'll try to explain the meaning of bonding orbitals and antibonding orbitals using the Schrödinger equation, as thoroughly as I can based on my understanding. You'll need to read the posts below first to understand this one:
 
-- [Eigenvalue & Eigenvector](https://blog.naver.com/kkul20235/224221436871)
-- [Orthogonality](https://oasisforhaanee.github.io/orthogonality/) — linear algebra concept
+- [Eigenvalue & Eigenvector](https://oasisforhaanee.github.io/eigenvalue-and-eigenvector/)
+- [The Inner Product and Orthogonality of Functions](https://oasisforhaanee.github.io/inner-product-and-orthogonality-of-functions/) — linear algebra concept
 - [Schrödinger Equation](https://oasisforhaanee.github.io/schrodinger-equation/) — the concept of the Schrödinger equation
 - [Stationary State](https://oasisforhaanee.github.io/stationary-state/)
 - [Hydrogen Atom Orbitals](https://oasisforhaanee.github.io/hydrogen-atom-orbitals/) — the concept of orbitals
