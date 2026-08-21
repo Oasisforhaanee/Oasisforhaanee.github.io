@@ -20,21 +20,35 @@ jobs:
           API_KEY: ${{ secrets.GOATCOUNTER_API_KEY }}
         run: |
           python3 - <<'EOF'
-          import json, os, datetime, urllib.request
+          import json, os, datetime, time, urllib.request
 
           key = os.environ.get("API_KEY", "")
           if not key:
               print("ERROR: GOATCOUNTER_API_KEY secret is not set")
               raise SystemExit(1)
 
-          req = urllib.request.Request(
-              "https://oasisforhaanee.goatcounter.com/api/v0/stats/total",
-              headers={"Authorization": "Bearer " + key, "Content-Type": "application/json"})
-          try:
-              with urllib.request.urlopen(req, timeout=30) as r:
-                  data = json.load(r)
-          except Exception as e:
-              print("ERROR: GoatCounter API call failed:", e)
+          # ALL-TIME cumulative total: /stats/total defaults to the last 7 days,
+          # which makes the footer "Total N" shrink as the window rolls. Pass an
+          # early start so total = lifetime pageviews.
+          url = ("https://oasisforhaanee.goatcounter.com/api/v0/stats/total"
+                 "?start=2000-01-01T00:00:00Z")
+
+          data = None
+          last_err = None
+          for attempt in range(4):   # retry transient network errors
+              try:
+                  req = urllib.request.Request(
+                      url, headers={"Authorization": "Bearer " + key,
+                                    "Content-Type": "application/json"})
+                  with urllib.request.urlopen(req, timeout=30) as r:
+                      data = json.load(r)
+                  break
+              except Exception as e:
+                  last_err = e
+                  print(f"WARNING: attempt {attempt+1}/4 failed: {e}")
+                  time.sleep(5 * (attempt + 1))
+          if data is None:
+              print("ERROR: GoatCounter API call failed:", last_err)
               raise SystemExit(1)   # do NOT overwrite stats.json with zeros
 
           if not isinstance(data, dict) or "total" not in data:
