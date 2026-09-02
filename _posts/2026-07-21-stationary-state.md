@@ -8,16 +8,18 @@ description: What a stationary state is — why the time-independent Schrödinge
 canonicalURL: "https://blog.naver.com/kkul20235/224353189556"
 usemathjax: true
 comments: true
+
 ---
 
 Reading the post below first will help your understanding:
-["The Schrödinger Equation (Time-Independent & Time-Dependent)"](https://oasisforhaanee.github.io/schrodinger-equation/).
 
-We previously said that a wave function that changes with time can be expressed as the following:
+["The Schrödinger Equation (Time-Independent & Time-Dependent)"](https://oasisforhaanee.github.io/schrodinger-equation/)
+
+Previously we said that a time-dependent wave function can be written as
 
 $$\Psi (x,t)=\psi (x)\phi (t)$$
 
-And we explained that this produces a time part and a space part each with a specific energy $E$.
+and that this produces a time part and a space part, each with a specific energy $E$.
 
 **Time part →**
 
@@ -27,19 +29,17 @@ $$\phi (t)=e^{-iEt/\hbar }$$
 
 $$-\frac{\hbar ^2}{2m}\frac{d^2\psi (x)}{dx^2}+V(x)\psi (x)=E\psi (x)$$
 
-But this equation doesn't hold for every wave function the way the time-dependent Schrödinger equation does. Let's go back to the time-dependent Schrödinger equation.
+But this equation does not hold for every wave function the way the time-dependent Schrödinger equation does. Let us return to the time-dependent Schrödinger equation.
 
 $$i\hbar \frac{\partial \psi (x,t)}{\partial t}=-\frac{\hbar ^2}{2m}\frac{\partial ^2\psi (x,t)}{\partial x^2}+V(x,t)\psi (x,t)$$
 
-This is the time-dependent Schrödinger equation, and it holds for *any* wave function. Just as we said the Schrödinger equation is like $F=ma$, the equation of motion applied to waves, this equation holds for all waves.
+This equation holds for *any* wave function. Just as the Schrödinger equation is the analogue of $F=ma$ for waves, this equation applies to all waves.
 
-And when we derived the time-independent Schrödinger equation from this equation, we made one important assumption.
-
-Namely,
+In deriving the time-independent Schrödinger equation from it, we made one important assumption:
 
 $$\Psi (x,t)=\psi (x)\phi (t)$$
 
-— the assumption that the wave function can be split into a time part and a space part multiplied together. And when we assumed this, we got the equation for a wave function with a specific energy:
+—the assumption that the wave function separates into a product of a time part and a space part. With this assumption, we obtained the equation for a wave function of definite energy:
 
 $$i\hbar \frac{1}{\phi (t)}\frac{d\phi (t)}{dt}=\frac{1}{\psi (x)}\left[-\frac{\hbar ^2}{2m}\frac{d^2\psi (x)}{dx^2}+V(x)\psi (x)\right]=E$$
 
@@ -47,52 +47,54 @@ $$-\frac{\hbar ^2}{2m}\frac{d^2\psi (x)}{dx^2}+V(x)\psi (x)=E\psi (x)$$
 
 $$\phi (t)=e^{-iEt/\hbar }$$
 
-So for example, what if we have a wave function $\psi_1$ with energy $E_1$ and a wave function $\psi_2$ with energy $E_2$? With $E_1<E_2$, the wave functions would be:
+Consider, then, a wave function $\psi_1$ of energy $E_1$ and a wave function $\psi_2$ of energy $E_2$, with $E_1<E_2$. They are
 
 $$\Psi _1(x,t)=\psi _1(x)\cdot e^{-iE_1t/\hbar }$$
 
 $$\Psi _2(x,t)=\psi _2(x)\cdot e^{-iE_2t/\hbar }$$
 
-For a wave function that is a superposition of these, we can no longer use separation of variables.
+For a wave function that is a superposition of these, separation of variables no longer applies:
 
 $$\Psi (x,t)=\psi _1(x)e^{-iE_1t/\hbar }+\psi _2(x)e^{-iE_2t/\hbar }\quad \to \quad \Psi (x,t)\ne \psi (x)\phi (t)$$
 
-In other words, separation of variables works only for wave functions with a *specific* energy, and its result — the time-independent Schrödinger equation — holds only for wave functions with a specific energy. We call this wave function with a specific energy a wave function in a **stationary state**.
+In other words, separation of variables works only for wave functions of *definite* energy, and its result—the time-independent Schrödinger equation—holds only for wave functions of definite energy. Such a wave function is said to describe a **stationary state**.
 
-So how is it that the time-dependent Schrödinger equation holds for *all* wave functions? It's because the time-dependent Schrödinger equation is a *linear* equation. Let's suppose $\psi_1(x,t)$ and $\psi_2(x,t)$ each satisfy the Schrödinger equation.
+How, then, does the time-dependent Schrödinger equation hold for *all* wave functions? Because it is a *linear* equation. Suppose $\psi_1(x,t)$ and $\psi_2(x,t)$ each satisfy the Schrödinger equation.
 
 $$i\hbar \frac{\partial }{\partial t}\psi _1(x,t)=-\frac{\hbar ^2}{2m}\frac{\partial ^2\psi _1(x,t)}{\partial x^2}+V(x,t)\psi _1(x,t)\quad \text{--- (1)}$$
 
 $$i\hbar \frac{\partial }{\partial t}\psi _2(x,t)=-\frac{\hbar ^2}{2m}\frac{\partial ^2\psi _2(x,t)}{\partial x^2}+V(x,t)\psi _2(x,t)\quad \text{--- (2)}$$
 
-Substituting the superposition state $\psi_1(x,t)+\psi_2(x,t)$ into the Schrödinger equation, the left-hand side becomes:
+Substituting the superposition $\psi_1(x,t)+\psi_2(x,t)$ into the Schrödinger equation, the left-hand side becomes
 
 $$i\hbar \frac{\partial }{\partial t}\left(\psi _1(x,t)+\psi _2(x,t)\right)=i\hbar \frac{\partial }{\partial t}\psi _1(x,t)+i\hbar \frac{\partial }{\partial t}\psi _2(x,t)$$
 
-The right-hand side becomes:
+and the right-hand side becomes
 
 $$=-\frac{\hbar ^2}{2m}\frac{\partial ^2}{\partial x^2}\left(\psi _1+\psi _2\right)+V(x,t)\left(\psi _1+\psi _2\right)$$
 
 $$=\left(-\frac{\hbar ^2}{2m}\frac{\partial ^2\psi _1}{\partial x^2}+V(x,t)\psi _1\right)+\left(-\frac{\hbar ^2}{2m}\frac{\partial ^2\psi _2}{\partial x^2}+V(x,t)\psi _2\right)$$
 
-So plugging the superimposed $\psi(x,t)=\psi_1(x,t)+\psi_2(x,t)$ into the time-dependent Schrödinger equation gives the same result as adding equations (1) and (2), so it holds just the same.
+So substituting the superposition $\psi(x,t)=\psi_1(x,t)+\psi_2(x,t)$ into the time-dependent Schrödinger equation gives the same result as adding equations (1) and (2); the superposition is therefore itself a solution.
 
-What this means is that if there's a wave function that is a superposition of many stationary states of various energies, since each individual stationary state is a solution of the Schrödinger equation, the superimposed wave function is also a solution of the Schrödinger equation.
+The conclusion is that if a wave function is a superposition of many stationary states of various energies, then—since each stationary state is a solution of the Schrödinger equation—the superposition is also a solution.
 
-This explanation got a bit ambiguous, so let me give an example with the free-electron case, $V(x)=0$. A wave with wave number $k$ has the following energy:
+To make this concrete, consider the free-electron case, $V(x)=0$. A wave of wave number $k$ has energy
 
 $$E_k=\frac{\hbar ^2k^2}{2m}$$
 
-This means only a wave with a constant wave number — that is, a constant wavelength — has a specific energy. A wave function that is a superposition of them has an energy that varies depending on the degree of superposition. I'll cover this content more later, so I'll stop here.
+This means that only a wave of constant wave number—that is, constant wavelength—has a definite energy. A superposition of such waves has an energy that varies with the degree of superposition. (This will be revisited later.)
 
 To summarize:
 
-- The time-independent Schrödinger equation holds only for wave functions with a specific energy — that is, stationary states.
-- A wave function that is a superposition of stationary states also satisfies the time-dependent Schrödinger equation.
+- The time-independent Schrödinger equation holds only for wave functions of definite energy—that is, stationary states.
+- A wave function that is a superposition of stationary states still satisfies the time-dependent Schrödinger equation.
 - A superimposed wave function has an energy that varies with the degree of superposition.
 
-To understand what point 3 means, you need to learn about the Fourier transform.
+Understanding the third point requires the Fourier transform, which is the subject of a later post.
 
-That's it for this post. Thank you for reading all the way through.
+That is it for this post. Thank you for reading.
+
+---
 
 *This post reflects my own understanding, so there may be errors. Questions are always welcome, so feel free to ask.*
