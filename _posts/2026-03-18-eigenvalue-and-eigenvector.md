@@ -11,38 +11,40 @@ comments: true
 permalink: /eigenvalue-and-eigenvector/
 ---
 
-If you've studied linear algebra, or engineering mathematics, you must have heard of eigenvalues and eigenvectors. The form looks like this:
+Anyone who has studied linear algebra or engineering mathematics will have encountered eigenvalues and eigenvectors. The defining equation has the form
 
-$$A\mathbf{v=\lambda \mathbf{v}}$$
+$$A\mathbf{v}=\lambda \mathbf{v}$$
 
-$v$ is the eigenvector, $\lambda$ is the eigenvalue, and A is a linear transformation. I also first came across this equation around my sophomore year when I took Engineering Mathematics 1, and back then I memorized problem-solving procedures without knowing what it meant and took the exam.
+Here $\mathbf{v}$ is the eigenvector, $\lambda$ is the eigenvalue, and $A$ is a linear transformation. This equation is frequently presented as a computational procedure, without much attention to what it means.
 
-Anyway, eigenvalues and eigenvectors appear frequently not only in engineering mathematics but in various fields. In particular, in quantum mechanics, the famous Schrödinger equation has exactly the same form, $H\psi(x)=E\psi(x)$.
+Eigenvalues and eigenvectors appear not only in engineering mathematics but across many fields. In quantum mechanics in particular, the Schrödinger equation has exactly this form: $H\psi(x)=E\psi(x)$.
 
-In this post, let's quickly look at what eigenvalues and eigenvectors mean.
+This post examines what eigenvalues and eigenvectors mean.
 
-To give the conclusion first: when a linear transformation A is applied, the vectors that become scalar multiples of the original vector are eigenvectors, and that scalar value is the eigenvalue.
+To state the conclusion first: when a linear transformation $A$ is applied, the vectors that are mapped to scalar multiples of themselves are the eigenvectors, and the corresponding scalar factors are the eigenvalues.
 
-Actually, this isn't a hidden meaning — the equation directly shows it. The equation $Av = \lambda v$ is an equation that finds the cases where, when the linear transformation matrix A is applied to a vector $v$, the transformed $v$ is scaled by $\lambda$ times.
+This is not a hidden meaning; the equation states it directly. The equation $A\mathbf{v} = \lambda \mathbf{v}$ asks for the vectors $\mathbf{v}$ such that applying the transformation $A$ produces the same vector scaled by $\lambda$.
 
-Let's look a bit more closely. As I mentioned in a previous post ([the calculus-matrix post](https://oasisforhaanee.github.io/matrix/)), a linear transformation A can be understood as the whole space being twisted uniformly. Let me give an example:
+Let us look more closely. As discussed in an [earlier post on matrices](https://oasisforhaanee.github.io/matrix/), a linear transformation $A$ can be understood as a uniform deformation of the entire space. Consider the example
 
 $$\begin{bmatrix}2&0\\0&1\end{bmatrix}$$
 
-What this matrix means is: scale the x-axis components by 2, and leave the y-axis components as they are.
+This matrix scales the $x$-components by 2 and leaves the $y$-components unchanged.
 
 $$\begin{bmatrix}3&0\\0&2\end{bmatrix}\begin{bmatrix}2\\1\end{bmatrix}=\begin{bmatrix}6\\2\end{bmatrix}$$
 
-As you can see, applying the matrix to the vector $[2;1]$, the x-axis component grew threefold to 6, and the y-axis component doubled to 2. Whatever vector in 2D space you apply this matrix to, all x-axis components will grow 3 times and y-axis components 2 times.
+Applying this second matrix to the vector $(2,1)$, the $x$-component is tripled to 6 and the $y$-component is doubled to 2. Whatever vector in the plane this matrix is applied to, all $x$-components are scaled by 3 and all $y$-components by 2.
 
-Then let's imagine. Let's stretch the xy graph plane we know, with the points on it growing 3 times in the x-axis direction and 2 times in the y-axis direction. Then the points (vectors) on it will each move — just like the vector $[2;1]$ moved to $[6;2]$ earlier. At that time, you can intuitively know that some vectors will only change in magnitude and not in direction. And such vectors really do exist.
+Now imagine the $xy$-plane itself being stretched, with every point moving to 3 times its $x$-coordinate and 2 times its $y$-coordinate. Every point (vector) in the plane moves—just as $(2,1)$ moved to $(6,2)$. It is intuitively clear that certain vectors will change only in magnitude, not in direction. Such vectors do indeed exist.
 
-Those vectors are the eigenvectors we're dealing with in this post. When a linear transformation is applied, despite the change in space, the vector whose components are only scaled as they are is an eigenvector. And that scale factor is the eigenvalue. When I realized this meaning, my mind was completely blown. Why did I just write down equations without thinking about understanding such a simple meaning...
+These are the eigenvectors. Under a linear transformation, despite the deformation of the space, an eigenvector is a vector whose components are merely scaled. The scale factor is the eigenvalue.
 
-So why do eigenvalues and eigenvectors play such an important role? When the space is transformed, we said eigenvectors only change in scale. What does this resemble? These eigenvectors can serve as a basis for the linearly transformed matrix. Since only the scale changes when a linear transformation is applied, they can serve as a basis. For example, if the eigenvectors are A and B and the eigenvalues are $p$ and $q$, then if the original vector $v$ is expressed as $v=A+B$, after the linear transformation $v$ becomes $v'=pA+qB$. Of course, this requires the condition that distinct eigenvectors matching the dimension of the matrix exist.
+Why do eigenvalues and eigenvectors play such an important role? We have said that eigenvectors are only rescaled when the space is transformed. This is exactly the property that allows them to serve as a **basis** for the transformation. Because a linear transformation only rescales them, a vector expressed in the eigenvector basis transforms in a particularly simple way. For example, if the eigenvectors are $\mathbf{A}$ and $\mathbf{B}$ with eigenvalues $p$ and $q$, and the original vector is $\mathbf{v}=\mathbf{A}+\mathbf{B}$, then after the transformation $\mathbf{v}$ becomes $\mathbf{v}'=p\mathbf{A}+q\mathbf{B}$. This requires, of course, that there exist as many linearly independent eigenvectors as the dimension of the matrix.
 
-Additionally, understanding eigenvectors this way, you can also intuitively understand that $\det(A)$ is expressed as the product of the eigenvalues. Understanding with the 2D case: suppose there's a 2D shape on the coordinate plane. When a linear transformation A is applied, its scaling factor is $\det(A)$, and this applies everywhere in that space, as covered in a previous post ([the calculus-determinant post](https://oasisforhaanee.github.io/2025-11-09-determinant/)). Then looking at this from the eigenvalue perspective, the area formed by those eigenvectors is scaled by the product of the eigenvalues under the linear transformation, so you can immediately see that $\det(A)$ is expressed as the product of A's eigenvalues.
+This viewpoint also makes it intuitively clear why $\det(A)$ equals the product of the eigenvalues. In the two-dimensional case, consider a region in the plane. Under the linear transformation $A$, its area is scaled by $\det(A)$, and this holds uniformly throughout the space, as covered in an [earlier post on the determinant](https://oasisforhaanee.github.io/2025-11-09-determinant/). From the eigenvalue perspective, the area of the parallelogram spanned by the eigenvectors is scaled by the product of the eigenvalues under the transformation. It follows immediately that $\det(A)$ is the product of the eigenvalues of $A$.
 
-In this post, we dealt with the meaning of eigenvectors and eigenvalues, which are very important concepts in linear algebra. Eigenvalues are a very important concept that comes out as the value when an operator is applied, especially in quantum mechanics, so if you're studying physics, it'd be good to know them. Thanks for reading the long post.
+This post has covered the meaning of eigenvectors and eigenvalues, which are central concepts in linear algebra. Eigenvalues are particularly important in quantum mechanics, where they emerge as the measured values when an operator acts on a state; a solid grasp of them is valuable for anyone studying physics.
 
-※This post reflects my own understanding, so there may be errors. Questions are always welcome, so feel free to ask.
+---
+
+This post reflects my own understanding, so there may be errors. Questions are always welcome, so feel free to ask.
