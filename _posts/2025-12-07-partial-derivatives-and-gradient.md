@@ -11,71 +11,69 @@ comments: true
 
 ---
 
-Hello everyone, it's been a while. We had the first snow yesterday. Snow... it was lovely out in society, but here I never want to see it again... honestly it's a bit sad. Seoul got hit with a heavy snowfall, so please be careful on the icy roads and stay warm.
+This post examines two concepts that appear constantly in multivariable calculus: the **partial derivative** and the **gradient**.
 
-In this post we'll look at two concepts that come up constantly in calculus: the **partial derivative** and the **gradient**.
+To state the conclusions up front: a partial derivative is the derivative of a multivariable function taken with respect to one chosen variable while all other variables are held fixed as constants.
 
-To give the conclusion up front: a partial derivative means taking the derivative of a multivariable function while treating one specific variable as the variable and holding all the others fixed as constants.
-
-The gradient at an arbitrary point $a$ is the normal vector that is perpendicular to the level set of the function at $a$ (in 2D, the curve satisfying $f(x,y)=c$; in 3D, the surface satisfying $f(x,y,z)=c$).
+The gradient at a point $a$ is the normal vector perpendicular to the level set of the function through $a$ (in two dimensions, the curve $f(x,y)=c$; in three dimensions, the surface $f(x,y,z)=c$).
 
 ## Independent and dependent variables
 
-In what follows we'll deal with multivariable functions made of several independent variables, so let's first clarify what an independent variable is, and what the opposite — a dependent variable — is.
+Since we will be working with multivariable functions of several independent variables, we first clarify what an independent variable is, and what its counterpart—a dependent variable—is.
 
-A function built from independent variables is a little different from the functions we usually know. Let me give an example.
+A function built from independent variables behaves somewhat differently from the single-variable functions we are accustomed to. Consider the following example.
 
 $$f\left(x,y\right)=x^2+y^2$$
 
 $$r^2=x^2+y^2$$
 
-The function $f(x,y)$ above is a multivariable function of two variables, $x$ and $y$, while the equation below is the familiar equation of a circle. $f$ looks similar to the circle equation, but it is different. In the circle equation, as the absolute value of $x$ grows the absolute value of $y$ shrinks — $x$ and $y$ are in a *dependent* relationship where each affects the other. But for the function $f$, over the points of the $xy$-coordinate plane, the $x$ and $y$ values do not influence each other — they stand in an *independent* relationship. When $x$ or $y$ changes, only the value of the function $f$ changes.
+The first expression, $f(x,y)$, is a function of two variables, $x$ and $y$. The second is the familiar equation of a circle. Although $f$ resembles the circle equation, the two are different. In the circle equation, as $|x|$ increases, $|y|$ must decrease: $x$ and $y$ are *dependent* on one another. For the function $f$, by contrast, $x$ and $y$ range freely over the coordinate plane without constraining each other: they are *independent*. When $x$ or $y$ changes, only the value of $f$ changes.
 
-A function composed of such independent variables is what we call a **multivariable function**.
+A function of independent variables of this kind is called a **multivariable function**.
 
-Still, the two expressions are related. In the function $f$, the locus of points where $f$ takes the value $r^2$ coincides with the solution of the circle equation. The set of points where $f$ has the same value $r^2$ can be viewed as a **level curve** in 2D.
+The two expressions are nonetheless related. The set of points where $f$ takes the value $r^2$ coincides with the solution set of the circle equation. The set of points on which $f$ has the constant value $r^2$ is a **level curve** in two dimensions.
 
 ![A contour plot draws the level curves that connect points of equal height.](/assets/img/img_page07.jpg)
 
-A contour plot also draws level curves that connect points of equal height. To help build intuition, we can use the idea of a **contour plot**. A contour connects points that share the same height. Joining points of equal height gives us closed curves like those in the figure above. The same holds for $f(x,y)=x^2+y^2$. If we place $f(x,y)$ along the height of the $z$-axis in 3D, we get the graph shown below.
+The notion of a **contour plot** is a useful aid to intuition. A contour line connects points of equal height; joining such points produces closed curves like those in the figure above. The same construction applies to $f(x,y)=x^2+y^2$. If we plot $f(x,y)$ as the height along the $z$-axis in three dimensions, we obtain the surface shown below.
 
 ![The graph of $z=x^2+y^2$.](/assets/img/Screenshot_20251207_114700_KakaoTalk.jpg)
 
 The graph of $z=x^2+y^2$
 
-Here, the locus $r^2=x^2+y^2$ is the collection of points where $z=r^2$. By the same logic as the contour plot, if we look for the points at height $z=r^2$, we recover the circle of radius $r$ that we know well.
+Here, the locus $r^2=x^2+y^2$ is the set of points at height $z=r^2$. By the same reasoning as for the contour plot, the points at height $z=r^2$ form the circle of radius $r$.
 
 ## Partial derivative
 
-A partial derivative means, for an expression made of several variables, treating all variables except one as constants and differentiating the function with respect to that single variable to obtain its instantaneous rate of change. It is used to find the rate of change with respect to each variable in a multivariable function whose variables act independently.
+A partial derivative of an expression in several variables is obtained by treating all variables except one as constants and differentiating with respect to the remaining variable, yielding the instantaneous rate of change in that variable. It is used to find the rate of change with respect to each variable separately in a multivariable function whose variables act independently.
 
 $$\frac{\partial f}{\partial x}\ \ \ \ \ \ \ \ \ f_x$$
 
-The partial derivative symbol uses a rounded "d" on the left, or a superscript notation on the right.
+The partial derivative is denoted either with the rounded "$\partial$" symbol (left) or with a subscript (right).
 
 ### The geometric meaning of a partial derivative
 
-The multivariable function of $x$ and $y$, $z=x^2+xy+y^2$:
+Consider the function of two variables $z=x^2+xy+y^2$:
 
 ![The geometric meaning of a partial derivative.](/assets/img/images_swan9405_post_cb6f5f98-1c93-4aaf-a4ee-a5bead9115d4_image.png)
 
-The graph above is the 3D plot of the multivariable function $z=x^2+xy+y^2$. If you were asked to draw a tangent line at some point, the 3D surface would let you draw infinitely many tangents. To get the derivative in a particular direction, you must fix the direction — and that's where the partial derivative comes in.
+The figure shows the three-dimensional graph of $z=x^2+xy+y^2$. At any point on this surface there are infinitely many tangent lines, so "the slope" at a point is not well defined until a direction is fixed. The partial derivative is precisely the derivative in a fixed coordinate direction.
 
-So what does the partial derivative mean on the graph? The red line in the figure above is the graph obtained by treating the remaining variable $y$ as a constant, leaving only $x$ as the variable (in the figure, $y$ is fixed at $y=1$). The derivative — the slope — of this red line is the partial derivative of the graph with respect to $x$. In other words, substituting $y=1$ into $x^2+xy+y^2$ gives $x^2+x+1$, and differentiating with respect to $x$ yields $2x+1$.
+What does the partial derivative look like on the graph? The red curve in the figure is obtained by holding $y$ fixed as a constant (here $y=1$) and letting only $x$ vary. The slope of this red curve is the partial derivative of the surface with respect to $x$. Concretely, substituting $y=1$ into $x^2+xy+y^2$ gives $x^2+x+1$, and differentiating with respect to $x$ yields $2x+1$.
 
-So for a multivariable function whose variables are independent, the partial derivative is simply a matter of treating the remaining variables as constants and differentiating. But if the variables are *dependent* — for example, when $x$ and $y$ each affect one another's values — you must use the **chain rule** to take the partial derivative.
+For a multivariable function whose variables are independent, then, the partial derivative is simply a matter of treating the remaining variables as constants and differentiating. If the variables are *dependent*—for example, if $x$ and $y$ influence one another—the **chain rule** must be used instead.
 
 ## Chain rule
 
-Suppose the function $w(x,y)$ depends on $x$ and $y$, and $x=x(t)$, $y=y(t)$ are themselves dependent on $t$. Then the derivative of $w$ with respect to $t$ is:
+Suppose $w(x,y)$ depends on $x$ and $y$, and that $x=x(t)$ and $y=y(t)$ in turn depend on $t$. Then the derivative of $w$ with respect to $t$ is
 
 $$\frac{\partial w}{\partial t}=\frac{\partial w}{\partial x}\frac{\partial x}{\partial t}+\frac{\partial w}{\partial y}\frac{\partial y}{\partial t}$$
 
-The first term on the right is the change in $w$ caused by $x$, and the second term is the change caused by $y$. This product of partial derivatives appears because $w$'s change with respect to $t$ is affected by both the change in $x$ as $t$ changes and the change in $y$ as $t$ changes.
+The first term on the right is the change in $w$ caused by $x$, and the second is the change caused by $y$. The products of partial derivatives arise because the change in $w$ with respect to $t$ is driven both by how $x$ changes with $t$ and by how $y$ changes with $t$.
 
-You might wonder whether canceling one term on the right wouldn't just give the left side — but since $w$'s expression changes with respect to the *independent* variables $x$ and $y$, you must add the change due to $x$ and the change due to $y$ to get the total change. You can't simply cancel.
+One might be tempted to "cancel" the $\partial x$ or $\partial y$ in a single term to recover the left-hand side. This is not valid: because $w$ varies with respect to the *independent* variables $x$ and $y$, the total change is the sum of the change due to $x$ and the change due to $y$. Neither term can be dropped.
 
-Implicit differentiation from high-school calculus also uses the chain rule. Consider the classic example of differentiating the circle equation $x^2+y^2=r^2$ with respect to $x$. Since $x$ and $y$ are not independent but dependent variables influencing each other, we must apply the chain rule. That gives:
+Implicit differentiation, familiar from single-variable calculus, is itself an application of the chain rule. Consider the standard example of differentiating the circle equation $x^2+y^2=r^2$ with respect to $x$. Since $x$ and $y$ are dependent rather than independent, the chain rule applies:
 
 $$\frac{d}{dx}(x^2+y^2)=\frac{d}{dx}(r^2)$$
 
@@ -83,54 +81,52 @@ $$\frac{d}{dx}(x^2)+\frac{d}{dx}(y^2)=\frac{d(x^2)}{dx}\cdot \frac{dx}{dx}+\frac
 
 $$\frac{dy}{dx}=-\frac{2x}{2y}=-\frac{x}{y}$$
 
-As you can see, the chain rule is a crucial bridge that lets us differentiate even when variables are dependent. I remember using it a lot back when I studied my major, and it's well worth knowing.
+The chain rule is thus the essential bridge that allows differentiation even when the variables are dependent, and it appears throughout applied mathematics and physics.
 
 ## Gradient
 
-First, the definition of the gradient. The gradient is the vector made of the partial derivatives of a function (built from independent variables) with respect to each of its variables. In symbols:
+We begin with the definition. The gradient of a function of independent variables is the vector whose components are the partial derivatives of the function with respect to each variable. In symbols:
 
 $$\nabla f(\mathbf{x})=\left(\frac{\partial f}{\partial x_1},\frac{\partial f}{\partial x_2},\dots ,\frac{\partial f}{\partial x_n}\right)$$
 
-The formula above means that the gradient of a function $f$ expressed in the independent variables $x_1,x_2,\dots,x_n$, evaluated at the point $x$, is the vector written above. This is the general definition; in the more intuitive 3D setting, for a function $f$ of the independent variables $x,y,z$, the gradient is:
+This says that the gradient of a function $f$ of the independent variables $x_1,x_2,\dots,x_n$, evaluated at the point $\mathbf{x}$, is the vector written above. This is the general definition; in the more intuitive three-dimensional setting, for a function $f$ of $x,y,z$, the gradient is
 
 $$\nabla f(x,y,z)=\left(\frac{\partial f}{\partial x},\frac{\partial f}{\partial y},\frac{\partial f}{\partial z}\right)$$
 
-If $f(x,y,z)=x^2+y^2+z^2$, then the partial with respect to $x$ is $2x$ (treating $y,z$ as constants); similarly the partial w.r.t. $y$ is $2y$ and w.r.t. $z$ is $2z$, so by definition the gradient vector is $(2x,2y,2z)$. For example, at the point $(1,2,3)$ the gradient vector comes out to $(2,4,6)$.
+If $f(x,y,z)=x^2+y^2+z^2$, the partial derivative with respect to $x$ is $2x$ (treating $y$ and $z$ as constants); similarly, the partials with respect to $y$ and $z$ are $2y$ and $2z$. By definition, the gradient is $(2x,2y,2z)$. At the point $(1,2,3)$, for example, the gradient is $(2,4,6)$.
 
-The gradient formula is derived more simply than you'd think, but that doesn't mean it works for every function. As mentioned earlier, it is meaningful only for multivariable functions made of *independent* variables.
+The gradient is simpler to compute than one might expect, but it is not meaningful for every function: as noted above, it applies to multivariable functions of *independent* variables.
 
 ## The geometric meaning of the gradient
 
-We've seen that the gradient comes out as above, but why compute it? Let's understand what the gradient means, intuitively, through graphs and formulas.
+Having seen how to compute the gradient, we now ask what it means. We approach this intuitively through both graphs and formulas.
 
-Earlier we found that the chain-rule formula comes out as:
+Recall the chain-rule formula derived above:
 
 $$\frac{\partial w}{\partial t}=\frac{\partial w}{\partial x}\frac{\partial x}{\partial t}+\frac{\partial w}{\partial y}\frac{\partial y}{\partial t}$$
 
-Rewriting this for a function $f$ of variables $x,y,z$, we get the chain-rule expression:
+Rewriting it for a function $f$ of the variables $x,y,z$, we obtain
 
 $$\frac{\partial f}{\partial t}=\frac{\partial f}{\partial x}\frac{\partial x}{\partial t}+\frac{\partial f}{\partial y}\frac{\partial y}{\partial t}+\frac{\partial f}{\partial z}\frac{\partial z}{\partial t}$$
 
-Surprisingly, this expression is equal to the dot product of the gradient vector and the velocity vector:
+Remarkably, this expression is exactly the dot product of the gradient vector and the velocity vector:
 
-$$\frac{\partial f}{\partial t}=\frac{\partial f}{\partial x}\frac{\partial x}{\partial t}+\frac{\partial f}{\partial y}\frac{\partial y}{\partial t}+\frac{\partial f}{\partial z}\frac{\partial y}{\partial t}$$
+$$\frac{\partial f}{\partial t}=\frac{\partial f}{\partial x}\frac{\partial x}{\partial t}+\frac{\partial f}{\partial y}\frac{\partial y}{\partial t}+\frac{\partial f}{\partial z}\frac{\partial z}{\partial t}$$
 
 $$=\left(\frac{\partial f}{\partial x},\frac{\partial f}{\partial y},\frac{\partial f}{\partial z}\right)\cdot \left(\frac{\partial x}{\partial t},\frac{\partial y}{\partial t},\frac{\partial z}{\partial t}\right)$$
 
-$$=\nabla f(x,y,z)\cdot \frac{\xrightarrow {\ }{dr}}{dt}$$
+$$=\nabla f(x,y,z)\cdot \frac{d\mathbf{r}}{dt}$$
 
-$$\nabla f(x,y,z)\cdot \frac{d\mathbf{r}}{dt}$$
+where $\vec{v}=\frac{d\mathbf{r}}{dt}=\left(\frac{dx}{dt},\frac{dy}{dt},\frac{dz}{dt}\right)$ is the velocity vector.
 
-where $\vec{v}=\left(\frac{dx}{dt},\frac{dy}{dt},\frac{dz}{dt}\right)$ is the velocity vector.
+Now suppose this expression equals $0$. On the right-hand side, a vanishing dot product means the gradient vector and the velocity vector are perpendicular. On the left-hand side, $df/dt=0$ means the value of $f$ does not change along the path. Exactly as with a contour line on a hillside, the points satisfying $df/dt=0$ form the locus of points sharing the same value of $f$, and on that locus the gradient is perpendicular to the velocity.
 
-Now suppose this expression equals $0$. On the right, since the dot product is $0$, the gradient vector and the velocity vector are perpendicular. On the left, $df/dt=0$ means the value of $f$ does not change. Just like a contour line on a mountain, the points satisfying $df/dt=0$ are the locus of points sharing the same function value $f$, and on those points the gradient vector is perpendicular to the velocity vector.
-
-For a 2-variable function, the tangent line to the curve is the velocity vector; for a 3-variable function, the tangent plane on the surface is the set of velocity vectors. The normal vector perpendicular to it is the gradient vector. Note there are two perpendicular directions, inward and outward, but the gradient points in the direction where the function value *increases* (if the point lies on $f(x,y,z)=c$, the gradient points toward $f(x,y,z)=c+1$). The figure below shows that the gradient vector at point $P$ (the blue arrow) is the normal vector to the tangent plane of the level set $f(x,y,z)=0$ (the ellipsoidal surface).
+For a function of two variables, the velocity vector is tangent to the level curve; for a function of three variables, the velocity vectors span the tangent plane of the level surface. The normal vector perpendicular to that tangent line or plane is the gradient. There are two perpendicular directions (inward and outward); the gradient points in the direction in which the function value *increases*—if the point lies on $f(x,y,z)=c$, the gradient points toward $f(x,y,z)=c+1$. The figure below shows the gradient vector at a point $P$ (the blue arrow) as the normal vector to the tangent plane of the level set $f(x,y,z)=0$ (the ellipsoidal surface).
 
 ![The gradient vector (blue arrow) at point P is the normal vector to the tangent plane of the level set $f(x,y,z)=0$.](/assets/img/image.png)
 
-This post covered partial derivatives and tangent planes. The material is vast and I'm still inexperienced, so there may be mistakes. If any part of my explanation is wrong, please let me know in the comments anytime, and feel free to ask questions. Thanks for reading this long piece.
+This post has covered partial derivatives, the chain rule, and the gradient together with its interpretation as the normal to a level set.
 
 ---
 
-*This post was written from my own perspective, so it may contain errors. Questions are always welcome — feel free to ask anytime.*
+*This post reflects my own understanding, so there may be errors. Questions are always welcome, so feel free to ask.*
