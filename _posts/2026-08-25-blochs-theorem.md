@@ -9,78 +9,75 @@ canonicalURL: "https://blog.naver.com/kkul20235/224389848433"
 usemathjax: true
 comments: true
 permalink: /blochs-theorem/
+
 ---
 
-Hello everyone. Hope you're all doing well. Lately I find myself thinking a lot about life. Someday I want to become a strong person whose beliefs are firmly rooted. Anyway, let's get started with the post.
+This post covers Bloch's theorem, the theory that defines wave functions in solid-state physics.
 
-In this post we'll look at Bloch's theorem, the theory that defines wave functions in solid-state physics.
-
-Please read the previous post first to understand this one:
+Please read the previous post first:
 
 [Wave Function in a Periodic Potential](https://oasisforhaanee.github.io/wave-function-in-periodic-potential/)
 
 ## Bloch's theorem
 
-In the previous post, we multiplied each atom's wave function ψ_j by a coefficient a_j = e^{ikja} that represents its phase, summed them all up, and expressed the wave function Ψ_k(r) for a particular value of k:
+In the previous post, we multiplied each atom's wave function $\psi_j$ by a phase coefficient $a_j = e^{ikja}$, summed them, and expressed the wave function $\Psi_k(r)$ for a given $k$:
 
-$$ \Psi _k(r)=\sum_{j}Ae^{ikja}\psi _j(r)=\sum_{j}Ae^{ikR_j}\psi _0(r-R_j) $$
+$$\Psi _k(r)=\sum_{j}Ae^{ikja}\psi _j(r)=\sum_{j}Ae^{ikR_j}\psi _0(r-R_j)$$
 
-In this case, each j-th wave function gets multiplied by a phase coefficient a_j, so the wave function forms by rotating discretely on the complex plane.
+Each $j$-th wave function is multiplied by a phase coefficient $a_j$, so the wave function forms by rotating discretely on the complex plane.
 
 ![The wave function drawn on the complex plane at k = π/4a. Each neighboring ψ is multiplied by a different phase coefficient.](/assets/img/bloch-3d-to-real.gif)
 
-The appearance drawn on the complex plane at k = π/4a. You can see that each neighboring ψ is multiplied by a different phase coefficient.
+The appearance on the complex plane at $k=\pi/4a$; each neighboring $\psi$ is multiplied by a different phase coefficient.
 
-Bloch's theorem expresses the Ψ_k(r) we wrote above in the following form:
+Bloch's theorem expresses $\Psi_k(r)$ in the form
 
-$$ \Psi _k(r)=e^{i\mathbf{k}\cdot \mathbf{r}}u_{\mathbf{k}}(\mathbf{r}) $$
+$$\Psi _k(r)=e^{i\mathbf{k}\cdot \mathbf{r}}u_{\mathbf{k}}(\mathbf{r})$$
 
-The equation above is the general form of Bloch's theorem. u_k(r) is a function with period a, and e^{ik·r} is the term that describes the helical rotation on the complex plane with position.
+This is the general form of Bloch's theorem. Here $u_k(r)$ is a function of period $a$, and $e^{ik\cdot r}$ describes the helical rotation on the complex plane with position.
 
-Since it shares the same Ψ_k(r) equation, let's look at what meaning u_k(r) carries.
+Since it shares the same $\Psi_k(r)$, let us see what $u_k(r)$ means.
 
-$$ \Psi _k(r)=\sum_{j}Ae^{ikR_j}\psi _0(r-R_j)=e^{i\mathbf{k}\cdot \mathbf{r}}u_{\mathbf{k}}(\mathbf{r}) $$
+$$\Psi _k(r)=\sum_{j}Ae^{ikR_j}\psi _0(r-R_j)=e^{i\mathbf{k}\cdot \mathbf{r}}u_{\mathbf{k}}(\mathbf{r})$$
 
-Moving the e^{ik·r} term to the left-hand side and rearranging:
+Moving the $e^{ik\cdot r}$ factor to the left-hand side and rearranging:
 
-$$ e^{-ikr}\Psi _k(r)=u_k(r) $$
+$$e^{-ikr}\Psi _k(r)=u_k(r)$$
 
-$$ u_k(r)=e^{-ikr}\sum_{j}Ae^{ikR_j}\psi _0(r-R_j)=\sum_{j}Ae^{-ik(r-R_j)}\psi _0(r-R_j) $$
+$$u_k(r)=e^{-ikr}\sum_{j}Ae^{ikR_j}\psi _0(r-R_j)=\sum_{j}Ae^{-ik(r-R_j)}\psi _0(r-R_j)$$
 
-The u_k(r) formula above is a periodic function with period a. The proof is as follows:
+This $u_k(r)$ is a periodic function of period $a$. The proof is as follows. Using $R_j=ja$:
 
-$$ u_k(r)=\sum_{j}Ae^{-ik(r-R_j)}\psi _0(r-R_j)=\sum_{j}Ae^{-ik(r-ja)}\psi _0(r-ja) $$
+$$u_k(r)=\sum_{j}Ae^{-ik(r-ja)}\psi _0(r-ja)$$
 
-$$ u_k(r+a)=\sum_{j}Ae^{-ik(r+a-ja)}\psi _0(r+a-ja)=\sum_{j}Ae^{-ik(r-(j-1)a)}\psi _0(r-(j-1)a) $$
+$$u_k(r+a)=\sum_{j}Ae^{-ik(r+a-ja)}\psi _0(r+a-ja)=\sum_{j}Ae^{-ik(r-(j-1)a)}\psi _0(r-(j-1)a)$$
 
-$$ m=j-1 $$
+Letting $m=j-1$:
 
-$$ u_k(r+a)=\sum_{m}Ae^{-ik(r-ma)}\psi _0(r-ma) $$
+$$u_k(r+a)=\sum_{m}Ae^{-ik(r-ma)}\psi _0(r-ma)$$
 
-We can see that u_k(r) and u_k(r+a) are completely identical equations, just with the index symbol changed from j to m. Since both j and m range over all integers, the two equations are fully equivalent.
+The two expressions are identical, just with the index relabeled from $j$ to $m$. Since both $j$ and $m$ range over all integers, $u_k(r)=u_k(r+a)$.
 
-The reason we use Bloch's theorem is to extract the periodic component u_k(r) out of the original Ψ_k(r) function.
+The reason for using Bloch's theorem is to extract the periodic component $u_k(r)$ from the original $\Psi_k(r)$.
 
-But don't mistake u_k(r) for a simple periodic function on the ordinary 2D plane.
-
-u_k(r) is the sum of each ψ_0 multiplied by e^{-ik(r-R_j)}, and since the variable here is r, it's a function that carries a helical rotation as position changes.
+However, $u_k(r)$ is not a simple periodic function on the ordinary 2D plane. It is the sum of each $\psi_0$ multiplied by $e^{-ik(r-R_j)}$, and—since the variable is $r$—it carries a helical rotation as position changes.
 
 ![The appearance of Ψ_k(r) and u_k(r) at k = π/4a.](/assets/img/bloch-uk-phase-rotation.gif)
 
-The appearance of Ψ_k(r) and u_k(r) at k = π/4a.
+The appearance of $\Psi_k(r)$ and $u_k(r)$ at $k=\pi/4a$.
 
-Looking at the graph above the function looks flat, but viewed from the complex plane's real–imaginary axis perspective, it's not flat — there's a subtle helical rotation hidden inside.
+The graph above looks flat, but viewed from the real–imaginary perspective of the complex plane there is a subtle helical rotation hidden inside.
 
 ## The meaning of Bloch's theorem
 
-Bloch's theorem might seem like nothing special mathematically beyond pulling the e^{ik·r} component out of the Ψ_k(r) wave function to extract the periodic u_k(r). But separating the e^{ik·r} component carries a very important mathematical and physical meaning. Because like a Fourier transform, by combining the e^{ik·r} terms for various k, we can construct new wave functions for position r:
+Mathematically, Bloch's theorem may seem to do nothing more than pull the $e^{ik\cdot r}$ factor out of $\Psi_k(r)$ to extract the periodic $u_k(r)$. But separating out $e^{ik\cdot r}$ carries real mathematical and physical meaning. Exactly like a Fourier transform, combining the $e^{ik\cdot r}$ terms for various $k$ constructs new wave functions of position $r$:
 
-$$ f(r)=A\int_{-\infty}^{\infty}F(k)e^{ikr}dk $$
+$$f(r)=A\int_{-\infty}^{\infty}F(k)e^{ikr}dk$$
 
-But there are no infinite systems in the real world. As we'll cover later, continuous k values are only possible in a system made of an infinite number of atoms; in real finite-sized systems, k takes discrete values. A representative way to apply this discreteness physically and naturally is the Born–von Karman boundary condition. We'll continue with that in the next post.
+There are no truly infinite systems in the real world, however. As we will see, continuous $k$ values are possible only for a system of infinitely many atoms; in a real finite system, $k$ takes discrete values. A natural way to impose this discreteness is the Born–von Karman boundary condition, the subject of the next post.
 
 [Born–von Karman Boundary Condition](https://oasisforhaanee.github.io/born-von-karman-boundary-condition/)
 
-Thanks for reading the long post.
+---
 
-This post reflects my own understanding, so there may be errors. Questions are always welcome, so feel free to ask.
+*This post reflects my own understanding, so there may be errors. Questions are always welcome, so feel free to ask.*
