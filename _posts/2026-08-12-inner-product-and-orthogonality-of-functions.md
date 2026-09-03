@@ -92,7 +92,7 @@ $$\int _{-\pi }^{\pi }\cos (nx)\sin (nx)\, dx=\int _{-\pi }^{\pi }\frac{1}{2}\si
 
 $$2.\ n\ne m$$
 
-Using $\sin (A)\cos (B)=\frac{1}{2}\left\{\sin (A+B)+\sin (A-B)\right\}$:
+Using $\sin (A)\cos (B)=\frac{1}{2}\left\lbrace\sin (A+B)+\sin (A-B)\right\rbrace$:
 
 $$\int _{-\pi }^{\pi }\sin (mx)\cos (nx)\, dx=\frac{1}{2}\int _{-\pi }^{\pi }\left\{\sin ((m+n)x)+\sin ((m-n)x)\right\}dx$$
 
@@ -106,7 +106,7 @@ $$\left\langle \sin (nx),\sin (mx)\right\rangle =\int _{-\pi }^{\pi }\sin (nx)\s
 
 $$1.\ n\ne m$$
 
-Using $\sin (A)\sin (B)=\frac{1}{2}\left\{\cos (A-B)-\cos (A+B)\right\}$:
+Using $\sin (A)\sin (B)=\frac{1}{2}\left\lbrace\cos (A-B)-\cos (A+B)\right\rbrace$:
 
 $$\int _{-\pi }^{\pi }\sin (nx)\sin (mx)\, dx=\frac{1}{2}\int _{-\pi }^{\pi }\left\{\cos ((n-m)x)-\cos ((n+m)x)\right\}\, dx$$
 
@@ -122,7 +122,7 @@ $$\left\langle \cos (nx),\cos (mx)\right\rangle =\int _{-\pi }^{\pi }\cos (nx)\c
 
 $$1.\ n\ne m$$
 
-Using $\cos (A)\cos (B)=\frac{1}{2}\left\{\cos (A+B)+\cos (A-B)\right\}$:
+Using $\cos (A)\cos (B)=\frac{1}{2}\left\lbrace\cos (A+B)+\cos (A-B)\right\rbrace$:
 
 $$\int _{-\pi }^{\pi }\cos (nx)\cos (mx)\, dx=\frac{1}{2}\int _{-\pi }^{\pi }\left\{\cos ((n+m)x)+\cos ((n-m)x)\right\}\, dx$$
 
