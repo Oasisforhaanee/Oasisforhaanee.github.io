@@ -122,3 +122,5 @@ plugins:
 # redeploy
 
 # redeploy-touch 2026-09-03 (fix inline math braces left-lbrace)
+
+# redeploy-touch 2026-09-03b (fix inline asterisk)
