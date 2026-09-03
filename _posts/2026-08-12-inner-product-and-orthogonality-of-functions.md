@@ -24,7 +24,7 @@ On the interval $[a, b]$, the inner product of two functions is
 
 $$\langle f,g\rangle=\int _a^bf(x)^*\cdot g(x)\, dx$$
 
-Here $f(x)^*$ denotes the complex conjugate of $f(x)$. Since this post deals only with real-valued functions, we may think of $f(x)^*$ as simply $f(x)$.
+Here $f(x)^\ast$ denotes the complex conjugate of $f(x)$. Since this post deals only with real-valued functions, we may think of $f(x)^\ast$ as simply $f(x)$.
 
 But why does the inner product of functions take this form? It looks quite different from the vector inner product we know.
 
