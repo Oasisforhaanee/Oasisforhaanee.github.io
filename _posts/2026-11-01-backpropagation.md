@@ -11,7 +11,7 @@ comments: true
 ---
 
 
-Hi! In this post, I will take a deeper look at backpropagation, which I introduced in my earlier post on artificial neural networks (ANNs). If you are not yet familiar with ANNs, please read the [ANN post](https://blog.naver.com/kkul20235/224439468218) first.
+Hi! In this post, I will take a deeper look at backpropagation, which I introduced in my earlier post on artificial neural networks (ANNs). If you are not yet familiar with ANNs, please read the [ANN post](https://oasisforhaanee.github.io/artificial-neural-network/) first.
 
 If you are unfamiliar with the chain rule, please read the [chain rule section](https://oasisforhaanee.github.io/partial-derivatives-and-gradient/#chain-rule) first.
 
