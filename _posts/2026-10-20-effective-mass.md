@@ -76,7 +76,7 @@ For a potential well much deeper than the wave's energy scale, reflection can be
 
 Surprising, isn't it? We might expect reflection from a very high potential, but a very low, negative potential can reflect a wave too.
 
-The wavefunction being reflected here is the electron wavefunction. As it moves through the lattice, it interacts with the nuclear potentials and undergoes reflection. An interesting effect then appears: reflected components whose wavevectors differ by a reciprocal-lattice vector $G$ have matching phases and can interfere constructively, whereas other contributions cancel across the crystal. This is the same principle as Bragg's law, discussed in my [XRD post](https://blog.naver.com/kkul20235/224446636507).
+The wavefunction being reflected here is the electron wavefunction. As it moves through the lattice, it interacts with the nuclear potentials and undergoes reflection. An interesting effect then appears: reflected components whose wavevectors differ by a reciprocal-lattice vector $G$ have matching phases and can interfere constructively, whereas other contributions cancel across the crystal. This is the same principle as Bragg's law, discussed in my [XRD post](https://oasisforhaanee.github.io/x-ray-diffraction/).
 
 As a result, the electron takes the form of a Bloch state: a propagating plane-wave factor multiplied by a periodic function that incorporates the lattice and Bragg-scattering effects. Still a little abstract? We need equations to make it precise.
 
@@ -102,7 +102,7 @@ $$
 \left(\psi _k(x)=e^{ikx}u_k(x)\right)
 $$
 
-Substituting this expression directly into the Schrödinger equation makes the calculation complicated. To exploit the orthogonality of plane waves, we expand the periodic functions $u_k(x)$ and $V(x)$ as Fourier series in reciprocal-lattice plane waves. Please refer to the one-dimensional periodic-function expansion in my [reciprocal-lattice post](https://blog.naver.com/kkul20235/224436591820).
+Substituting this expression directly into the Schrödinger equation makes the calculation complicated. To exploit the orthogonality of plane waves, we expand the periodic functions $u_k(x)$ and $V(x)$ as Fourier series in reciprocal-lattice plane waves. Please refer to the one-dimensional periodic-function expansion in my [reciprocal-lattice post](https://oasisforhaanee.github.io/reciprocal-lattice/).
 
 The potential can be expanded as:
 
@@ -144,7 +144,7 @@ Propagation of a Bloch wave in a lattice potential. In Fourier space, the couple
 
 Multiplying the periodic function $u_k(x)$ by the propagating plane-wave factor completes the wavefunction, including its propagation through real space.
 
-To visualize time-dependent propagation as in the graph above, we must also multiply each energy eigenstate by its time-evolution factor. Please refer to my [stationary-state post](https://oasisforhaanee.github.io/stationary-state/).
+To visualize time-dependent propagation as in the graph above, we must also multiply each energy eigenstate by its time-evolution factor. Please refer to my [Schrödinger-equation post](https://oasisforhaanee.github.io/schrodinger-equation/).
 
 What happens if $k=G/2$? A Bloch function consists of a plane-wave factor and a periodic modulation, with the latter expanded in reciprocal-lattice components. Away from the strong Bragg-reflection condition, the electron can propagate through the crystal.
 
@@ -174,7 +174,7 @@ We can now explain effective mass. An electron wavefunction in a crystal extends
 
 The interaction depends on the Bloch wavevector $k$, so the acceleration response to an external force also depends on $k$. Effective mass bundles all those complicated lattice-potential and Bragg-reflection effects into one quantity—rather like sweeping them all into the same box, haha.
 
-Let's derive it. First, you need the idea of group velocity; please read my [group-velocity post](https://blog.naver.com/kkul20235/224447121386).
+Let's derive it. First, you need the idea of group velocity; please read my [group-velocity post](https://oasisforhaanee.github.io/group-velocity/).
 
 The propagation speed of an electron wavepacket in the lattice is its group velocity. Using that relation, we can derive the effective mass:
 

@@ -16,7 +16,7 @@ The functions $P_l(x)$ appearing there are Legendre polynomials.
 
 ## What is the point of this series?
 
-Before deriving it, let's briefly discuss why we should learn it. Recall my [Fourier-transform post](https://oasisforhaanee.github.io/fourier-transform/).
+Before deriving it, let's briefly discuss why we should learn it. Recall my [Fourier transform in quantum mechanics post](https://oasisforhaanee.github.io/fourier-transform-in-qm/).
 
 A Fourier series represents a suitable periodic function using a sum of sine and cosine waves. A Legendre–Fourier series is similar, but uses polynomials instead. Suitable functions on $[-1,1]$ can be expanded in a basis of mutually orthogonal polynomials.
 

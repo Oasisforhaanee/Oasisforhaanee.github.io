@@ -16,7 +16,7 @@ In this post, let's take a detailed look at **density of states**, or **DOS**, a
 
 ## The time-independent Schrödinger equation for free electrons
 
-For background, see my [stationary-state post](https://oasisforhaanee.github.io/stationary-state/).
+For background, see my [Schrödinger-equation post](https://oasisforhaanee.github.io/schrodinger-equation/).
 
 Before discussing DOS, let's solve the wavefunction equation for a free electron. This requires the Schrödinger equation, so please read the linked explanation first if it is unfamiliar.
 

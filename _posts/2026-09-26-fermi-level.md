@@ -10,9 +10,9 @@ usemathjax: true
 comments: true
 ---
 
-I'm writing this immediately after the previous post on the density of states. This time, let's explore how free electrons occupy states as temperature changes. Before starting, please read the earlier posts, including [bosons, fermions, and the Fermi–Dirac distribution](https://blog.naver.com/kkul20235/224417852554).
+I'm writing this immediately after the previous post on the density of states. This time, let's explore how free electrons occupy states as temperature changes. Before starting, please read the earlier posts, including [bosons, fermions, and the Fermi–Dirac distribution](https://oasisforhaanee.github.io/bosons-and-fermions/).
 
-The other prerequisite is my [density of states post](https://blog.naver.com/kkul20235/224422451692).
+The other prerequisite is my [density of states post](https://oasisforhaanee.github.io/density-of-states/).
 
 ## Fermi level
 

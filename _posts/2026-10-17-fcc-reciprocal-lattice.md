@@ -10,7 +10,7 @@ usemathjax: true
 comments: true
 ---
 
-In this post, let's explore the reciprocal lattices of FCC and BCC crystals. If reciprocal space is unfamiliar, please read my [reciprocal-lattice introduction](https://blog.naver.com/kkul20235/224436591820) first.
+In this post, let's explore the reciprocal lattices of FCC and BCC crystals. If reciprocal space is unfamiliar, please read my [reciprocal-lattice introduction](https://oasisforhaanee.github.io/reciprocal-lattice/) first.
 
 Reciprocal space is the wavevector-space description obtained by Fourier-transforming real-space structure. Just as a time-dependent wave can be represented as a superposition of frequency components, a real-space lattice can be described using wavevector components. Reciprocal space is where we represent those components.
 

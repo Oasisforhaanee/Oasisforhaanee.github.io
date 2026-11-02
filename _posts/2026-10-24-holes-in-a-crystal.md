@@ -10,7 +10,7 @@ usemathjax: true
 comments: true
 ---
 
-In this post, let's explore electrons and holes. Please read my [effective-mass post](https://blog.naver.com/kkul20235/224447833077) first.
+In this post, let's explore electrons and holes. Please read my [effective-mass post](https://oasisforhaanee.github.io/effective-mass/) first.
 
 ## Electron motion in a crystal
 
