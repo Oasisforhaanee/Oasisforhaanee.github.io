@@ -2,6 +2,10 @@
   url: /
   external: false
 
+- title: All Posts
+  url: /all-posts/
+  external: false
+
 - title: categories
   url: /categories/
   external: false

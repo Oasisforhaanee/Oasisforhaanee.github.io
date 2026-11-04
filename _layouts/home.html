@@ -3,8 +3,8 @@ layout: default
 home: true
 ---
 
-<h3 class="posts-item-note" aria-label="All Posts">All Posts</h3>
-{% for post in site.posts %}
+<h3 class="posts-item-note" aria-label="Recent Posts">Recent Posts</h3>
+{% for post in site.posts limit: 10 %}
 <article class="post-item">
   <span class="post-item-date">{{ post.date | date: "%b %d, %Y" }}</span>
   <h4 class="post-item-title">
