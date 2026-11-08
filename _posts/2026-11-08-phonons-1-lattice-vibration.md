@@ -32,7 +32,7 @@ Before discussing phonons in detail, let us look at the vibrations they arise fr
 
 ## Lattice vibration
 
-How does heat travel through a solid? Electrons can carry energy in states described by [Bloch waves](/blochs-theorem/), but energy is also transmitted through atomic vibrations—**lattice vibrations**.
+How does heat travel through a solid? Electrons can carry energy in states described by Bloch waves, but energy is also transmitted through atomic vibrations—**lattice vibrations**.
 
 Atoms in a crystal are bound near their equilibrium lattice positions. Unlike mobile electrons influenced by the crystal's periodic potential, these atoms remain localized around those positions, although they can vibrate. Near equilibrium, the potential energy can be approximated by a harmonic-oscillator potential, and the atoms undergo approximately harmonic motion.
 
@@ -128,7 +128,7 @@ $$
 
 Here $k$ controls the variation with position $x$, whereas $\omega$ controls the variation with time $t$.
 
-Why does choosing $k$ determine $\omega$? In the equation of motion, the forces depend on the relative displacements of neighboring atoms. A mode pattern that produces greater spring deformation produces a larger restoring force per displacement and therefore a higher frequency. A pattern that deforms the springs less has a lower frequency. This is the same reason the two coupled-pendulum modes in [Eigenmodes](/eigenmodes/) have different frequencies. The interaction fixes the relationship between $k$ and $\omega$.
+Why does choosing $k$ determine $\omega$? In the equation of motion, the forces depend on the relative displacements of neighboring atoms. A mode pattern that produces greater spring deformation produces a larger restoring force per displacement and therefore a higher frequency. A pattern that deforms the springs less has a lower frequency. This is the same reason the two coupled-pendulum modes in Eigenmodes have different frequencies. The interaction fixes the relationship between $k$ and $\omega$.
 
 The function $u_n(t)$ describes the normal modes labeled by $k$. For an infinite chain, $k$ can range continuously—for example, through $0.1$, $0.100000\ldots$, and neighboring values. We will impose a finite-system boundary condition later.
 
@@ -168,7 +168,7 @@ The dispersion relation restricted to the first Brillouin zone.
 
 ## Born–von Karman boundary conditions
 
-See the earlier post on the [Born–von Karman Boundary Condition](/born-von-karman-boundary-condition/).
+See the earlier post on the Born–von Karman Boundary Condition.
 
 No real solid contains infinitely many atoms. To describe a finite system, we impose a boundary condition, which makes the allowed values of $k$ discrete. For a chain of $N$ atoms, the Born–von Karman periodic boundary condition gives
 
@@ -204,12 +204,6 @@ So far, we have examined one-dimensional lattice vibration and the meaning of th
 
 That is all for now. Thank you for reading!
 
-> **Notation note:** The spring constant is denoted consistently by $K$. In the plane-wave substitution, the time derivative contributes $(-i\omega)^2=-\omega^2$, and Newton's equation retains the atomic mass $M$. These small notation slips in the source have been corrected.
-
-## Related reading
-
-- [The Einstein Model for the Heat Capacity of a Solid](/einstein-model-heat-capacity/)
-- [Eigenmodes: Coupled Pendulums and Normal Modes](/eigenmodes/)
 
 ---
 

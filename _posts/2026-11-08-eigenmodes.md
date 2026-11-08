@@ -126,11 +126,11 @@ Any motion of this linear two-pendulum system can be expressed as a linear combi
 
 A superposition with equal mode weights, 1/sqrt(2), and a phase difference of pi. Energy is exchanged through the spring.
 
-The modes at $\omega_1$ and $\omega_2$ therefore act as a basis for the system's motion. The analogy is to the [stationary-state](/stationary-state/) basis obtained by solving the [Schrödinger equation](/schrodinger-equation/). In this classical system, each mode has a definite frequency; its energy also depends on its amplitude, rather than being fixed by the frequency alone.
+The modes at $\omega_1$ and $\omega_2$ therefore act as a basis for the system's motion. The analogy is to the stationary-state basis obtained by solving the Schrödinger equation. In this classical system, each mode has a definite frequency; its energy also depends on its amplitude, rather than being fixed by the frequency alone.
 
-Within a single eigenmode, each pendulum oscillates with a constant amplitude. A superposition can instead produce the changing amplitudes shown in the example above. That motion is harder to interpret directly, but finding the eigenmodes breaks it into much simpler pieces. This reminds me of the [Fourier transform](/fourier-transform/).
+Within a single eigenmode, each pendulum oscillates with a constant amplitude. A superposition can instead produce the changing amplitudes shown in the example above. That motion is harder to interpret directly, but finding the eigenmodes breaks it into much simpler pieces. This reminds me of the Fourier transform.
 
-The [eigenvectors](/eigenvalue-and-eigenvector/) of these two modes are also mutually orthogonal.
+The eigenvectors of these two modes are also mutually orthogonal.
 
 ## How interaction changes the eigenbasis
 
@@ -138,7 +138,7 @@ We first looked at a pendulum without a coupling spring. If there were two such 
 
 Connecting the pendulums with a spring couples their motions, so they begin to affect each other.
 
-In other words, introducing an interaction changes the useful eigenbasis of the system. The new eigenvectors are the ones obtained from the [matrix](/matrix/) equation, and we use them to describe the motion of the coupled system as a whole.
+In other words, introducing an interaction changes the useful eigenbasis of the system. The new eigenvectors are the ones obtained from the matrix equation, and we use them to describe the motion of the coupled system as a whole.
 
 ## How many eigenmodes are there?
 
@@ -158,12 +158,6 @@ That is the basic idea of eigenmodes. In the MIT lecture below, Walter Lewin wor
 
 That is all for this post. Thank you for reading!
 
-> **Notation note:** The pendulum equations use the small-angle approximation. The dynamical-matrix eigenvalues are squared angular frequencies; unlike a quantum energy eigenstate, a classical normal mode does not have a unique energy independent of amplitude.
-
-## Related reading
-
-- [The Einstein Model for the Heat Capacity of a Solid](/einstein-model-heat-capacity/)
-- [Phonons (1): Lattice Vibration](/phonons-1-lattice-vibration/)
 
 ---
 

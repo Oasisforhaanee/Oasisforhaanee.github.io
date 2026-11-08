@@ -155,12 +155,6 @@ At high temperatures, set $x=\hbar\omega/(k_BT)$. Since $e^x\approx1+x$ for smal
 
 Thank you for reading this long explanation!
 
-> **Notation note:** This post uses heat capacity, $C_V=(\partial U/\partial T)_V$, rather than heat capacity per unit mass. In the probability formula, the numerator is the Boltzmann factor $e^{-E_n/(k_BT)}$; an apparent numerator typo in the Korean equation has been corrected. Omitting the zero-point energy changes the energy reference, not the heat capacity.
-
-## Related reading
-
-- [Eigenmodes: Coupled Pendulums and Normal Modes](/eigenmodes/)
-- [Phonons (1): Lattice Vibration](/phonons-1-lattice-vibration/)
 
 ---
 
