@@ -69,7 +69,7 @@ Everyday oscillations make energy seem continuous. Give an oscillating object a 
 
 The energy levels of a microscopic harmonic oscillator are quantized as illustrated below.
 
-![Quantized energy levels of a harmonic oscillator.](/assets/img/einstein-model-heat-capacity-04.gif)
+![Quantized energy levels of a harmonic oscillator.](/assets/img/einstein-model-heat-capacity-quantized-energy.png)
 
 Quantized energy levels of a harmonic oscillator.
 
