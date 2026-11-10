@@ -16,7 +16,7 @@ This post covers the most widely used notation in quantum mechanics: bra-ket not
 
 First, please read:
 
-[Linear Dependence, Linear Independence, and Orthogonality](https://oasisforhaanee.github.io/linear-dependence-independence-and-orthogonality/)
+[Inner Product and Orthogonality of Functions](https://oasisforhaanee.github.io/inner-product-and-orthogonality-of-functions/)
 
 ## Bra-ket notation
 
@@ -44,23 +44,23 @@ In bra-ket notation this is written
 
 $$\int _{-\infty }^{\infty }f^*(x)g(x)dx=\left\langle f|g\right\rangle$$
 
-Here $\langle f|$ is the **Bra** and $|g\rangle$ the **Ket**.
+Here $\langle f\rvert$ is the **Bra** and $\lvert g\rangle$ the **Ket**.
 
-$\langle f|$ and $|g\rangle$ are state vectors not tied to any particular basis. To express $f$ and $g$ in position space, we project them onto the position basis:
+$\langle f\rvert$ and $\lvert g\rangle$ are state vectors not tied to any particular basis. To express $f$ and $g$ in position space, we project them onto the position basis:
 
 $$\left\langle x|g\right\rangle \rightarrow \begin{pmatrix}g(x_1)\\g(x_2)\\g(x_3)\\\vdots \end{pmatrix}$$
 
 $$\left\langle f|x\right\rangle \rightarrow \begin{pmatrix}f^*(x_1)&f^*(x_2)&f^*(x_3)&\cdots \end{pmatrix}$$
 
-What does $|x\rangle$ mean? It is the vector for a specific position $x$—a vector with a $1$ in the component for that position and $0$ everywhere else:
+What does $\lvert x\rangle$ mean? It is the vector for a specific position $x$—a vector with a $1$ in the component for that position and $0$ everywhere else:
 
 $$\left|x_1\right\rangle \rightarrow \begin{pmatrix}1\\0\\0\\\vdots \end{pmatrix},\quad \left|x_2\right\rangle \rightarrow \begin{pmatrix}0\\1\\0\\\vdots \end{pmatrix},\quad \left|x_3\right\rangle \rightarrow \begin{pmatrix}0\\0\\1\\\vdots \end{pmatrix},\dots$$
 
-In other words, $f$ and $g$ are the wave functions themselves; the moment the state vector is projected onto the position basis, it becomes the familiar wave function $g(x)$ or $f^*(x)$ as a function of position $x$, and can be drawn as a graph. In the figure below, $x_i$ denotes each point on the $x$-axis.
+In other words, $f$ and $g$ are the wave functions themselves; the moment the state vector is projected onto the position basis, it becomes the familiar wave function $g(x)$ or $f^\ast(x)$ as a function of position $x$, and can be drawn as a graph. In the figure below, $x_i$ denotes each point on the $x$-axis.
 
 ![Projecting the state vector f onto the position basis vectors xi gives the values f*(xi) on the complex plane](/assets/img/bra-ket-projection.png)
 
-The figure shows the state vector $f$ projected onto the position basis vectors $x_i$. Projecting $f$ onto each $x_i$ gives the values $f^*(x_i)$ on the complex plane. Adding them all up, the graph of $f^*(x)$ emerges.
+The figure shows the state vector $f$ projected onto the position basis vectors $x_i$. Projecting $f$ onto each $x_i$ gives the values $f^\ast(x_i)$ on the complex plane. Adding them all up, the graph of $f^\ast(x)$ emerges.
 
 Expanding to the end:
 
