@@ -87,6 +87,8 @@ Consider the time part. In the time factor, the energy $E_k$ grows with the magn
 
 As time passes, therefore, the original shape of the wave function is not maintained; it gradually spreads. The lower-energy components spread slowly and the higher-energy components spread quickly, so the overall shape disperses.
 
+![The wave function broadens over time as a free particle disperses](/assets/img/fourier-free-particle-dispersion.gif)
+
 That is it for this post. Thank you for reading.
 
 ---
