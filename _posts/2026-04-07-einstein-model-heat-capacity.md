@@ -11,7 +11,7 @@ tags:
 - Boltzmann Distribution
 description: Harmonic oscillators, quantized energy, and the Boltzmann distribution
   lead to the Einstein heat-capacity formula.
-canonicalURL: https://blog.naver.com/kkul20235/224244467606
+
 usemathjax: true
 comments: true
 permalink: /einstein-model-heat-capacity/

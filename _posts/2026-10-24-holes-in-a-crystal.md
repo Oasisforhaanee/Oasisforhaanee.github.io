@@ -5,7 +5,7 @@ date: 2026-10-24
 categories: [solid-state-physics]
 tags: ["Holes", "Effective Mass", "Energy Bands"]
 description: "Why empty states in an almost-filled band behave as positively charged carriers, and how their momentum, velocity, and energy are defined."
-canonicalURL: "https://blog.naver.com/kkul20235/224452606945"
+
 usemathjax: true
 comments: true
 ---

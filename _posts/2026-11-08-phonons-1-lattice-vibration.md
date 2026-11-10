@@ -12,7 +12,7 @@ tags:
 - Born–von Karman Boundary Condition
 description: Deriving the dispersion relation of a one-dimensional atomic chain, lattice
   aliasing, and the discrete modes imposed by Born–von Karman boundary conditions.
-canonicalURL: https://blog.naver.com/kkul20235/224469598670
+
 usemathjax: true
 comments: true
 permalink: /phonons-1-lattice-vibration/

@@ -5,12 +5,12 @@ date: 2026-09-21
 categories: [mathematics]
 tags: ["Electrostatics", "Curl", "Stokes' Theorem"]
 description: "Using the electrostatic potential, path independence, and Stokes' theorem to understand why an electrostatic field has zero curl."
-canonicalURL: "https://blog.naver.com/kkul20235/224418935662"
+
 usemathjax: true
 comments: true
 ---
 
-In this post, let's examine why the curl of the electric field is zero in electrostatics. For background, see my [previous electromagnetism post](https://blog.naver.com/kkul20235/224415166942).
+In this post, let's examine why the curl of the electric field is zero in electrostatics.
 
 In the previous post, we found that the electrostatic field is the negative gradient of the potential: $\mathbf{E}=-\nabla V$. It points opposite to the direction in which the potential increases most steeply.
 

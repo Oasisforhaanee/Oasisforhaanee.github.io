@@ -5,7 +5,7 @@ date: 2026-08-25
 categories: [quantum-mechanics]
 tags: [Bloch's Theorem, Periodic Potential, Wave Function, Complex Plane, Energy Band, Fourier Transform, Solid State Physics]
 description: "Bloch's theorem: factoring the wave function in a periodic potential into a plane wave e^{ik·r} times a periodic function u_k(r), proving u_k(r) has the lattice period a, and why separating out the e^{ik·r} component matters — combining e^{ik·r} terms for different k builds new wave functions, just like a Fourier transform."
-canonicalURL: "https://blog.naver.com/kkul20235/224389848433"
+
 usemathjax: true
 comments: true
 permalink: /blochs-theorem/

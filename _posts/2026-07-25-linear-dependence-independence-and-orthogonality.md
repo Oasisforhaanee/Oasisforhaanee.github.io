@@ -5,7 +5,7 @@ date: 2026-07-25
 categories: [linear-algebra]
 tags: [Linear Dependence, Linear Independence, Orthogonality, Basis, Inner Product, Linear Algebra]
 description: "The most fundamental concepts of linear algebra — when vectors are parallel they're linearly dependent, when they're not they're linearly independent, and when they share no components at all they're orthogonal; plus why the determinant of dependent vectors is 0 and how independence makes a basis."
-canonicalURL: "https://blog.naver.com/kkul20235/224357601640"
+
 usemathjax: true
 comments: true
 permalink: /linear-dependence-independence-and-orthogonality/

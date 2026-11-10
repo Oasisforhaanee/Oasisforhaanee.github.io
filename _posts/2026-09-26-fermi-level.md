@@ -5,7 +5,7 @@ date: 2026-09-26
 categories: [solid-state-physics]
 tags: ["Fermi Level", "Fermi-Dirac Distribution", "Sommerfeld Expansion"]
 description: "Distinguishing the Fermi energy from the temperature-dependent chemical potential using density of states and particle-number conservation."
-canonicalURL: "https://blog.naver.com/kkul20235/224423149513"
+
 usemathjax: true
 comments: true
 ---

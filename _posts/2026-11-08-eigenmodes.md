@@ -12,7 +12,7 @@ tags:
 - Superposition
 description: Deriving the normal modes of spring-coupled pendulums and understanding
   eigenvectors, superposition, and the effect of coupling.
-canonicalURL: https://blog.naver.com/kkul20235/224469261544
+
 usemathjax: true
 comments: true
 permalink: /eigenmodes/

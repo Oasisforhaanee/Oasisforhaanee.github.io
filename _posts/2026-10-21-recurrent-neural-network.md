@@ -5,7 +5,7 @@ date: 2026-10-21
 categories: [algorithm]
 tags: ["RNN", "Neural Networks", "Backpropagation"]
 description: "Recurrent connections, hidden states, and a worked matrix example of an RNN and its weight update."
-canonicalURL: "https://blog.naver.com/kkul20235/224448839890"
+
 usemathjax: true
 comments: true
 ---

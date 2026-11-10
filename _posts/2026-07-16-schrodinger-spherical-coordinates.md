@@ -5,7 +5,7 @@ date: 2026-07-16
 categories: [quantum-mechanics]
 tags: [Schrödinger Equation, Spherical Coordinates, Laplacian, Chain Rule]
 description: How to convert the 3D Schrödinger equation from Cartesian to spherical coordinates — including the full chain-rule derivation of the Laplacian.
-canonicalURL: "https://blog.naver.com/kkul20235/224348646713"
+
 usemathjax: true
 comments: true
 

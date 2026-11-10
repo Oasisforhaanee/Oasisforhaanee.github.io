@@ -5,7 +5,7 @@ date: 2026-09-25
 categories: [solid-state-physics]
 tags: ["Density of States", "Free Electrons", "Periodic Boundary Conditions"]
 description: "Deriving the free-electron density of states from plane waves, periodic boundary conditions, and state counting in k-space."
-canonicalURL: "https://blog.naver.com/kkul20235/224422451692"
+
 usemathjax: true
 comments: true
 ---

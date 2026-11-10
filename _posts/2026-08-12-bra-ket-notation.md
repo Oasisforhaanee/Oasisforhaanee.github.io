@@ -5,7 +5,7 @@ date: 2026-08-12
 categories: [linear-algebra]
 tags: [Bra-Ket Notation, Inner Product, Hilbert Space, Basis, Projection, Complex Plane, State Vector]
 description: "Bra-ket notation is just the inner product of functions — turning functions into infinite-dimensional vectors in a Hilbert space, projecting state vectors onto the position basis, and why ⟨f|g⟩ is exactly the integral of f*(x)g(x)."
-canonicalURL: "https://blog.naver.com/kkul20235/224376503820"
+
 usemathjax: true
 comments: true
 permalink: /bra-ket-notation/

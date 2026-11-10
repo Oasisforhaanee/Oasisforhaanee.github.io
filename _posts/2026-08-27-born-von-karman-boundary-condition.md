@@ -5,7 +5,7 @@ date: 2026-08-27
 categories: [quantum-mechanics]
 tags: [Born-von Karman Boundary Condition, Bloch's Theorem, Periodic Potential, Wave Function, Energy Band, Solid State Physics]
 description: "How a finite crystal of N atoms is made tractable: the Born–von Karman boundary condition assumes the first atom equals the (N+1)-th, which forces the wave number k into discrete values k = 2πn/Na and turns the continuous k–energy spectrum into a finite set of states."
-canonicalURL: "https://blog.naver.com/kkul20235/224391932456"
+
 usemathjax: true
 comments: true
 permalink: /born-von-karman-boundary-condition/

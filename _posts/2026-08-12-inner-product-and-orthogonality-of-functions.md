@@ -5,7 +5,7 @@ date: 2026-08-12
 categories: [linear-algebra]
 tags: [Inner Product, Orthogonality, Hilbert Space, Riemann Sum, Fourier Series, Orthogonal Functions]
 description: "Why the inner product of functions is an integral — turning a function into an infinite-dimensional vector via the Riemann sum, when two functions are orthogonal, and how sin(nx) and cos(nx) being orthogonal powers the Fourier series."
-canonicalURL: "https://blog.naver.com/kkul20235/224376331608"
+
 usemathjax: true
 comments: true
 permalink: /inner-product-and-orthogonality-of-functions/

@@ -5,7 +5,7 @@ date: 2026-10-20
 categories: [solid-state-physics]
 tags: ["Effective Mass", "Bloch Electrons", "Energy Bands"]
 description: "From Bloch waves and Bragg reflection to the curvature of energy bands and the effective mass of an electron."
-canonicalURL: "https://blog.naver.com/kkul20235/224447833077"
+
 usemathjax: true
 comments: true
 ---

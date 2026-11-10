@@ -5,7 +5,7 @@ date: 2026-08-31
 categories: [quantum-mechanics]
 tags: [Energy Band, Bloch's Theorem, Born-von Karman Boundary Condition, Periodic Potential, Orbital, Hybridization, Brillouin Zone, Solid State Physics]
 description: "Why metals conduct: how 1s, 2s, and 2p orbitals in a periodic potential split into energy bands, how each k point in the 1st Brillouin zone corresponds to a different wave-function basis (bonding or antibonding), how electrons fill the bands and jump to nearby empty states under an electric field, and why similar-energy orbitals hybridize (sp, sp2, sp3) in transition metals."
-canonicalURL: "https://blog.naver.com/kkul20235/224396075311"
+
 usemathjax: true
 comments: true
 permalink: /energy-band/

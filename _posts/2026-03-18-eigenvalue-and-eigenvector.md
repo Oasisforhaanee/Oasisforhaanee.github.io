@@ -5,7 +5,7 @@ date: 2026-03-18
 categories: [linear-algebra]
 tags: [Eigenvalue, Eigenvector, Linear Transformation, Matrix, Basis, Quantum Mechanics, Schrödinger Equation]
 description: "What eigenvalues and eigenvectors really mean — the vectors that only get scaled (not rotated) under a linear transformation, why they can serve as a basis, and why det(A) is the product of the eigenvalues; the same form as the Schrödinger equation Hψ = Eψ."
-canonicalURL: "https://blog.naver.com/kkul20235/224221436871"
+
 usemathjax: true
 comments: true
 permalink: /eigenvalue-and-eigenvector/

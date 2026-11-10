@@ -5,7 +5,7 @@ date: 2025-10-28T19:31:00+09:00
 categories: [mathematics]
 tags: [Plane Equation, Vectors, Dot Product, Normal Vector, Calculus]
 description: "A first-principles explanation of scalars and vectors, the dot product, and what the equation of a plane really means — starting from the very basics."
-canonicalURL: "https://blog.naver.com/kkul20235/224056851459"
+
 usemathjax: true
 comments: true
 permalink: /equation-of-plane/

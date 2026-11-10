@@ -5,7 +5,7 @@ date: 2026-08-06
 categories: [quantum-mechanics]
 tags: [Hydrogen Atom, Orbitals, Wave Function, Quantum Numbers, Probability Density, 1s Orbital, 2s Orbital, 2p Orbitals, Degeneracy]
 description: Visualizing the hydrogen atom wave functions — plugging the quantum numbers n, l, m into the general solution and drawing the 1s, 2s, 2p orbitals, including how the complex 2p solutions combine into the familiar px and py orbitals.
-canonicalURL: "https://blog.naver.com/kkul20235/224370369513"
+
 usemathjax: true
 comments: true
 

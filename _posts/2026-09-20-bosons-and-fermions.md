@@ -5,7 +5,7 @@ date: 2026-09-20
 categories: [solid-state-physics]
 tags: ["Bose-Einstein Distribution", "Fermi-Dirac Distribution", "Statistical Mechanics"]
 description: "Exploring distinguishability, chemical potential, and the state-counting arguments behind Bose\u2013Einstein and Fermi\u2013Dirac occupation functions."
-canonicalURL: "https://blog.naver.com/kkul20235/224417852554"
+
 usemathjax: true
 comments: true
 ---
@@ -46,7 +46,7 @@ A distribution describes how the particles in a system share its energy. Suppose
 
 ## Distinguishable particles
 
-In the classical regime, distinguishable-particle counting leads to the Boltzmann distribution. See my [earlier Boltzmann-distribution post](https://blog.naver.com/kkul20235/224158648727) for more detail.
+In the classical regime, distinguishable-particle counting leads to the Boltzmann distribution.
 
 ## A closed-system picture
 

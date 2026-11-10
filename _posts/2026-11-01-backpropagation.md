@@ -5,7 +5,7 @@ date: 2026-11-01
 categories: [algorithm]
 tags: [Neural Networks, Backpropagation, Chain Rule, Gradient Descent]
 description: "Deriving the four backpropagation equations and weight and bias updates step by step."
-canonicalURL: "https://blog.naver.com/kkul20235/224461348674"
+
 usemathjax: true
 comments: true
 ---

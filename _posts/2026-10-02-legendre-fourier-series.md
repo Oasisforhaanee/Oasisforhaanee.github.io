@@ -5,7 +5,7 @@ date: 2026-10-02
 categories: [mathematics]
 tags: ["Legendre Polynomials", "Orthogonality", "Gram-Schmidt"]
 description: "Deriving Legendre polynomials by power series and Gram\u2013Schmidt orthogonalization, and understanding them as a function-space basis."
-canonicalURL: "https://blog.naver.com/kkul20235/224429760433"
+
 usemathjax: true
 comments: true
 ---

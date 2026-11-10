@@ -5,7 +5,7 @@ date: 2026-08-16
 categories: [quantum-mechanics]
 tags: [Periodic Potential, Bloch's Theorem, Energy Band, Wave Function, Linear Combination, Tight Binding, Wave Number, Stationary State]
 description: "What happens to wave functions and energy when many atoms are arranged periodically — generalizing the two-atom bonding/antibonding split to a chain of potentials, deriving E(k) = E0 + ΔE0 + 2t·cos(ka), and how the phase between neighboring wave functions grows with the wave number k."
-canonicalURL: "https://blog.naver.com/kkul20235/224380395249"
+
 usemathjax: true
 comments: true
 permalink: /wave-function-in-periodic-potential/

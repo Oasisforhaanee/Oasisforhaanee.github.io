@@ -5,7 +5,7 @@ date: 2026-09-07
 categories: [solid-state-physics]
 tags: ["Drude Model", "Conductivity", "Mobility"]
 description: "Deriving electrical conductivity and carrier mobility from the average drift of electrons between collisions."
-canonicalURL: "https://blog.naver.com/kkul20235/224403967011"
+
 usemathjax: true
 comments: true
 ---

@@ -5,7 +5,7 @@ date: 2026-10-19
 categories: [solid-state-physics]
 tags: ["XRD", "Bragg's Law", "Reciprocal Lattice"]
 description: "How Bragg peaks reveal crystal planes, and how Bragg's law becomes the Laue condition in reciprocal space."
-canonicalURL: "https://blog.naver.com/kkul20235/224446636507"
+
 usemathjax: true
 comments: true
 ---

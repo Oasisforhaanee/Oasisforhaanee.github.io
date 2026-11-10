@@ -5,7 +5,7 @@ date: 2026-08-11
 categories: [quantum-mechanics]
 tags: [Bonding Orbital, Antibonding Orbital, Molecular Orbital, Schrödinger Equation, Linear Combination, Interference, Energy Splitting]
 description: "Why bonding and antibonding orbitals exist — solving the time-independent Schrödinger equation for two overlapping hydrogen 1s wave functions, and how constructive/destructive interference splits the energy into bonding E+ and antibonding E− states."
-canonicalURL: "https://blog.naver.com/kkul20235/224375274200"
+
 usemathjax: true
 comments: true
 permalink: /bonding-and-antibonding-orbitals/

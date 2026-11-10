@@ -5,7 +5,7 @@ date: 2026-10-09
 categories: [solid-state-physics]
 tags: ["Reciprocal Lattice", "Fourier Series", "Brillouin Zone"]
 description: "Building intuition for reciprocal space, then using Fourier components to solve the electron problem in a periodic potential."
-canonicalURL: "https://blog.naver.com/kkul20235/224436591820"
+
 usemathjax: true
 comments: true
 ---

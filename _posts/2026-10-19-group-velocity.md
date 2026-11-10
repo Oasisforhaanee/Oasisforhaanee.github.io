@@ -5,7 +5,7 @@ date: 2026-10-19
 categories: [solid-state-physics]
 tags: ["Group Velocity", "Phase Velocity", "Waves"]
 description: "Deriving phase and group velocities from plane waves and their superposition, with an animation of beats."
-canonicalURL: "https://blog.naver.com/kkul20235/224447121386"
+
 usemathjax: true
 comments: true
 ---

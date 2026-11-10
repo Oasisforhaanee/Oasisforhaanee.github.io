@@ -5,7 +5,7 @@ date: 2026-10-17
 categories: [solid-state-physics]
 tags: ["FCC", "BCC", "Reciprocal Lattice", "Brillouin Zone"]
 description: "Constructing reciprocal lattices from primitive vectors and understanding why the reciprocal of FCC is BCC."
-canonicalURL: "https://blog.naver.com/kkul20235/224444893195"
+
 usemathjax: true
 comments: true
 ---

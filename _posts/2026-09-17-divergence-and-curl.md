@@ -5,7 +5,7 @@ date: 2026-09-17
 categories: [mathematics]
 tags: ["Vector Calculus", "Gradient", "Divergence", "Curl"]
 description: "Building intuition for scalar and vector fields, gradients, divergence, and curl through formulas and diagrams."
-canonicalURL: "https://blog.naver.com/kkul20235/224414808844"
+
 usemathjax: true
 comments: true
 ---

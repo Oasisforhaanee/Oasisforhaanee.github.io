@@ -5,7 +5,7 @@ date: 2026-10-12
 categories: [algorithm]
 tags: ["Neural Networks", "Backpropagation", "Deep Learning"]
 description: "How artificial neural networks compute their outputs and learn through backpropagation, with worked examples."
-canonicalURL: "https://blog.naver.com/kkul20235/224439468218"
+
 usemathjax: true
 comments: true
 ---
