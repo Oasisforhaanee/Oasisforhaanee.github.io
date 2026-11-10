@@ -12,6 +12,8 @@ permalink: /multipole-expansion/
 
 In this post, let's explore **multipole expansion**, a topic that appears when studying electric dipoles in electromagnetism.
 
+Before reading, please review [Electric Field and Potential: E = −∇V](/electric-field-and-potential/).
+
 ## Electric potential
 
 $$
