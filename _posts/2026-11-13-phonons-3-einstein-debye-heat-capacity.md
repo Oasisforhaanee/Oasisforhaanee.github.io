@@ -117,7 +117,11 @@ $$
 
 Experiments indeed show that the heat capacity of a solid approaches $3Nk_B$ at high temperatures.
 
-However, the Einstein model does not work well at low temperatures close to absolute zero.
+However, the Einstein model does not work well at low temperatures close to absolute zero. Comparing its prediction with the measured data reveals a large discrepancy in the low-temperature region.
+
+![Measured heat capacity of silver compared with the Einstein-model fit, with an inset showing the discrepancy at low temperatures.](/assets/img/phonons-3-03.png)
+
+*Measured heat capacity of silver (points) and the prediction of the Einstein model (line).*
 
 Let us see why by looking at the Debye model, which improves on it.
 
@@ -235,6 +239,10 @@ $$
 C\approx \frac{12\pi ^4}{5}Nk_B\left(\frac{T}{\Theta _D}\right)^3\propto T^3
 $$
 
+![Measured heat capacity of silver compared with Debye- and Einstein-model fits, including a low-temperature inset.](/assets/img/phonons-3-04.png)
+
+The heat capacity predicted by the Debye model is in close agreement with the experimental data.
+
 ## How the Debye and Einstein models differ
 
 Why did the Einstein model fail at low temperatures? The reason is that an oscillator's mean energy depends on $\omega$. When $\omega$ is very small, the spacing between energy levels is narrow, so the mode can have a relatively large phonon occupation even at low temperatures. For a large $\omega$, however, the energy-level spacing is wide. At low temperatures, the higher energy levels have very small occupation probabilities, leaving very few phonons in the mode. As $T$ increases, the heat capacity consequently rises steeply, in proportion to $T^3$.
@@ -246,6 +254,8 @@ The Einstein model assumes the same frequency $\omega_E$ for every oscillator. I
 In this post, we calculated the heat capacity of a solid using the eigenmodes and the $k$–$\omega$ dispersion relation derived from lattice vibrations in the earlier posts. I hope this helped show the close relationship between heat capacity and the energy occupation of eigenmodes.
 
 That is all for this post. Thank you for reading through this long discussion!
+
+Source of the silver heat-capacity graphs: [Open Solid State Notes — Debye model](https://solidstate.quantumtinkerer.tudelft.nl/2_debye_model/).
 
 ---
 
