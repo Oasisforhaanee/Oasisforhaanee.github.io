@@ -143,7 +143,7 @@ $$
 \left\langle E(\omega )\right\rangle =\frac{1}{2}\hbar \omega +\frac{\hbar \omega }{e^{\hbar \omega /k_BT}-1}
 $$
 
-As the dispersion relation above shows, the angular frequency $\omega$ differs from mode to mode according to $k$. Unlike the Einstein model, we must therefore add up the energies of the individual modes. There are $3N$ eigenmodes in total, so we can write
+As the dispersion relation above shows, the angular frequency $\omega$ differs from mode to mode according to $k$. Unlike in the Einstein model, where we could simply multiply the mean energy of one oscillator by $3N$, we must now sum the mean energies of the individual modes. Since there are $3N$ eigenmodes in total, we can write
 
 $$
 U=\sum _{i=1}^{3N}\left\langle E\left(\omega _i\right)\right\rangle
