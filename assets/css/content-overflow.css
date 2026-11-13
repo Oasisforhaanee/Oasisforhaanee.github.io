@@ -1,0 +1,101 @@
+/* Keep wide article content inside its own native scroll area. */
+[itemprop="articleBody"] .content-overflow {
+  display: block;
+  min-width: 0;
+  max-width: 100%;
+}
+
+[itemprop="articleBody"] .content-overflow--math {
+  margin: 1em 0;
+}
+
+[itemprop="articleBody"] .content-overflow__viewport {
+  display: block;
+  box-sizing: border-box;
+  min-width: 0;
+  max-width: 100%;
+  overflow-x: auto;
+  overflow-y: hidden;
+  overscroll-behavior-x: contain;
+  -webkit-overflow-scrolling: touch;
+  scrollbar-width: thin;
+  scrollbar-color: #888 transparent;
+}
+
+[itemprop="articleBody"] .content-overflow--math > .content-overflow__viewport {
+  /* Leave room for tall accents, integral limits, and descenders. */
+  padding: 0.35em 2px 0.55em;
+}
+
+[itemprop="articleBody"] .content-overflow__viewport > mjx-container[display="true"] {
+  margin: 0;
+}
+
+[itemprop="articleBody"] .content-overflow--math.is-overflowing > .content-overflow__viewport > mjx-container[display="true"] {
+  /* A centered oversized expression can otherwise hide its left edge. */
+  text-align: left;
+}
+
+[itemprop="articleBody"] .content-overflow__viewport:focus-visible,
+[itemprop="articleBody"] .content-overflow__toggle:focus-visible {
+  outline: 2px solid currentColor;
+  outline-offset: 3px;
+}
+
+[itemprop="articleBody"] .content-overflow--image img {
+  height: auto;
+}
+
+[itemprop="articleBody"] .content-overflow--image.is-expanded img {
+  /* Only explicit full-size viewing overrides the existing responsive image. */
+  display: block;
+  width: var(--image-original-width) !important;
+  max-width: none !important;
+  height: auto !important;
+}
+
+[itemprop="articleBody"] .content-overflow__tools {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 0.35rem 0.75rem;
+  padding-top: 0.3rem;
+  font-size: 0.8rem;
+  line-height: 1.5;
+}
+
+[itemprop="articleBody"] .content-overflow__hint {
+  opacity: 0.8;
+}
+
+[itemprop="articleBody"] .content-overflow__toggle {
+  min-height: 2rem;
+  padding: 0.25rem 0.6rem;
+  border: 1px solid currentColor;
+  border-radius: 4px;
+  background: transparent;
+  color: inherit;
+  font: inherit;
+  cursor: pointer;
+}
+
+[itemprop="articleBody"] .content-overflow__tools[hidden],
+[itemprop="articleBody"] .content-overflow__hint[hidden],
+[itemprop="articleBody"] .content-overflow__toggle[hidden] {
+  display: none !important;
+}
+
+@media print {
+  [itemprop="articleBody"] .content-overflow__viewport {
+    overflow: visible;
+  }
+
+  [itemprop="articleBody"] .content-overflow--image.is-expanded img {
+    width: auto !important;
+    max-width: 100% !important;
+  }
+
+  [itemprop="articleBody"] .content-overflow__tools {
+    display: none !important;
+  }
+}
