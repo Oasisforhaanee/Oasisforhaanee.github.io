@@ -203,7 +203,7 @@ $$
 \approx 2|\lambda |\left(1+\frac{1}{2}\cdot \frac{(E_1-E_2)^2}{4\lambda ^2}\right)=2|\lambda |+\frac{(E_1-E_2)^2}{4|\lambda |}
 $$
 
-The final term is much smaller than the $2|\lambda|$ term, so we can neglect it. The energies then become
+The final term is much smaller than the $2\lvert\lambda\rvert$ term, so we can neglect it. The energies then become
 
 $$
 E_+\approx \frac{E_1+E_2}{2}+|\lambda |
