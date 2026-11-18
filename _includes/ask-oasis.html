@@ -7,4 +7,6 @@
   <form id="ask-form"><label for="ask-question">Keyword or question</label><input id="ask-question" maxlength="500" required autocomplete="off" placeholder="Try: Fourier transform"><label class="ask-consent"><input id="ask-ai" type="checkbox" disabled> Use AI (sends your question and matching excerpts to Google)</label><button id="ask-submit" type="submit">Find posts</button></form>
   <p id="ask-status" role="status">AI is not connected. Blog search is available.</p>
 </section>
-<script src="{{ '/assets/js/ask-oasis.js' | relative_url }}" defer></script>
+<script src="{{ '/assets/js/ask-search.js' | relative_url }}?v=multilingual-1" defer></script>
+<script src="{{ '/assets/js/ask-ai-client.js' | relative_url }}?v=diagnostics-1" defer></script>
+<script src="{{ '/assets/js/ask-oasis.js' | relative_url }}?v=diagnostics-1" defer></script>
