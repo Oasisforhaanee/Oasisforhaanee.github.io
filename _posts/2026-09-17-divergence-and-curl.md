@@ -51,7 +51,7 @@ $$
 The gradient points in the direction in which the scalar field increases most rapidly. On a height map, it is the steepest uphill direction. For a small displacement vector $v$, the change in the function is approximately its dot product with the gradient:
 
 $$
-\Delta f\approx \mathbf{v}\cdot \nabla \mathbf{F}=\begin{pmatrix}v_x&v_y&v_z\end{pmatrix}\begin{pmatrix}\frac{\partial f}{\partial x}\\\frac{\partial f}{\partial y}\\\frac{\partial f}{\partial z}\end{pmatrix}
+\Delta f\approx \mathbf{v}\cdot \nabla f=\begin{pmatrix}v_x&v_y&v_z\end{pmatrix}\begin{pmatrix}\frac{\partial f}{\partial x}\\\frac{\partial f}{\partial y}\\\frac{\partial f}{\partial z}\end{pmatrix}
 $$
 
 $$
@@ -61,17 +61,17 @@ $$
 For a vector field, every point already has several components, so its spatial derivatives have a different form:
 
 $$
-\nabla \mathbf{F}=\begin{pmatrix}\frac{\partial F_x}{\partial x}&\frac{\partial F_x}{\partial y}&\frac{\partial F_x}{\partial z}\\\frac{\partial F_y}{\partial x}&\frac{\partial F_y}{\partial y}&\frac{\partial F_y}{\partial z}\\\frac{\partial F_z}{\partial x}&\frac{\partial F_z}{\partial y}&\frac{\partial F_z}{\partial z}\end{pmatrix}
+J_{\mathbf{F}}=\begin{pmatrix}\frac{\partial F_x}{\partial x}&\frac{\partial F_x}{\partial y}&\frac{\partial F_x}{\partial z}\\\frac{\partial F_y}{\partial x}&\frac{\partial F_y}{\partial y}&\frac{\partial F_y}{\partial z}\\\frac{\partial F_z}{\partial x}&\frac{\partial F_z}{\partial y}&\frac{\partial F_z}{\partial z}\end{pmatrix}
 $$
 
-Each row resembles the gradient of a scalar component. The first gives the spatial derivatives of $F_x$, the second those of $F_y$, and the third those of $F_z$. Collectively, these derivatives form a matrix, or a second-order tensor. A small displacement produces an approximate vector change through contraction with this derivative tensor. The following expression records the component arrangement used in the original notes:
+Each row contains the gradient of one scalar component: $F_x$, $F_y$, or $F_z$. Here we use the Jacobian convention $(J_{\mathbf{F}})_{ij}=\partial F_i/\partial x_j$, with field components indexing rows and spatial coordinates indexing columns. These derivatives form a matrix representing a second-order tensor in Cartesian coordinates. For a small displacement written as a column vector, the first-order change is the Jacobian multiplied by that displacement, equivalently the directional derivative $(\mathbf{v}\cdot\nabla)\mathbf{F}$:
 
 $$
-\Delta \mathbf{F}\approx \mathbf{v}\cdot \nabla \mathbf{F}=\begin{pmatrix}v_x&v_y&v_z\end{pmatrix}\begin{pmatrix}\frac{\partial F_x}{\partial x}&\frac{\partial F_x}{\partial y}&\frac{\partial F_x}{\partial z}\\\frac{\partial F_y}{\partial x}&\frac{\partial F_y}{\partial y}&\frac{\partial F_y}{\partial z}\\\frac{\partial F_z}{\partial x}&\frac{\partial F_z}{\partial y}&\frac{\partial F_z}{\partial z}\end{pmatrix}
+\Delta \mathbf{F}\approx J_{\mathbf{F}}\mathbf{v}=(\mathbf{v}\cdot\nabla)\mathbf{F}=\begin{pmatrix}\frac{\partial F_x}{\partial x}&\frac{\partial F_x}{\partial y}&\frac{\partial F_x}{\partial z}\\\frac{\partial F_y}{\partial x}&\frac{\partial F_y}{\partial y}&\frac{\partial F_y}{\partial z}\\\frac{\partial F_z}{\partial x}&\frac{\partial F_z}{\partial y}&\frac{\partial F_z}{\partial z}\end{pmatrix}\begin{pmatrix}v_x\\v_y\\v_z\end{pmatrix}
 $$
 
 $$
-=\begin{pmatrix}v_x\frac{\partial F_x}{\partial x}+v_y\frac{\partial F_y}{\partial x}+v_z\frac{\partial F_z}{\partial x},&v_x\frac{\partial F_x}{\partial y}+v_y\frac{\partial F_y}{\partial y}+v_z\frac{\partial F_z}{\partial y},&v_x\frac{\partial F_x}{\partial z}+v_y\frac{\partial F_y}{\partial z}+v_z\frac{\partial F_z}{\partial z}\end{pmatrix}
+=\begin{pmatrix}v_x\frac{\partial F_x}{\partial x}+v_y\frac{\partial F_x}{\partial y}+v_z\frac{\partial F_x}{\partial z}\\v_x\frac{\partial F_y}{\partial x}+v_y\frac{\partial F_y}{\partial y}+v_z\frac{\partial F_y}{\partial z}\\v_x\frac{\partial F_z}{\partial x}+v_y\frac{\partial F_z}{\partial y}+v_z\frac{\partial F_z}{\partial z}\end{pmatrix}
 $$
 
 ## Divergence
@@ -99,7 +99,7 @@ The left picture has positive divergence and looks like a source, spreading outw
 The mathematical definition of divergence is:
 
 $$
-\nabla \cdot \mathbf{F}=\lim _{V\to 0}^{ }\frac{1}{V}\oiint _{\ S}^{\ }\mathbf{F}\cdot \hat{\mathbf{n}}\, dS
+\nabla \cdot \mathbf{F}=\lim _{V\to 0}^{ }\frac{1}{V}\iint _{\ S}^{\ }\mathbf{F}\cdot \hat{\mathbf{n}}\, dS
 $$
 
 Take a small volume V enclosed by a closed surface S. Integrate the dot product of the vector field F and the outward unit normal over S, divide by V, and take the limit as the volume approaches zero. This defines a value at each point in the vector field.
@@ -107,7 +107,7 @@ Take a small volume V enclosed by a closed surface S. Integrate the dot product 
 Thinking about this more broadly, the net flux leaving an entire volume V equals the integral of the divergence throughout that volume. Mathematically:
 
 $$
-\oiint _{\ S}^{\ }\mathbf{F}\cdot \hat{\mathbf{n}}\, dS\ =\oiiint _{V\ }^{\ }\left(\nabla \cdot \mathbf{F}\right)dV
+\iint_{\partial V}\mathbf{F}\cdot\hat{\mathbf{n}}\,dS=\iiint_V\left(\nabla\cdot\mathbf{F}\right)\,dV
 $$
 
 ![The divergence theorem: adding local outward fluxes and integrating over the outer boundary](/assets/img/divergence-and-curl-divergence-theorem.png)
@@ -127,7 +127,7 @@ $$
 Unlike divergence, we now use the cross-product form. Looking only at the $x$ component:
 
 $$
-\left(\nabla \times \mathbf{A}\right)_x=\left(\frac{\partial A_z}{\partial y}-\frac{\partial A_y}{\partial z}\right)\mathbf{i}
+\left(\nabla \times \mathbf{A}\right)_x=\frac{\partial A_z}{\partial y}-\frac{\partial A_y}{\partial z}
 $$
 
 The corresponding diagram is:
@@ -140,7 +140,7 @@ The sign of the component indicates the rotational sense:
 
 ![Divergence and Curl — figure 7](/assets/img/divergence-and-curl-07.png)
 
-With the orientation shown, positive curl corresponds to counterclockwise circulation and negative curl to clockwise circulation.
+With the orientation shown, a positive curl component along the chosen normal corresponds to counterclockwise circulation when viewed from the tip of that normal toward the surface; a negative component corresponds to clockwise circulation. Curl itself is a vector, so the sign refers to a component, not to the whole vector.
 
 ## Stokes' theorem
 
@@ -162,7 +162,7 @@ $$
 \iint _{S\ }^{\ }(\nabla \times \mathbf{F})\cdot \hat{\mathbf{n}}\, dS=\oint _{\ C}^{\ }\mathbf{F}\cdot d\mathbf{l}
 $$
 
-The surface integral of the normal component of curl over S equals the line integral of F around its closed boundary curve C.
+The surface integral of the normal component of curl over an oriented surface S equals the line integral of F around its closed boundary curve C. The direction around C and the chosen normal must agree by the right-hand rule. Here S is a surface with boundary, not a closed surface enclosing a volume. Both this theorem and the divergence theorem assume a sufficiently smooth field and piecewise-smooth boundaries.
 
 ![Stokes' theorem: summing local circulation and integrating around the outer boundary](/assets/img/divergence-and-curl-stokes-theorem.png)
 

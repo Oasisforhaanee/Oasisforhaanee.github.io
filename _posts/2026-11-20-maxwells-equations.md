@@ -44,7 +44,7 @@ $$
 Maxwell's first equation says that, if we take a very small volume V around a point in the electric field, the divergence there is proportional to the charge density within that volume. To see why, let's start with the definition of divergence.
 
 $$
-\nabla \cdot \mathbf{E}=\lim _{V\to 0}^{ }\frac{1}{V}\oiint _{\ S}^{\ }\mathbf{E}\cdot \hat{\mathbf{n}}\, dS
+\nabla \cdot \mathbf{E}=\lim _{V\to 0}^{ }\frac{1}{V}\iint _{\ S}^{\ }\mathbf{E}\cdot \hat{\mathbf{n}}\, dS
 $$
 
 This is the definition of divergence. Imagine a small balloon sitting in an electric field.
@@ -70,7 +70,7 @@ $$
 Substituting this directly into the divergence formula gives:
 
 $$
-\nabla \cdot \mathbf{E}=\lim _{r\to 0}^{ }\frac{\oiint _{S\ }^{\ }\left(\frac{1}{4\pi \varepsilon _0}\frac{q}{r^2}\hat{\mathbf{n}}\right)\cdot \hat{\mathbf{n}}\, dS}{\frac{4}{3}\pi r^3}=\lim _{r\to 0}^{ }\frac{4\pi r^2\cdot \frac{1}{4\pi \varepsilon _0}\frac{q}{r^2}}{\frac{4}{3}\pi r^3}=\lim _{V\to 0}^{ }\frac{q}{\varepsilon _0V}=\frac{\rho }{\varepsilon _0}
+\nabla \cdot \mathbf{E}=\lim _{r\to 0}^{ }\frac{\iint _{S\ }^{\ }\left(\frac{1}{4\pi \varepsilon _0}\frac{q}{r^2}\hat{\mathbf{n}}\right)\cdot \hat{\mathbf{n}}\, dS}{\frac{4}{3}\pi r^3}=\lim _{r\to 0}^{ }\frac{4\pi r^2\cdot \frac{1}{4\pi \varepsilon _0}\frac{q}{r^2}}{\frac{4}{3}\pi r^3}=\lim _{V\to 0}^{ }\frac{q}{\varepsilon _0V}=\frac{\rho }{\varepsilon _0}
 $$
 
 Here, q/V is the charge density, giving the first of Maxwell's equations.
@@ -148,7 +148,7 @@ $$
 But there are situations where this equation does not work on its own. The diagram below shows a capacitor being charged. For the same closed curve C, Stokes' theorem requires the surface integral of curl B to be the same for the surfaces in the left and right diagrams.
 
 $$
-\oiint _{S_1\ }^{\ }\left(\nabla \times \mathbf{B}\right)\hat{\mathbf{n}}\cdot dS=\oiint _{S_2\ }^{\ }\left(\nabla \times \mathbf{B}\right)\hat{\mathbf{n}}\cdot dS=\oint _{\ C}^{\ }\mathbf{B}\cdot d\mathbf{l}
+\iint _{S_1\ }^{\ }\left(\nabla \times \mathbf{B}\right)\cdot\hat{\mathbf{n}}\,dS=\iint _{S_2\ }^{\ }\left(\nabla \times \mathbf{B}\right)\cdot\hat{\mathbf{n}}\,dS=\oint _{\ C}^{\ }\mathbf{B}\cdot d\mathbf{l}
 $$
 
 ![Maxwell's equations — figure 3](/assets/img/maxwells-equations-03.png)
@@ -156,11 +156,11 @@ $$
 If we substitute Ampère's law into this expression, the following integrals should also be equal.
 
 $$
-\oiint _{S_1\ }^{\ }\left(\nabla \times \mathbf{B}\right)\hat{\mathbf{n}}\cdot dS=\oiint _{S_2\ }^{\ }\left(\nabla \times \mathbf{B}\right)\hat{\mathbf{n}}\cdot dS
+\iint _{S_1\ }^{\ }\left(\nabla \times \mathbf{B}\right)\cdot\hat{\mathbf{n}}\,dS=\iint _{S_2\ }^{\ }\left(\nabla \times \mathbf{B}\right)\cdot\hat{\mathbf{n}}\,dS
 $$
 
 $$
-=\oiint _{\ S_1}^{\ }\mu _0\mathbf{J}\cdot \hat{\mathbf{n}}\, dS=\oiint _{\ S_2}^{\ }\mu _0\mathbf{J}\cdot \hat{\mathbf{n}}\, dS
+=\iint _{\ S_1}^{\ }\mu _0\mathbf{J}\cdot \hat{\mathbf{n}}\, dS=\iint _{\ S_2}^{\ }\mu _0\mathbf{J}\cdot \hat{\mathbf{n}}\, dS
 $$
 
 Current density J passes through surface S1, so its integral is nonzero. But no current passes through surface S2, so that integral is zero—a contradiction! There is no conduction current flowing through the gap between the capacitor plates. To resolve this, Maxwell supplemented the equation as follows.
