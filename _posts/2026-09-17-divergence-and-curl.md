@@ -1,10 +1,10 @@
 ---
 layout: post
-title: "Divergence and Curl"
+title: "Divergence and Curl: Divergence Theorem and Stokes' Theorem"
 date: 2026-09-17
 categories: [mathematics]
 tags: ["Vector Calculus", "Gradient", "Divergence", "Curl"]
-description: "Building intuition for scalar and vector fields, gradients, divergence, and curl through formulas and diagrams."
+description: "Building intuition for fields, gradients, divergence, curl, the divergence theorem, and Stokes' theorem through formulas and diagrams."
 
 usemathjax: true
 comments: true
@@ -94,6 +94,28 @@ Adding these three derivatives measures local net outflow, like water spreading 
 
 The left picture has positive divergence and looks like a source, spreading outward. The right has negative divergence and looks like a sink, drawing inward.
 
+## Gauss's divergence theorem
+
+The mathematical definition of divergence is:
+
+$$
+\nabla \cdot \mathbf{F}=\lim _{V\to 0}^{ }\frac{1}{V}\oiint _{\ S}^{\ }\mathbf{F}\cdot \hat{\mathbf{n}}\, dS
+$$
+
+Take a small volume V enclosed by a closed surface S. Integrate the dot product of the vector field F and the outward unit normal over S, divide by V, and take the limit as the volume approaches zero. This defines a value at each point in the vector field.
+
+Thinking about this more broadly, the net flux leaving an entire volume V equals the integral of the divergence throughout that volume. Mathematically:
+
+$$
+\oiint _{\ S}^{\ }\mathbf{F}\cdot \hat{\mathbf{n}}\, dS\ =\oiiint _{V\ }^{\ }\left(\nabla \cdot \mathbf{F}\right)dV
+$$
+
+![The divergence theorem: adding local outward fluxes and integrating over the outer boundary](/assets/img/divergence-and-curl-divergence-theorem.png)
+
+The left diagram adds the divergence contributions throughout the volume; the right diagram integrates the outward flux over the enclosing surface. The divergence theorem says that these totals are equal.
+
+For an intuitive picture, the fluxes through shared faces of neighboring volume elements cancel each other. Only the contribution at the outer boundary remains.
+
 ## Curl
 
 The curl of a vector field is defined by:
@@ -119,6 +141,34 @@ The sign of the component indicates the rotational sense:
 ![Divergence and Curl — figure 7](/assets/img/divergence-and-curl-07.png)
 
 With the orientation shown, positive curl corresponds to counterclockwise circulation and negative curl to clockwise circulation.
+
+## Stokes' theorem
+
+The mathematical definition of the normal component of curl is:
+
+$$
+(\nabla \times \mathbf{F})\cdot \hat{\mathbf{n}}=\lim _{S\to 0}^{ }\frac{1}{S}\oint _{\ C}^{\ }\mathbf{F}\cdot d\mathbf{l}
+$$
+
+Take an infinitesimal area S with boundary C. Integrate the vector field F along C, divide by S, and take the limit as the area approaches zero. Extending this idea to a surface S and its boundary C, the surface integral of the dot product between curl F and the unit normal equals the line integral of F around the boundary.
+
+![Curl and circulation around a closed curve](/assets/img/divergence-and-curl-curl-circulation-definition.png)
+
+By the definition of curl, the circulation of F around the closed curve C corresponds to the magnitude represented by the orange line.
+
+This definition gives us an intuitive way to understand Stokes' theorem:
+
+$$
+\iint _{S\ }^{\ }(\nabla \times \mathbf{F})\cdot \hat{\mathbf{n}}\, dS=\oint _{\ C}^{\ }\mathbf{F}\cdot d\mathbf{l}
+$$
+
+The surface integral of the normal component of curl over S equals the line integral of F around its closed boundary curve C.
+
+![Stokes' theorem: summing local circulation and integrating around the outer boundary](/assets/img/divergence-and-curl-stokes-theorem.png)
+
+The left diagram adds the curl contributions over all the surface elements. The right diagram takes the line integral of F around the boundary of the whole surface. Stokes' theorem says these give the same result.
+
+As with the divergence theorem, contributions along the shared boundaries of neighboring surface elements cancel. Only the outer boundary contribution remains.
 
 Divergence and curl are so important in electromagnetism that I wanted to examine their calculus meaning carefully. Remember that gradients can describe spatial derivatives of both scalar and vector fields, although their results have different types. Divergence and curl here act on vector fields. The familiar gradient that points toward the fastest increase is specifically the gradient of a **scalar** field.
 
