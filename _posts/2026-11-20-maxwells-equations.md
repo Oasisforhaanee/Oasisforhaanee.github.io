@@ -333,6 +333,16 @@ That number looks very familiar! It is the speed of light. The solution we have 
 
 Light propagates through oscillations of electric and magnetic fields. That is why we call it an **electromagnetic wave**.
 
+To generate this light, the charge must accelerate. When a charge accelerates, its electric field changes, which changes the magnetic field, which in turn changes the electric field... Through this process, an electromagnetic wave is generated and propagates outward.
+
+![Electromagnetic radiation from an accelerating charge in two dimensions](/assets/img/maxwells-equations-radiation-2d.gif)
+
+Electromagnetic-wave propagation from an accelerating charge in a two-dimensional electric field (circular wavefronts).
+
+![Electromagnetic radiation from an accelerating charge in three dimensions](/assets/img/maxwells-equations-radiation-3d.gif)
+
+Electromagnetic-wave propagation from an accelerating charge in a three-dimensional electric field (spherical wavefronts).
+
 ## Maxwell's equations and eigenmodes
 
 The concept of an eigenmode comes up again and again in physics. I found a connection here, too: electromagnetic waves are solutions of a wave equation.
